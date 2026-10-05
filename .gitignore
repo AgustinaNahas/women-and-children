@@ -3,3 +3,10 @@ node_modules
 out
 .vercel
 *.tsbuildinfo
+
+# Material de investigación. El sitio no lo lee.
+scripts/
+data/audio/
+data/pilot/
+data/whisper/
+data/timestamps.json

@@ -1,0 +1,2309 @@
+{
+  "session": 81,
+  "speeches_scanned": 197,
+  "speeches_with_women": 94,
+  "speeches_with_women_and_children": 15,
+  "hit_count": 230,
+  "mentions": [
+    {
+      "date": "2026-09-22",
+      "slug": "secretary-general-united-nations",
+      "country": "Secretary-General of the United Nations",
+      "speaker": "António Guterres",
+      "file": "pipeline/out/81/2026-09-22/M_1.txt",
+      "char_index": 10714,
+      "term": "women",
+      "context": "discussion of inequality can ignore its most universal form: The inequality between women and men. Everywhere, women and girls continue to face discrimination, violence, exclusion"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "secretary-general-united-nations",
+      "country": "Secretary-General of the United Nations",
+      "speaker": "António Guterres",
+      "file": "pipeline/out/81/2026-09-22/M_1.txt",
+      "char_index": 10742,
+      "term": "women",
+      "context": "ignore its most universal form: The inequality between women and men. Everywhere, women and girls continue to face discrimination, violence, exclusion and abuse. Around the"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "secretary-general-united-nations",
+      "country": "Secretary-General of the United Nations",
+      "speaker": "António Guterres",
+      "file": "pipeline/out/81/2026-09-22/M_1.txt",
+      "char_index": 11076,
+      "term": "women",
+      "context": "outrage –and a profound waste for humanity. Peace is more durable when women are at the table. Economies are more dynamic when women have equal"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "secretary-general-united-nations",
+      "country": "Secretary-General of the United Nations",
+      "speaker": "António Guterres",
+      "file": "pipeline/out/81/2026-09-22/M_1.txt",
+      "char_index": 11133,
+      "term": "women",
+      "context": "durable when women are at the table. Economies are more dynamic when women have equal opportunity. Societies are more resilient when girls can learn, lead"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "president-general-assembly-opening",
+      "country": "President of the General Assembly (opening)",
+      "speaker": "Dr. Khalilur Rahman",
+      "file": "pipeline/out/81/2026-09-22/M_2.txt",
+      "char_index": 8635,
+      "term": "women",
+      "context": "Behind these figures are healthier children, more resilient communities, greater opportunities for women and girls, and renewed hope. These gains show that accelerating the SDGs"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "president-general-assembly-opening",
+      "country": "President of the General Assembly (opening)",
+      "speaker": "Dr. Khalilur Rahman",
+      "file": "pipeline/out/81/2026-09-22/M_2.txt",
+      "char_index": 9606,
+      "term": "women",
+      "context": "across borders and into homes at unprecedented speed and scale. They target women and girls, minorities, migrants, refugees and persons with disabilities, often for political"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "brazil",
+      "country": "Brazil",
+      "speaker": "Luiz Inácio Lula Da Silva",
+      "file": "pipeline/out/81/2026-09-22/M_3.txt",
+      "char_index": 3105,
+      "term": "women and children",
+      "context": "Palestinians will carry the pain and trauma left by the genocide of women and children perpetrated. By Netanyahu. Government in Gaza. Israeli civilians pay the price for"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "brazil",
+      "country": "Brazil",
+      "speaker": "Luiz Inácio Lula Da Silva",
+      "file": "pipeline/out/81/2026-09-22/M_3.txt",
+      "char_index": 10453,
+      "term": "women",
+      "context": "advanced pieces of legislation in the world to protect children, adolescents and women in the digital environment. We will ensure fair compensation for artists, musicians"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "brazil",
+      "country": "Brazil",
+      "speaker": "Luiz Inácio Lula Da Silva",
+      "file": "pipeline/out/81/2026-09-22/M_3.txt",
+      "char_index": 12918,
+      "term": "women",
+      "context": "change is crucial to alleviate the domestic burden that still falls on women. We are building a Brazil where women don't need permission to occupy"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "brazil",
+      "country": "Brazil",
+      "speaker": "Luiz Inácio Lula Da Silva",
+      "file": "pipeline/out/81/2026-09-22/M_3.txt",
+      "char_index": 12956,
+      "term": "women",
+      "context": "burden that still falls on women. We are building a Brazil where women don't need permission to occupy positions of power or enter the job"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "brazil",
+      "country": "Brazil",
+      "speaker": "Luiz Inácio Lula Da Silva",
+      "file": "pipeline/out/81/2026-09-22/M_3.txt",
+      "char_index": 13884,
+      "term": "women",
+      "context": "podium, driven by indignation at the injustices of their time Men and women who refused to accept war as a destiny, colonialism as a right,"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "turkiye",
+      "country": "Türkiye",
+      "speaker": "Recep Tayyip Erdoğan",
+      "file": "pipeline/out/81/2026-09-22/M_6.txt",
+      "char_index": 3348,
+      "term": "women",
+      "context": "three years, 74,000 of our brothers and sisters—most of them children and women—have fallen victim to Israel’s state terrorism. The people of Gaza are still"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "turkiye",
+      "country": "Türkiye",
+      "speaker": "Recep Tayyip Erdoğan",
+      "file": "pipeline/out/81/2026-09-22/M_6.txt",
+      "char_index": 17529,
+      "term": "women",
+      "context": "West, is at the forefront of these issues. Most of all, Muslim women and girls are subjected to greater discrimination in recent years. We regard"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "turkiye",
+      "country": "Türkiye",
+      "speaker": "Recep Tayyip Erdoğan",
+      "file": "pipeline/out/81/2026-09-22/M_6.txt",
+      "char_index": 17690,
+      "term": "women",
+      "context": "headscarf bans introduced in schools by certain countries as an attack on women’s most fundamental rights. Rising xenophobia, cultural racism and anti-Semitism are also toxic"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "turkiye",
+      "country": "Türkiye",
+      "speaker": "Recep Tayyip Erdoğan",
+      "file": "pipeline/out/81/2026-09-22/M_6.txt",
+      "char_index": 18042,
+      "term": "women",
+      "context": "We can break this siege only by protecting the family consisting of women and men. Türkiye will continue to take initiatives in protecting families and"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "peru",
+      "country": "Peru",
+      "speaker": "Keiko Sofia Fujimori Higuchi",
+      "file": "pipeline/out/81/2026-09-22/M_10.txt",
+      "char_index": 10590,
+      "term": "women",
+      "context": "to respect and ensure all human rights the rights of peasants, children, women, the rights of police forces and members of the military that are"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "luxembourg",
+      "country": "Luxembourg",
+      "speaker": "His Royal Highness Guillaume of Luxembourg",
+      "file": "pipeline/out/81/2026-09-22/M_14.txt",
+      "char_index": 7272,
+      "term": "women",
+      "context": "of responsibility applies to peace and security. Conflicts affect all human beings women, children, older persons, persons with disabilities, as well as people who are"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "luxembourg",
+      "country": "Luxembourg",
+      "speaker": "His Royal Highness Guillaume of Luxembourg",
+      "file": "pipeline/out/81/2026-09-22/M_14.txt",
+      "char_index": 7650,
+      "term": "women",
+      "context": "through peacekeeping operations humanitarian interventions protecting children affected by armed conflict, the women peace and security agenda, as well as the mine clearance humanitarian activities"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "angola",
+      "country": "Angola",
+      "speaker": "João Manuel Gonçalves Lourenço",
+      "file": "pipeline/out/81/2026-09-22/M_15.txt",
+      "char_index": 7156,
+      "term": "women",
+      "context": "the Persian Gulf. We condemn the genocide against defenceless populations, the elderly, women, children, bedridden patients, health professionals, journalists and workers of international humanitarian organizations,"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 7586,
+      "term": "women",
+      "context": "been actively advancing the implementation of United Nations Security Council Resolution 1325, “Women, Peace and Security,” and has become one of the few countries to"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 7681,
+      "term": "women",
+      "context": "has become one of the few countries to have reached 15 percent women’s representation among its military personnel serving in United Nations Peacekeeping Operations. Since"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 7896,
+      "term": "women",
+      "context": "its first female peacekeeper to the UN mission in Western Sahara, Mongolian women have made valuable contributions to global peace over the past two decades"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 8111,
+      "term": "women",
+      "context": "In this connection, Mongolia plans to host the second international conference on \"Women's Participation in UN Peacekeeping Operations\" in Ulaanbaatar in 2027. I am pleased"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 10138,
+      "term": "women and children",
+      "context": "cli mate change, and improving education, health, food security, and advancement of women and children. According to the Sustainable Development Report 2026, Mongolia has achieved 68.8 percent"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 15228,
+      "term": "women",
+      "context": "Nations, Mongolia has contributed to international cooperation to advance gender equality, strengthen women’s political participation and leadership, and increase their representation at decision-making levels. In"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 15437,
+      "term": "women",
+      "context": "years, Mongolia has established a tradition of hosting international events dedicated to women in our country, including the International Conference on Strengthening the Role of"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 15527,
+      "term": "women",
+      "context": "in our country, including the International Conference on Strengthening the Role of Women in Peacekeeping in 2022, the Female Foreign Ministers’ Meeting in 2023, and"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 15619,
+      "term": "women",
+      "context": "in 2022, the Female Foreign Ministers’ Meeting in 2023, and the World Women’s Forum in 2024, in collaboration with the United Nations, and the World"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 15698,
+      "term": "women",
+      "context": "Forum in 2024, in collaboration with the United Nations, and the World Women Entrepreneurs’ Forum in 2025. Hence, I am confident that the World Women"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 15772,
+      "term": "women",
+      "context": "Women Entrepreneurs’ Forum in 2025. Hence, I am confident that the World Women Parliamentarians’ Forum, to be held in Ulaanbaatar on October 12-13 this year,"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 15904,
+      "term": "women",
+      "context": "in Ulaanbaatar on October 12-13 this year, will substantially contribute to strengthening women’s political leadership and inter-parliamentary cooperation, thereby advancing gender equality and accelerating progress"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "mongolia",
+      "country": "Mongolia",
+      "speaker": "Khurelsukh Ukhnaa",
+      "file": "pipeline/out/81/2026-09-22/M_16.txt",
+      "char_index": 16302,
+      "term": "women",
+      "context": "serve as a solid bridge for partnership, cooperation, and solidarity in advancing women’s social and political leadership and participation at all levels. Mr. President, Mongolia"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "suriname",
+      "country": "Suriname",
+      "speaker": "Jennifer Geerlings-Simons",
+      "file": "pipeline/out/81/2026-09-22/M_18.txt",
+      "char_index": 9365,
+      "term": "women",
+      "context": "to multilateralism, dialogue, and the rule of law. Many capable candidates, including women leaders who have taken up the challenge, have been put forth and"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "sierra-leone",
+      "country": "Sierra Leone",
+      "speaker": "Julius Maada Bio",
+      "file": "pipeline/out/81/2026-09-22/M_19.txt",
+      "char_index": 11574,
+      "term": "women",
+      "context": "84. In eighty years, every Secretary-General has been a man. 85. The women put forward for this office have placed their competence beyond dispute. 86."
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "sierra-leone",
+      "country": "Sierra Leone",
+      "speaker": "Julius Maada Bio",
+      "file": "pipeline/out/81/2026-09-22/M_19.txt",
+      "char_index": 12352,
+      "term": "women",
+      "context": "operations, uphold international law, support mediation and peacebuilding, defend the rights of women and girls, and serve as a bridge wherever Member States seek one."
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "bosnia-and-herzegovina",
+      "country": "Bosnia and Herzegovina",
+      "speaker": "Denis Bećirović",
+      "file": "pipeline/out/81/2026-09-22/M_20.txt",
+      "char_index": 4692,
+      "term": "women and children",
+      "context": "crimes against humanity and other war crimes; ▪ advancing the rights of women and children; ▪ and strengthening gender equality, better healthcare and education. The world must"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "dominica",
+      "country": "Dominica",
+      "speaker": "Sylvanie Burton",
+      "file": "pipeline/out/81/2026-09-22/M_21.txt",
+      "char_index": 15868,
+      "term": "women",
+      "context": "to the needs of all people. Our development must include young people, women and girls, Indigenous Peoples, persons with disabilities, the elderly and communities that"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "united-republic-tanzania",
+      "country": "United Republic of Tanzania",
+      "speaker": "Deogratius Ndejembi",
+      "file": "pipeline/out/81/2026-09-22/M_26.txt",
+      "char_index": 2763,
+      "term": "women",
+      "context": "our people, productive infrastructure, technology and innovation, while creating greater opportunities for women and young people. Our ambition is to transform economic growth into lasting"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "united-republic-tanzania",
+      "country": "United Republic of Tanzania",
+      "speaker": "Deogratius Ndejembi",
+      "file": "pipeline/out/81/2026-09-22/M_26.txt",
+      "char_index": 9651,
+      "term": "women",
+      "context": "and security, such as preventive diplomacy and the peaceful Settlement of disputes; women in peacekeeping; youth in peace and security and the Reform of UN"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "united-republic-tanzania",
+      "country": "United Republic of Tanzania",
+      "speaker": "Deogratius Ndejembi",
+      "file": "pipeline/out/81/2026-09-22/M_26.txt",
+      "char_index": 11688,
+      "term": "women",
+      "context": "who has played a pivotal role in advancing the SDGs, advocacy for women, children and those whose voices are too often unheard. We shall miss"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "trinidad-and-tobago",
+      "country": "Trinidad and Tobago",
+      "speaker": "Kamla Persad-Bissessar",
+      "file": "pipeline/out/81/2026-09-22/M_28.txt",
+      "char_index": 4325,
+      "term": "women and children",
+      "context": "on which he had campaigned, and we intend to commit to is women and children, as well as peace and security. And then we had talked about"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "japan",
+      "country": "Japan",
+      "speaker": "Takaichi Sanae",
+      "file": "pipeline/out/81/2026-09-22/M_29.txt",
+      "char_index": 10262,
+      "term": "women",
+      "context": "global challenges, such as the eradication of poverty, economic and social development, women’s empowerment, climate change, and global health. We have done so through our"
+    },
+    {
+      "date": "2026-09-22",
+      "slug": "croatia",
+      "country": "Croatia",
+      "speaker": "Andrej Plenković",
+      "file": "pipeline/out/81/2026-09-22/M_31.txt",
+      "char_index": 11216,
+      "term": "women",
+      "context": "advance mine action in Ukraine—drawing on Croatia’s own postwar experience —and protect women and girls from digital violence. • This practical, inclusive, and human centered"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "burundi",
+      "country": "Burundi",
+      "speaker": "Évariste Ndayishimiye",
+      "file": "pipeline/out/81/2026-09-23/M_37.txt",
+      "char_index": 2988,
+      "term": "women",
+      "context": "this year once again convened a Continental Youth Dialogue coupled with the Women, Peace, and Security Agenda. During this dialogue, I sense the enthusiasm of"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "burundi",
+      "country": "Burundi",
+      "speaker": "Évariste Ndayishimiye",
+      "file": "pipeline/out/81/2026-09-23/M_37.txt",
+      "char_index": 3088,
+      "term": "women",
+      "context": "Agenda. During this dialogue, I sense the enthusiasm of young people and women to build a community with a shared future in the spirit of"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "burundi",
+      "country": "Burundi",
+      "speaker": "Évariste Ndayishimiye",
+      "file": "pipeline/out/81/2026-09-23/M_37.txt",
+      "char_index": 13926,
+      "term": "women",
+      "context": "between water, peace, conflict prevention, and inclusive leadership by young people and women. The discussions at this dialogue made it clear that there can be"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "iran-islamic-republic",
+      "country": "Iran (Islamic Republic of)",
+      "speaker": "Masoud Pezeshkian",
+      "file": "pipeline/out/81/2026-09-23/M_38.txt",
+      "char_index": 854,
+      "term": "women and children",
+      "context": "warheads, targeted that sports hall. They martyred, assassinated our scientists, our men, women and children. Innocent children whom in truth had committed no crimes, no sins. Those"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "argentina",
+      "country": "Argentina",
+      "speaker": "Javier Gerardo Milei",
+      "file": "pipeline/out/81/2026-09-23/M_41.txt",
+      "char_index": 2019,
+      "term": "women",
+      "context": "defenders of human rights have sheltered bloodthirsty dictatorships and regimes that stone women in the streets. They have systematically voted against Israel while remaining silent"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "argentina",
+      "country": "Argentina",
+      "speaker": "Javier Gerardo Milei",
+      "file": "pipeline/out/81/2026-09-23/M_41.txt",
+      "char_index": 16879,
+      "term": "women",
+      "context": "Argentines themselves. That is why I say to the free men and women of the world, to scientists, entrepreneurs and creators, to those who have"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "estonia",
+      "country": "Estonia",
+      "speaker": "Alar Karis",
+      "file": "pipeline/out/81/2026-09-23/M_42.txt",
+      "char_index": 11610,
+      "term": "women",
+      "context": "journalists and enhancing media literacy. We will continue our strong commitment to women’s rights and gender equality, including sexual and reproductive health and rights. Together"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "timor-leste",
+      "country": "Timor-Leste",
+      "speaker": "José Ramos-Horta",
+      "file": "pipeline/out/81/2026-09-23/M_43.txt",
+      "char_index": 8487,
+      "term": "women and children",
+      "context": "Afghanistan, Myanmar, Yemen. These are not abstracts. They are people, they are women and children, youth in their best years, they are parents, grandparents. And they are"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "dominican-republic",
+      "country": "Dominican Republic",
+      "speaker": "Luis Rodolfo Abinader Corona",
+      "file": "pipeline/out/81/2026-09-23/M_47.txt",
+      "char_index": 4133,
+      "term": "women",
+      "context": "commitment of all of the countries who today have their men and women serving in Haiti. However the reality does not allow us to wait."
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "bulgaria",
+      "country": "Bulgaria",
+      "speaker": "Iliana Iotova",
+      "file": "pipeline/out/81/2026-09-23/M_51.txt",
+      "char_index": 9578,
+      "term": "women",
+      "context": "be heard. Children's rights and access to education, the equal participation of women and girls in societal processes and the full inclusion of young people"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "bulgaria",
+      "country": "Bulgaria",
+      "speaker": "Iliana Iotova",
+      "file": "pipeline/out/81/2026-09-23/M_51.txt",
+      "char_index": 9933,
+      "term": "women",
+      "context": "right to education of every child to the coherent implementation of the Women, Peace and Security Agenda. The protection of human rights is measured not"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "central-african-republic",
+      "country": "Central African Republic",
+      "speaker": "Faustin Archange Touadera",
+      "file": "pipeline/out/81/2026-09-23/M_52.txt",
+      "char_index": 5802,
+      "term": "women",
+      "context": "best guarantee against recruitment by armed groups. The same is true for women whose role in peace-building is not a bonus, but a prerequisite. Mr."
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "panama",
+      "country": "Panama",
+      "speaker": "José Raúl Mulino Quintero",
+      "file": "pipeline/out/81/2026-09-23/M_53.txt",
+      "char_index": 2736,
+      "term": "women and children",
+      "context": "this space to transport more families and the result of it was women and children, children ending up orphaned in one of the worst social disasters that"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "poland",
+      "country": "Poland",
+      "speaker": "Karol Nawrocki",
+      "file": "pipeline/out/81/2026-09-23/M_55.txt",
+      "char_index": 14892,
+      "term": "women",
+      "context": "the West Bank and are strengthening employment and professional skills, particularly among women. In Lebanon, Poland is developing the operational capabilities o f the Lebanese"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "namibia",
+      "country": "Namibia",
+      "speaker": "Netumbo Nandi-Ndaitwah",
+      "file": "pipeline/out/81/2026-09-23/M_56.txt",
+      "char_index": 2517,
+      "term": "women",
+      "context": "Nations. 4. This fairness and justice should extend to the participation of women in decision making, including in the prevention and resolution of conflicts, post"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "namibia",
+      "country": "Namibia",
+      "speaker": "Netumbo Nandi-Ndaitwah",
+      "file": "pipeline/out/81/2026-09-23/M_56.txt",
+      "char_index": 2702,
+      "term": "women",
+      "context": "and peace building, in line with UN Security Council Resolution 1325 on Women, P eace and Security. The Women, Peace and Security Agenda has contributed"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "namibia",
+      "country": "Namibia",
+      "speaker": "Netumbo Nandi-Ndaitwah",
+      "file": "pipeline/out/81/2026-09-23/M_56.txt",
+      "char_index": 2734,
+      "term": "women",
+      "context": "UN Security Council Resolution 1325 on Women, P eace and Security. The Women, Peace and Security Agenda has contributed positively to rehabilitation, reconciliation and reintegration"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "mozambique",
+      "country": "Mozambique",
+      "speaker": "Daniel Francisco Chapo",
+      "file": "pipeline/out/81/2026-09-23/M_60.txt",
+      "char_index": 8448,
+      "term": "women",
+      "context": "content, respect the environment, and generate employment, especially for young people and women. 37. Mozambique will continue to diversify its partnerships in a sovereign, transparent,"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "honduras",
+      "country": "Honduras",
+      "speaker": "Nasry Juan Asfura Zablah",
+      "file": "pipeline/out/81/2026-09-23/M_63.txt",
+      "char_index": 954,
+      "term": "women",
+      "context": "the challenging context. This was an effort waged by brave men and women and we also enjoyed the support of international democracies who accompanied us"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "spain",
+      "country": "Spain",
+      "speaker": "Pedro Sánchez Pérez-Castejón",
+      "file": "pipeline/out/81/2026-09-23/M_68.txt",
+      "char_index": 4713,
+      "term": "women",
+      "context": "need is here. In this Letter that our ancestors wrote. Men and women who had seen the world burn and who – still – had"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "spain",
+      "country": "Spain",
+      "speaker": "Pedro Sánchez Pérez-Castejón",
+      "file": "pipeline/out/81/2026-09-23/M_68.txt",
+      "char_index": 4825,
+      "term": "women",
+      "context": "– had the courage to imagine a better future. Those men and women left their wisdom and their hope in this letter. And they did"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "spain",
+      "country": "Spain",
+      "speaker": "Pedro Sánchez Pérez-Castejón",
+      "file": "pipeline/out/81/2026-09-23/M_68.txt",
+      "char_index": 7491,
+      "term": "women",
+      "context": "Today, more than ever, when feminism is being attacked and thousands of women are victims of machismo, violence and xenophobia. And I want to be"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "spain",
+      "country": "Spain",
+      "speaker": "Pedro Sánchez Pérez-Castejón",
+      "file": "pipeline/out/81/2026-09-23/M_68.txt",
+      "char_index": 7609,
+      "term": "women",
+      "context": "I want to be clear: I'm not saying this because I think women have anything to prove. I say this because it is the world"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "spain",
+      "country": "Spain",
+      "speaker": "Pedro Sánchez Pérez-Castejón",
+      "file": "pipeline/out/81/2026-09-23/M_68.txt",
+      "char_index": 7791,
+      "term": "women",
+      "context": "path to equality there is no turning back. In my country, Spain, women were the first to show that security does not come from strength,"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "spain",
+      "country": "Spain",
+      "speaker": "Pedro Sánchez Pérez-Castejón",
+      "file": "pipeline/out/81/2026-09-23/M_68.txt",
+      "char_index": 7907,
+      "term": "women",
+      "context": "does not come from strength, but from social progress. They were brave women, like Clara Campoamor, who were the first to defend in Parliament the"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "democratic-republic-congo",
+      "country": "Democratic Republic of the Congo",
+      "speaker": "Judith Suminwa Tuluka",
+      "file": "pipeline/out/81/2026-09-23/M_70.txt",
+      "char_index": 5955,
+      "term": "women",
+      "context": "suffering attacks, forced displacement, and bereavement. Territories have been occupied, families dispersed. Women and girls have suffered sexual violence while children are recruited by armed"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "italy",
+      "country": "Italy",
+      "speaker": "Antonio Tajani",
+      "file": "pipeline/out/81/2026-09-23/M_71.txt",
+      "char_index": 11608,
+      "term": "women",
+      "context": "We are also on the front line in defending individual freedom and women’s rights, and in fighting, among other things, the abhorrent practice of female"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "italy",
+      "country": "Italy",
+      "speaker": "Antonio Tajani",
+      "file": "pipeline/out/81/2026-09-23/M_71.txt",
+      "char_index": 12505,
+      "term": "women",
+      "context": "the largest military presence in international missions. We place our men and women, our resource s and our expertise at the service of peace —in"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "italy",
+      "country": "Italy",
+      "speaker": "Antonio Tajani",
+      "file": "pipeline/out/81/2026-09-23/M_71.txt",
+      "char_index": 12646,
+      "term": "women",
+      "context": "in every mission in which we participate. To all our men and women in uniform go the gratitude of the Government, our institutions and the"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "italy",
+      "country": "Italy",
+      "speaker": "Antonio Tajani",
+      "file": "pipeline/out/81/2026-09-23/M_71.txt",
+      "char_index": 13017,
+      "term": "women",
+      "context": "a choice —the result of political action. Amid the ruins, men and women decided to pool coal and steel rather than use them to build"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "uzbekistan",
+      "country": "Uzbekistan",
+      "speaker": "Saida Mirziyoyeva",
+      "file": "pipeline/out/81/2026-09-23/M_72.txt",
+      "char_index": 6413,
+      "term": "women",
+      "context": "domestic violence. We also rely on this criterion when it comes to women ’s rights and opportunities. Therefore, we have created a separate system to"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "uzbekistan",
+      "country": "Uzbekistan",
+      "speaker": "Saida Mirziyoyeva",
+      "file": "pipeline/out/81/2026-09-23/M_72.txt",
+      "char_index": 6505,
+      "term": "women",
+      "context": "rights and opportunities. Therefore, we have created a separate system to support women’s entrepreneurship. Today, women make 39 percent of our parliament. Esteemed heads of"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "uzbekistan",
+      "country": "Uzbekistan",
+      "speaker": "Saida Mirziyoyeva",
+      "file": "pipeline/out/81/2026-09-23/M_72.txt",
+      "char_index": 6539,
+      "term": "women",
+      "context": "Therefore, we have created a separate system to support women’s entrepreneurship. Today, women make 39 percent of our parliament. Esteemed heads of delegations! In Tashkent,"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "zimbabwe",
+      "country": "Zimbabwe",
+      "speaker": "Emmerson Dambudzo Mnangagwa",
+      "file": "pipeline/out/81/2026-09-24/M_73.txt",
+      "char_index": 4651,
+      "term": "women",
+      "context": "against terrorism, organized crime, elicit arms flows, and illegal resource trafficking. Finally, women and young people must share peace from the outset. The support of"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "zimbabwe",
+      "country": "Zimbabwe",
+      "speaker": "Emmerson Dambudzo Mnangagwa",
+      "file": "pipeline/out/81/2026-09-24/M_73.txt",
+      "char_index": 4761,
+      "term": "women",
+      "context": "the outset. The support of Zimbabwe will also be extended to the women and youth peace and security agendas. The current times demand peacekeeping that"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "zimbabwe",
+      "country": "Zimbabwe",
+      "speaker": "Emmerson Dambudzo Mnangagwa",
+      "file": "pipeline/out/81/2026-09-24/M_73.txt",
+      "char_index": 7958,
+      "term": "women",
+      "context": "directing investment towards rural infrastructure, manufacturing hubs and agro processing facilities. More women and youth continue to end their value chain industries for both our"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "madagascar",
+      "country": "Madagascar",
+      "speaker": "Michaël Randrianirina",
+      "file": "pipeline/out/81/2026-09-24/M_74.txt",
+      "char_index": 3807,
+      "term": "women and children",
+      "context": "heart of its action. This priority commitment serves the entire population, particularly women and children, providing our youth with the means to build their future with confidence"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "ghana",
+      "country": "Ghana",
+      "speaker": "John Dramani Mahama",
+      "file": "pipeline/out/81/2026-09-24/M_75.txt",
+      "char_index": 4456,
+      "term": "women and children",
+      "context": "was rendered in the passive voice as though millions of African men, women, and children vanished into the shadows of time. They did not vanish. They were"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "ghana",
+      "country": "Ghana",
+      "speaker": "John Dramani Mahama",
+      "file": "pipeline/out/81/2026-09-24/M_75.txt",
+      "char_index": 15681,
+      "term": "women",
+      "context": "and mining, and creating sustainable, dignified jobs for our vibrant youth and women. Central to our national reset is a revolutionary expansion of social protection"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "palestine-state",
+      "country": "Palestine (State of)",
+      "speaker": "Mahmoud Abbas",
+      "file": "pipeline/out/81/2026-09-24/M_76.txt",
+      "char_index": 5999,
+      "term": "women and children",
+      "context": "The Israeli killing and aggression continue to claim the lives of men, women and children in Gaza. Nearly a year has passed since the adoption of Resolution"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "palestine-state",
+      "country": "Palestine (State of)",
+      "speaker": "Mahmoud Abbas",
+      "file": "pipeline/out/81/2026-09-24/M_76.txt",
+      "char_index": 10990,
+      "term": "women",
+      "context": "also proceeded along the path of democratic revival and the empowerment of women and youth. We have held local council elections and elections for the"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "somalia",
+      "country": "Somalia",
+      "speaker": "Hassan Sheikh Mohamud",
+      "file": "pipeline/out/81/2026-09-24/M_78.txt",
+      "char_index": 10516,
+      "term": "women",
+      "context": "voice. We engaged all Somali political leaders, Federal Member states, civil society, women, youth, and the diaspora to take part constructively in our hopeful political"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "comoros",
+      "country": "Comoros",
+      "speaker": "Azali Assoumani",
+      "file": "pipeline/out/81/2026-09-24/M_79.txt",
+      "char_index": 4427,
+      "term": "women",
+      "context": "the genocide in Palestine has continued. Hundreds of thousands of Palestinian civilians, women, children and elderly have lost their lives and entire populations stands on"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "liberia",
+      "country": "Liberia",
+      "speaker": "Joseph Nyuma Boakai",
+      "file": "pipeline/out/81/2026-09-24/M_80.txt",
+      "char_index": 5413,
+      "term": "women",
+      "context": "the global digital economy, not just consumers. Gender equality remains essential when women lead, peace agreements last longer, economies grow faster and governance becomes more"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "liberia",
+      "country": "Liberia",
+      "speaker": "Joseph Nyuma Boakai",
+      "file": "pipeline/out/81/2026-09-24/M_80.txt",
+      "char_index": 5605,
+      "term": "women",
+      "context": "Liberia Liberia remains committed to full political, economic and social equality for women and girls. Liberia welcomes global efforts to govern new technologies, including the"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "uruguay",
+      "country": "Uruguay",
+      "speaker": "Yamandú Orsi",
+      "file": "pipeline/out/81/2026-09-24/M_83.txt",
+      "char_index": 1778,
+      "term": "women",
+      "context": "missions with a deep sense of responsibility and solidarity. Uruguayan men and women can bear witness to the value of this instrument in easing suffering"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "european-union",
+      "country": "European Union",
+      "speaker": "António Costa",
+      "file": "pipeline/out/81/2026-09-24/M_84.txt",
+      "char_index": 6290,
+      "term": "women",
+      "context": "be able to live in peace and security, as free men and women. The UN needs an ambitious leader, firmly committed to the principles of"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "gambia-republic",
+      "country": "Gambia (Republic of The)",
+      "speaker": "Mohammed Jallow",
+      "file": "pipeline/out/81/2026-09-24/M_86.txt",
+      "char_index": 6899,
+      "term": "women",
+      "context": "trust can be restored and justice pursued, and a future in which women and young people have a meaningful voice and economic opportunity is within"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "gambia-republic",
+      "country": "Gambia (Republic of The)",
+      "speaker": "Mohammed Jallow",
+      "file": "pipeline/out/81/2026-09-24/M_86.txt",
+      "char_index": 7801,
+      "term": "women",
+      "context": "for United Nations peacekeeping operations and pay tribute to the men and women who serve under the UN flag, including Gambian military and police personnel"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "gambia-republic",
+      "country": "Gambia (Republic of The)",
+      "speaker": "Mohammed Jallow",
+      "file": "pipeline/out/81/2026-09-24/M_86.txt",
+      "char_index": 11448,
+      "term": "women",
+      "context": "economic diversification, private-sector investment and value addition. We are expanding opportunities for women and young people, improving lives and strengthening the human capital upon which"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "gambia-republic",
+      "country": "Gambia (Republic of The)",
+      "speaker": "Mohammed Jallow",
+      "file": "pipeline/out/81/2026-09-24/M_86.txt",
+      "char_index": 16758,
+      "term": "women",
+      "context": "lawful pathways for labour mobility as well as investment in young people, women, education, health and social protection to safeguard sustainable development and lasting peace."
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "gambia-republic",
+      "country": "Gambia (Republic of The)",
+      "speaker": "Mohammed Jallow",
+      "file": "pipeline/out/81/2026-09-24/M_86.txt",
+      "char_index": 17213,
+      "term": "women",
+      "context": "in the decisions that shape their future. The same is true of women's empowerment, which is essential to peaceful, inclusive and prosperous societies. The Gambia"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "gambia-republic",
+      "country": "Gambia (Republic of The)",
+      "speaker": "Mohammed Jallow",
+      "file": "pipeline/out/81/2026-09-24/M_86.txt",
+      "char_index": 17344,
+      "term": "women",
+      "context": "to peaceful, inclusive and prosperous societies. The Gambia remains committed to expanding women's economic opportunities, strengthening women's leadership and addressing the barriers that limit their"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "gambia-republic",
+      "country": "Gambia (Republic of The)",
+      "speaker": "Mohammed Jallow",
+      "file": "pipeline/out/81/2026-09-24/M_86.txt",
+      "char_index": 17390,
+      "term": "women",
+      "context": "prosperous societies. The Gambia remains committed to expanding women's economic opportunities, strengthening women's leadership and addressing the barriers that limit their meaningful participation in political"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "gambia-republic",
+      "country": "Gambia (Republic of The)",
+      "speaker": "Mohammed Jallow",
+      "file": "pipeline/out/81/2026-09-24/M_86.txt",
+      "char_index": 17547,
+      "term": "women",
+      "context": "participation in political and public life. We are also strengthening support for women entrepreneurs, survivors of gender -based violence and vulnerable households. Ensuring food security,"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "israel",
+      "country": "Israel",
+      "speaker": "Benjamin Netanyahu",
+      "file": "pipeline/out/81/2026-09-24/M_88.txt",
+      "char_index": 4122,
+      "term": "women",
+      "context": "Entebbe, Uganda. Like the Nazis, the terrorists selected the Jewish passengers men, women, children, babies. They threatened to kill them all if Israel did not"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "israel",
+      "country": "Israel",
+      "speaker": "Benjamin Netanyahu",
+      "file": "pipeline/out/81/2026-09-24/M_88.txt",
+      "char_index": 5857,
+      "term": "women",
+      "context": "front of their parents. They beheaded our men. They brutally raped our women, and then they murdered them. Altogether. They slaughtered 1200 Israelis that day."
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "israel",
+      "country": "Israel",
+      "speaker": "Benjamin Netanyahu",
+      "file": "pipeline/out/81/2026-09-24/M_88.txt",
+      "char_index": 7979,
+      "term": "women",
+      "context": "on families, peaceful families driving along the roads. They shoot at pregnant women. They shoot entire families. Of course, none of this is covered in"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "yemen",
+      "country": "Yemen",
+      "speaker": "Abdullah Abdulkader Al Alimi-Bawzer",
+      "file": "pipeline/out/81/2026-09-24/M_94.txt",
+      "char_index": 1084,
+      "term": "women",
+      "context": "12 years marked by war, displacement, poverty, recruitment of children, terrorizing of women, laying of mines, confiscation of rights, freedoms and public resources. Ladies and"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "yemen",
+      "country": "Yemen",
+      "speaker": "Abdullah Abdulkader Al Alimi-Bawzer",
+      "file": "pipeline/out/81/2026-09-24/M_94.txt",
+      "char_index": 11148,
+      "term": "women",
+      "context": "the Yemeni government a reliable partner. We speak not only of what women Yemen needs from the world, but also of what Yemen can contribute"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "kuwait",
+      "country": "Kuwait",
+      "speaker": "Sheikh Sabah Al-Khaled Al-Hamad Al-Mubarak Al-Sabah",
+      "file": "pipeline/out/81/2026-09-24/M_95.txt",
+      "char_index": 13748,
+      "term": "women",
+      "context": "diversifying its economy and sources of income, continuing its digital transformation, empowering women and youth, developing its legislation and consolidating governance and transparency. These efforts"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "thailand",
+      "country": "Thailand",
+      "speaker": "Anutin Charnvirakul",
+      "file": "pipeline/out/81/2026-09-24/M_98.txt",
+      "char_index": 3848,
+      "term": "women",
+      "context": "carry more responsibility for the outcomes And representation must also mean that women have a meaningful voice in the decisions that shape our common future."
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 4474,
+      "term": "women",
+      "context": "in different parts of the world. 9. The courageous participation of Bangladeshi women in peacekeeping missions, even under adverse circumstances, reflects our strong commitment to"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 4599,
+      "term": "women",
+      "context": "under adverse circumstances, reflects our strong commitment to advancing the agenda of “Women, Peace and Security”. This year, Bangladesh is observing the 40 th anniversary"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 9022,
+      "term": "women",
+      "context": "Mr President, More than half of the country's population is female. Therefore, women are at the forefront of all government plans for socio-economic transformation. The"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 9146,
+      "term": "women",
+      "context": "all government plans for socio-economic transformation. The government is giving priority to women's education, women's employment and the creation of women entrepreneurs. To promote women"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 9165,
+      "term": "women",
+      "context": "plans for socio-economic transformation. The government is giving priority to women's education, women's employment and the creation of women entrepreneurs. To promote women entrepreneurship, particularly"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 9204,
+      "term": "women",
+      "context": "is giving priority to women's education, women's employment and the creation of women entrepreneurs. To promote women entrepreneurship, particularly in the small and medium -sized"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 9236,
+      "term": "women",
+      "context": "women's education, women's employment and the creation of women entrepreneurs. To promote women entrepreneurship, particularly in the small and medium -sized industrial sector, the Government"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 9388,
+      "term": "women",
+      "context": "-sized industrial sector, the Government has expanded opportunities for cash financing for women. Free education opportunities up to the undergraduate level have been opened to"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 9475,
+      "term": "women",
+      "context": "Free education opportunities up to the undergraduate level have been opened to women. 18. The government seeks to ensure not only electoral democracy but also"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 10042,
+      "term": "women",
+      "context": "the name of the female head of each household, a symbol of women's economic empowerment. It is also in the government's plans to introduce a"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "bangladesh",
+      "country": "Bangladesh",
+      "speaker": "Tarique Rahman",
+      "file": "pipeline/out/81/2026-09-24/M_100.txt",
+      "char_index": 15034,
+      "term": "women",
+      "context": "where young people can pursue their dreams without fear or hindrance; where women can lead their lives with confidence; where every child grows up with"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "netherlands-kingdom",
+      "country": "Netherlands (Kingdom of the)",
+      "speaker": "Rob Jetten",
+      "file": "pipeline/out/81/2026-09-24/M_101.txt",
+      "char_index": 10149,
+      "term": "women",
+      "context": "the fact that, as we speak, more than 150 thousand men and women are serving under the blue flag. Giving vaccinations, providing food aid and"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "slovenia",
+      "country": "Slovenia",
+      "speaker": "Janez Janša",
+      "file": "pipeline/out/81/2026-09-24/M_102.txt",
+      "char_index": 1077,
+      "term": "women",
+      "context": "innocent people lost their lives. Behind these numbers are concrete men and women, as well as children. They had a future, but they were not"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "ireland",
+      "country": "Ireland",
+      "speaker": "Micheál Martin",
+      "file": "pipeline/out/81/2026-09-24/M_105.txt",
+      "char_index": 2939,
+      "term": "women",
+      "context": "remains one of the defining challenges of our time. Renewed pressure on women's rights and gender equality is putting hard-won progress at risk. Women and"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "ireland",
+      "country": "Ireland",
+      "speaker": "Micheál Martin",
+      "file": "pipeline/out/81/2026-09-24/M_105.txt",
+      "char_index": 3013,
+      "term": "women",
+      "context": "on women's rights and gender equality is putting hard-won progress at risk. Women and girls are being told that their ambitions, their education, their voices"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "ireland",
+      "country": "Ireland",
+      "speaker": "Micheál Martin",
+      "file": "pipeline/out/81/2026-09-24/M_105.txt",
+      "char_index": 3245,
+      "term": "women",
+      "context": "in Afghanistan is one of the clearest examples. The systematic exclusion of women and girls from education, employment and public life is not something that"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "ireland",
+      "country": "Ireland",
+      "speaker": "Micheál Martin",
+      "file": "pipeline/out/81/2026-09-24/M_105.txt",
+      "char_index": 3501,
+      "term": "women",
+      "context": "crisis. Girls are being denied the education that should shape their futures. Women are being denied the ability to work, to participate fully in society"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "ireland",
+      "country": "Ireland",
+      "speaker": "Micheál Martin",
+      "file": "pipeline/out/81/2026-09-24/M_105.txt",
+      "char_index": 3819,
+      "term": "women",
+      "context": "allow the absence of headlines to become an absence of action. The women of Afghanistan have not disappeared. And neither should our solidarity. The same"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "ireland",
+      "country": "Ireland",
+      "speaker": "Micheál Martin",
+      "file": "pipeline/out/81/2026-09-24/M_105.txt",
+      "char_index": 3946,
+      "term": "women",
+      "context": "neither should our solidarity. The same is true elsewhere. Across the world, women and girls face conflict-related sexual violence, forced displacement, trafficking and discrimination. Across"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "austria",
+      "country": "Austria",
+      "speaker": "Beate Meinl-Reisinger",
+      "file": "pipeline/out/81/2026-09-24/M_107.txt",
+      "char_index": 8302,
+      "term": "women",
+      "context": "make emerging technologies, the protection of civilians, children in armed conflict, and women’s full participation in peace processes priorities. Children must never be treated as"
+    },
+    {
+      "date": "2026-09-24",
+      "slug": "austria",
+      "country": "Austria",
+      "speaker": "Beate Meinl-Reisinger",
+      "file": "pipeline/out/81/2026-09-24/M_107.txt",
+      "char_index": 8414,
+      "term": "women",
+      "context": "in peace processes priorities. Children must never be treated as collateral damage. Women must have a real voice at the negotiating table, as leaders and"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "kiribati",
+      "country": "Kiribati",
+      "speaker": "Taneti Maamau",
+      "file": "pipeline/out/81/2026-09-25/M_109.txt",
+      "char_index": 8200,
+      "term": "women",
+      "context": "priority rests. Mr. President, We cannot speak about development without speaking about women and youth. Kiribati remains committed to gender equality and empowering women and"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "kiribati",
+      "country": "Kiribati",
+      "speaker": "Taneti Maamau",
+      "file": "pipeline/out/81/2026-09-25/M_109.txt",
+      "char_index": 8279,
+      "term": "women",
+      "context": "about women and youth. Kiribati remains committed to gender equality and empowering women and girls. Our election earlier this year to the Commission on the"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "kiribati",
+      "country": "Kiribati",
+      "speaker": "Taneti Maamau",
+      "file": "pipeline/out/81/2026-09-25/M_109.txt",
+      "char_index": 8362,
+      "term": "women",
+      "context": "Our election earlier this year to the Commission on the Status of Women—the first time Kiribati has secured a seat on this UN body —is"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "kiribati",
+      "country": "Kiribati",
+      "speaker": "Taneti Maamau",
+      "file": "pipeline/out/81/2026-09-25/M_109.txt",
+      "char_index": 8496,
+      "term": "women",
+      "context": "this UN body —is a significant milestone, reflecting our determination to advance women’s rights nationally and globally. We will expand opportunities, prevent violence, and promote"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "kiribati",
+      "country": "Kiribati",
+      "speaker": "Taneti Maamau",
+      "file": "pipeline/out/81/2026-09-25/M_109.txt",
+      "char_index": 8596,
+      "term": "women",
+      "context": "rights nationally and globally. We will expand opportunities, prevent violence, and promote women’s economic empowerment and leadership. Our youth, meanwhile, represent not simply the future"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "iraq",
+      "country": "Iraq",
+      "speaker": "Ali Falih Al-Zaidi",
+      "file": "pipeline/out/81/2026-09-25/M_111.txt",
+      "char_index": 10064,
+      "term": "women",
+      "context": "in accordance with the Constitution to protecting human rights and freedoms, promoting women's participation ensuring child welfare, and preserving the ethnic, religious and cultural diversity"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "monaco",
+      "country": "Monaco",
+      "speaker": "Christophe Mirmand",
+      "file": "pipeline/out/81/2026-09-25/M_113.txt",
+      "char_index": 6418,
+      "term": "women",
+      "context": "Programme, through development Aid geared towards the health, education and empowerment of women and girls. Restoring trust also means changing the organisation itself. Monaco supports"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "monaco",
+      "country": "Monaco",
+      "speaker": "Christophe Mirmand",
+      "file": "pipeline/out/81/2026-09-25/M_113.txt",
+      "char_index": 7913,
+      "term": "women",
+      "context": "transparent, inclusive and rigorous process. After 80 years, the Principality hopes that women candidates will be seriously considered. The organisation would do well to demonstrate"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "lesotho",
+      "country": "Lesotho",
+      "speaker": "Samuel Ntsokoane Matekane",
+      "file": "pipeline/out/81/2026-09-25/M_116.txt",
+      "char_index": 5214,
+      "term": "women",
+      "context": "energy projects, which can create significant employment opportunities for our youth and women. Our unique topography also presents opportunities for investment in data centres, which"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "solomon-islands",
+      "country": "Solomon Islands",
+      "speaker": "Matthew Cooper Wale",
+      "file": "pipeline/out/81/2026-09-25/M_119.txt",
+      "char_index": 11334,
+      "term": "women",
+      "context": "addresses the full life cycle of plastics, from production to disposal. Youth, Women and Persons with Disabilities Mr. President, Our people are our greatest asset."
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "solomon-islands",
+      "country": "Solomon Islands",
+      "speaker": "Matthew Cooper Wale",
+      "file": "pipeline/out/81/2026-09-25/M_119.txt",
+      "char_index": 11612,
+      "term": "women and children",
+      "context": "that empower young people, advance gender equality, and strengthen the protection of women and children against domestic violence. We welcome global progress in advancing the rights and"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "solomon-islands",
+      "country": "Solomon Islands",
+      "speaker": "Matthew Cooper Wale",
+      "file": "pipeline/out/81/2026-09-25/M_119.txt",
+      "char_index": 11736,
+      "term": "women",
+      "context": "We welcome global progress in advancing the rights and full participation of women and persons with disabilities in the economy, and Solomon Islands is committed"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "solomon-islands",
+      "country": "Solomon Islands",
+      "speaker": "Matthew Cooper Wale",
+      "file": "pipeline/out/81/2026-09-25/M_119.txt",
+      "char_index": 19296,
+      "term": "women",
+      "context": "hearts; people do. Charters do not keep the peace; the men and women who honour them do. Beyond every declaration and commitment, each of us"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "saint-lucia",
+      "country": "Saint Lucia",
+      "speaker": "Philip J. Pierre",
+      "file": "pipeline/out/81/2026-09-25/M_120.txt",
+      "char_index": 11722,
+      "term": "women",
+      "context": "t he spirit of entrepreneurship by supporting small and micro enterprises, especially women -owned businesses. We are promoting healthy lifestyles and universal healthcare for the"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "pakistan",
+      "country": "Pakistan",
+      "speaker": "Muhammad Shehbaz Sharif",
+      "file": "pipeline/out/81/2026-09-25/M_122.txt",
+      "char_index": 6478,
+      "term": "women",
+      "context": "mistake about it. PALESTINE Mr. President,  For generations, Palestinians — particularly women, children and the elderly — have been subjected to occupation, eviction, suffering"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "pakistan",
+      "country": "Pakistan",
+      "speaker": "Muhammad Shehbaz Sharif",
+      "file": "pipeline/out/81/2026-09-25/M_122.txt",
+      "char_index": 9015,
+      "term": "women",
+      "context": "any other country.  Fundamental rights of the Afghan people — especially women and girls; must be respected. Mr. President,  United Nations peacekeeping remains,"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "pakistan",
+      "country": "Pakistan",
+      "speaker": "Muhammad Shehbaz Sharif",
+      "file": "pipeline/out/81/2026-09-25/M_122.txt",
+      "char_index": 9197,
+      "term": "women",
+      "context": "the strongest expressions of collective security.  For decades, Pakistani men and women have served under the blue flag, protecting civilians and helping countries emerge"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "haiti",
+      "country": "Haiti",
+      "speaker": "Alix Didier Fils-Aimé",
+      "file": "pipeline/out/81/2026-09-25/M_126.txt",
+      "char_index": 6207,
+      "term": "women",
+      "context": "approach to migrations as well. Because behind statistics and debates there are women, children and men who carry with them a history, talents, hopes and"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "haiti",
+      "country": "Haiti",
+      "speaker": "Alix Didier Fils-Aimé",
+      "file": "pipeline/out/81/2026-09-25/M_126.txt",
+      "char_index": 8366,
+      "term": "women",
+      "context": "too tepid response. Given the scale of the threat massacres, bereaved families, women that have fallen victim to despicable violence, children deprived of their innocence"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "haiti",
+      "country": "Haiti",
+      "speaker": "Alix Didier Fils-Aimé",
+      "file": "pipeline/out/81/2026-09-25/M_126.txt",
+      "char_index": 9029,
+      "term": "women",
+      "context": "forget their sacrifice. For them, for their families, for these 12 million women, men and children, for children that are asking only to grow up,"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "haiti",
+      "country": "Haiti",
+      "speaker": "Alix Didier Fils-Aimé",
+      "file": "pipeline/out/81/2026-09-25/M_126.txt",
+      "char_index": 14006,
+      "term": "women",
+      "context": "jobs and sustainable opportunities, in particular for our young people and our women. Because when you no longer hear the sound of the guns, you"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "haiti",
+      "country": "Haiti",
+      "speaker": "Alix Didier Fils-Aimé",
+      "file": "pipeline/out/81/2026-09-25/M_126.txt",
+      "char_index": 14199,
+      "term": "women",
+      "context": "that are starting construction sites that are beginning work again, bustling markets, women that are running businesses, young people that are working, the laughter of"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "haiti",
+      "country": "Haiti",
+      "speaker": "Alix Didier Fils-Aimé",
+      "file": "pipeline/out/81/2026-09-25/M_126.txt",
+      "char_index": 16108,
+      "term": "women",
+      "context": "elections. We want free, credible, inclusive and honest elections. The participation of women is encouraged and young people are called upon to take their full"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "tonga",
+      "country": "Tonga",
+      "speaker": "Lord Fakafanua",
+      "file": "pipeline/out/81/2026-09-25/M_130.txt",
+      "char_index": 5041,
+      "term": "women",
+      "context": "committed to protecting the rights of marginalised people and ending violence against women and girls. This year, Tonga ratified the United Nations Convention on the"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "samoa",
+      "country": "Samoa",
+      "speaker": "Mulipola Anarosa Ale Molioo",
+      "file": "pipeline/out/81/2026-09-25/M_131.txt",
+      "char_index": 9208,
+      "term": "women",
+      "context": "investing in people. We are strengthening social protection, investing in youth, supporting women and persons with disabilities, and building a resilient economy. These efforts are"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "bahrain",
+      "country": "Bahrain",
+      "speaker": "Abdullatif bin Rashid Al Zayani",
+      "file": "pipeline/out/81/2026-09-25/M_133.txt",
+      "char_index": 11102,
+      "term": "women",
+      "context": "the Sustainable Development Goals, and strengthen the status and advancement of Bahraini women. The Kingdom embraces the Women, Peace and Security agenda, and the Youth,"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "bahrain",
+      "country": "Bahrain",
+      "speaker": "Abdullatif bin Rashid Al Zayani",
+      "file": "pipeline/out/81/2026-09-25/M_133.txt",
+      "char_index": 11134,
+      "term": "women",
+      "context": "strengthen the status and advancement of Bahraini women. The Kingdom embraces the Women, Peace and Security agenda, and the Youth, Peace and Security agenda, and"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "azerbaijan",
+      "country": "Azerbaijan",
+      "speaker": "Jeyhun Aziz oglu Bayramov",
+      "file": "pipeline/out/81/2026-09-25/M_134.txt",
+      "char_index": 4530,
+      "term": "women and children",
+      "context": "the liberation of occupied territories in 2020, more than 400 individuals, including women and children, became victim to landmines. The cumulative toll of landmines over the past"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "kazakhstan",
+      "country": "Kazakhstan",
+      "speaker": "Mukhtar Tileuberdi",
+      "file": "pipeline/out/81/2026-09-25/M_135.txt",
+      "char_index": 1407,
+      "term": "women",
+      "context": "parliament a diverse set of voices, including a historic high 34% of women. Mr. President, I express my country’s grave concern as the world continues"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "mexico",
+      "country": "Mexico",
+      "speaker": "Roberto Velasco Álvarez",
+      "file": "pipeline/out/81/2026-09-25/M_137.txt",
+      "char_index": 5703,
+      "term": "women",
+      "context": "are based on a very clear gender perspective, boosting the rights of women, prioritizing the poorest indigenous peoples, persons of African descent, persons with disabilities."
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "mexico",
+      "country": "Mexico",
+      "speaker": "Roberto Velasco Álvarez",
+      "file": "pipeline/out/81/2026-09-25/M_137.txt",
+      "char_index": 10525,
+      "term": "women",
+      "context": "clear on this. At the United Nations. It is also time for women. Alfonso Reyes, uh, diplomat and humanist, left Mexico. Um, taught Mexico rather"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "mauritius",
+      "country": "Mauritius",
+      "speaker": "Dhananjay Ramful",
+      "file": "pipeline/out/81/2026-09-25/M_138.txt",
+      "char_index": 9124,
+      "term": "women",
+      "context": "supporting the Convention on the Elimination of All Forms of Discrimination against Women and the Beijing Declaration and Platform for Action. Earlier this year, Mauritius"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "mauritius",
+      "country": "Mauritius",
+      "speaker": "Dhananjay Ramful",
+      "file": "pipeline/out/81/2026-09-25/M_138.txt",
+      "char_index": 9273,
+      "term": "women",
+      "context": "this year, Mauritius adopted new legislation to further enhance the protection of women’s rights. Mr. President, SDGs We are deeply concerned by the effects of"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "guatemala",
+      "country": "Guatemala",
+      "speaker": "Carlos Ramiro Martínez Alvarado",
+      "file": "pipeline/out/81/2026-09-25/M_141.txt",
+      "char_index": 7678,
+      "term": "women",
+      "context": "have also contributed to United Nations peacekeeping operations More than 6300 Guatemalan women and men have served under the United Nations flag in peacekeeping operations"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 479,
+      "term": "women",
+      "context": "but also independence and confidence. There, at the bank, she met many women with little to no experience with finances and were left vulnerable when"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 623,
+      "term": "women",
+      "context": "when circumstances changed. She wrote in her diary about some of the women she met – many of whom were recently widowed – coming to"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 1058,
+      "term": "women",
+      "context": "place could be. But she worried deeply about the consequences for the women who were not. During her life she witnessed extraordinary progress. But two"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 1173,
+      "term": "women",
+      "context": "life she witnessed extraordinary progress. But two generations later, far too many women are still entirely economically dependent on men. Madam/ Mister President 80 years"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 1399,
+      "term": "women",
+      "context": "modern society were being laid. 2(12) In the 1940s and 50s, Swedish women joined the labour market in large numbers. This was not only a"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 1548,
+      "term": "women",
+      "context": "principle – it also came from the realisation that our economy needed women in the work force. Women’s economic empowerment is a matter of freedom."
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 1574,
+      "term": "women",
+      "context": "from the realisation that our economy needed women in the work force. Women’s economic empowerment is a matter of freedom. When women work and earn"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 1632,
+      "term": "women",
+      "context": "the work force. Women’s economic empowerment is a matter of freedom. When women work and earn their own money, their self-determination grows. Gender equality is"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 1786,
+      "term": "women",
+      "context": "the right thing to do, it’s the smart thing to do. When women work, economies grow. Madam/Mister President, Each generation must fight for equality. In"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 1950,
+      "term": "women",
+      "context": "In 1919, the same year my grandmother was born, Sweden decided that women should have the same right as men to vote. That very same"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 2020,
+      "term": "women",
+      "context": "have the same right as men to vote. That very same year, women in Afghanistan were also granted the right to vote. More than a"
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 2127,
+      "term": "women",
+      "context": "the right to vote. More than a century later, the contrast between women’s freedoms in our two countries is as striking as it is saddening."
+    },
+    {
+      "date": "2026-09-25",
+      "slug": "sweden",
+      "country": "Sweden",
+      "speaker": "Maria Malmer Stenergard",
+      "file": "pipeline/out/81/2026-09-25/M_142.txt",
+      "char_index": 2366,
+      "term": "women",
+      "context": "not defend themselves. It is up to us to protect them, for women and girls everywhere – and for generations to come. Madam/Mister President, When"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "micronesia-federated-states",
+      "country": "Micronesia (Federated States of)",
+      "speaker": "Aren Palik",
+      "file": "pipeline/out/81/2026-09-26/M_146.txt",
+      "char_index": 8679,
+      "term": "women",
+      "context": "Mr. President, Our actions on gender equality continues to address barriers to women’s leadership, economic participation, and access to justice, digital safety, and protection from"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "micronesia-federated-states",
+      "country": "Micronesia (Federated States of)",
+      "speaker": "Aren Palik",
+      "file": "pipeline/out/81/2026-09-26/M_146.txt",
+      "char_index": 8808,
+      "term": "women",
+      "context": "participation, and access to justice, digital safety, and protection from violence—particularly for women and girls in remote and outer island communities. We are mainstreaming gender"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "micronesia-federated-states",
+      "country": "Micronesia (Federated States of)",
+      "speaker": "Aren Palik",
+      "file": "pipeline/out/81/2026-09-26/M_146.txt",
+      "char_index": 8980,
+      "term": "women",
+      "context": "are mainstreaming gender across state and national planning, strengthening survivor-centered services, expanding women’s economic empowerment and decision-making and engaging in preventing gender-based violence and advancing"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "holy-see",
+      "country": "Holy See",
+      "speaker": "His Eminence Cardinal Pietro Parolin",
+      "file": "pipeline/out/81/2026-09-26/M_150.txt",
+      "char_index": 8605,
+      "term": "women",
+      "context": "ravaged by indiscriminate violence affecting the most defenseless, starting with children and women faced with an unprecedented humanitarian catastrophe. All parties are urged to initiate,"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "holy-see",
+      "country": "Holy See",
+      "speaker": "His Eminence Cardinal Pietro Parolin",
+      "file": "pipeline/out/81/2026-09-26/M_150.txt",
+      "char_index": 9554,
+      "term": "women and children",
+      "context": "commit to meeting the immediate needs of the most at risk, especially women and children. The situation in the Democratic Republic of Congo is of concern to"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "russian-federation",
+      "country": "Russian Federation",
+      "speaker": "Sergey Lavrov",
+      "file": "pipeline/out/81/2026-09-26/M_153.txt",
+      "char_index": 3456,
+      "term": "women and children",
+      "context": "for the Gaza Strip. But peace does not reign there. Older persons, women and children continue to perish. The humanitarian situation is critical. The situation in the"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "philippines",
+      "country": "Philippines",
+      "speaker": "Ma. Theresa Lazaro",
+      "file": "pipeline/out/81/2026-09-26/M_154.txt",
+      "char_index": 8319,
+      "term": "women",
+      "context": "of human rights. We advocated decolonization in the elimination of discrimination against women. We advance the rights of children, persons with disabilities, older persons, indigenous"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "philippines",
+      "country": "Philippines",
+      "speaker": "Ma. Theresa Lazaro",
+      "file": "pipeline/out/81/2026-09-26/M_154.txt",
+      "char_index": 9321,
+      "term": "women",
+      "context": "addressing the root causes of conflict, empowering local communities, and ensuring that women are at the center of peace building. Mr. president, excellencies, our world"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "saudi-arabia",
+      "country": "Saudi Arabia",
+      "speaker": "Prince Faisal bin Farhan Al Saud",
+      "file": "pipeline/out/81/2026-09-26/M_157.txt",
+      "char_index": 7738,
+      "term": "women",
+      "context": "diversification, investment in human capital, promotion of innovation, empowerment of youth and women, development of the private sector, and consolidation of sustainability The vision has"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "iceland",
+      "country": "Iceland",
+      "speaker": "Thorgerdur Katrín Gunnarsdóttir",
+      "file": "pipeline/out/81/2026-09-26/M_159.txt",
+      "char_index": 8476,
+      "term": "women",
+      "context": "debate. Too often, these movements target groups whose rights supposedly matter less. Women. LGBTQI+ people. Minorities. Migrants. People who look different, love differently or live"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "iceland",
+      "country": "Iceland",
+      "speaker": "Thorgerdur Katrín Gunnarsdóttir",
+      "file": "pipeline/out/81/2026-09-26/M_159.txt",
+      "char_index": 9850,
+      "term": "women",
+      "context": "democracy. And nowhere is this backlash more extreme than in Afghanistan, where women and girls have been systematically erased from public life. Girls are denied"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "iceland",
+      "country": "Iceland",
+      "speaker": "Thorgerdur Katrín Gunnarsdóttir",
+      "file": "pipeline/out/81/2026-09-26/M_159.txt",
+      "char_index": 9944,
+      "term": "women",
+      "context": "girls have been systematically erased from public life. Girls are denied education, women are denied basic freedoms. For me, this can only be described as"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "iceland",
+      "country": "Iceland",
+      "speaker": "Thorgerdur Katrín Gunnarsdóttir",
+      "file": "pipeline/out/81/2026-09-26/M_159.txt",
+      "char_index": 12455,
+      "term": "women",
+      "context": "and negotiated treaties. They created the Human Rights Council, OCHA, ICC, UN Women and the UNFCCC. They placed Women, Peace and Security on the agenda"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "iceland",
+      "country": "Iceland",
+      "speaker": "Thorgerdur Katrín Gunnarsdóttir",
+      "file": "pipeline/out/81/2026-09-26/M_159.txt",
+      "char_index": 12490,
+      "term": "women",
+      "context": "Human Rights Council, OCHA, ICC, UN Women and the UNFCCC. They placed Women, Peace and Security on the agenda of the Security Council and recognised"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "tajikistan",
+      "country": "Tajikistan",
+      "speaker": "Sirojiddin Muhriddin",
+      "file": "pipeline/out/81/2026-09-26/M_163.txt",
+      "char_index": 3710,
+      "term": "women",
+      "context": "and inclusion. That is why Tajikistan continues to advance the empowerment of women and their meaningful participation in political, economic and social life. It is"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "san-marino",
+      "country": "San Marino",
+      "speaker": "Luca Beccari",
+      "file": "pipeline/out/81/2026-09-26/M_164.txt",
+      "char_index": 9008,
+      "term": "women",
+      "context": "from the Sahel to Afghanistan, civilians continue to pay the highest price. Women, Children, Older people. Families forced from their homes. Hospitals and schools destroyed."
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "san-marino",
+      "country": "San Marino",
+      "speaker": "Luca Beccari",
+      "file": "pipeline/out/81/2026-09-26/M_164.txt",
+      "char_index": 11147,
+      "term": "women",
+      "context": "long for half of a population to be denied its rights. Afghan women and girls continue to face systematic restrictions on education, employment, movement, public"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "san-marino",
+      "country": "San Marino",
+      "speaker": "Luca Beccari",
+      "file": "pipeline/out/81/2026-09-26/M_164.txt",
+      "char_index": 11345,
+      "term": "women",
+      "context": "and access to justice. Girls remain excluded from secondary and higher education. Women are increasingly excluded from public life. This cannot become normal. San Marino"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "san-marino",
+      "country": "San Marino",
+      "speaker": "Luca Beccari",
+      "file": "pipeline/out/81/2026-09-26/M_164.txt",
+      "char_index": 11489,
+      "term": "women",
+      "context": "San Marino calls for the full restoration of the rights of Afghan women and girls. Education is a right. Work is a right. Participation in"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "san-marino",
+      "country": "San Marino",
+      "speaker": "Luca Beccari",
+      "file": "pipeline/out/81/2026-09-26/M_164.txt",
+      "char_index": 11745,
+      "term": "women",
+      "context": "to deny them. The international community must continue to stand with Afghan women and girls. Humanitarian access must also remain unhindered. Afghanistan must not be"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "djibouti",
+      "country": "Djibouti",
+      "speaker": "Abdoulkader Houssein Omar",
+      "file": "pipeline/out/81/2026-09-26/M_165.txt",
+      "char_index": 9224,
+      "term": "women",
+      "context": "all, growth should translate into jobs, social progress and opportunities, particularly for women and young people. We are continuing to invest in education, health. And"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "belarus",
+      "country": "Belarus",
+      "speaker": "Maxim Ryzhenkov",
+      "file": "pipeline/out/81/2026-09-26/M_166.txt",
+      "char_index": 6152,
+      "term": "women",
+      "context": "supposedly. But that village house filled with Belarusian children, the elderly and women, was not burned down by the Führer himself. And there were thousands"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "oman",
+      "country": "Oman",
+      "speaker": "Sayyid Badr bin Hamad bin Hamood Albusaidi",
+      "file": "pipeline/out/81/2026-09-26/M_168.txt",
+      "char_index": 4875,
+      "term": "women",
+      "context": "within the framework of Oman Vision 2040. It also continues to empower women's active participation and contribution to the development process and decision-making, aLirming that"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "oman",
+      "country": "Oman",
+      "speaker": "Sayyid Badr bin Hamad bin Hamood Albusaidi",
+      "file": "pipeline/out/81/2026-09-26/M_168.txt",
+      "char_index": 5165,
+      "term": "women",
+      "context": "separate goal. Therefore, the allocation of eleven permanent and elected seats for women in the Omani Shura Council comes within this framework. In the environmental"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "tunisia",
+      "country": "Tunisia",
+      "speaker": "Mohamed Ali Nafti",
+      "file": "pipeline/out/81/2026-09-26/M_169.txt",
+      "char_index": 18362,
+      "term": "women",
+      "context": "that the success of reform and development depends on the participation of women and youth. Therefore, Tunisia emphasizes its commitment to strengthening the role of"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "tunisia",
+      "country": "Tunisia",
+      "speaker": "Mohamed Ali Nafti",
+      "file": "pipeline/out/81/2026-09-26/M_169.txt",
+      "char_index": 18453,
+      "term": "women",
+      "context": "and youth. Therefore, Tunisia emphasizes its commitment to strengthening the role of women in public life and in decision making positions, and to continuing efforts"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "tunisia",
+      "country": "Tunisia",
+      "speaker": "Mohamed Ali Nafti",
+      "file": "pipeline/out/81/2026-09-26/M_169.txt",
+      "char_index": 18593,
+      "term": "women",
+      "context": "to continuing efforts to combat all forms of violence and discrimination against women. Recognizing that women's empowerment is a key driver of development and stability."
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "tunisia",
+      "country": "Tunisia",
+      "speaker": "Mohamed Ali Nafti",
+      "file": "pipeline/out/81/2026-09-26/M_169.txt",
+      "char_index": 18617,
+      "term": "women",
+      "context": "to combat all forms of violence and discrimination against women. Recognizing that women's empowerment is a key driver of development and stability. Likewise, Tunisia places"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "tunisia",
+      "country": "Tunisia",
+      "speaker": "Mohamed Ali Nafti",
+      "file": "pipeline/out/81/2026-09-26/M_169.txt",
+      "char_index": 20698,
+      "term": "women",
+      "context": "capacity building and civil military coordination, which should include both men and women. Mr. president, in conclusion, I wish to reaffirm that the United Nations"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "gabon",
+      "country": "Gabon",
+      "speaker": "Marie-Édith Tassyla-Ye-Doumbeneny",
+      "file": "pipeline/out/81/2026-09-26/M_171.txt",
+      "char_index": 7519,
+      "term": "women",
+      "context": "and reformed multilateralism that takes into account the aspirations of peoples, particularly women and young people. It is within this framework that the fundamental right"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "sao-tome-and-principe",
+      "country": "Sao Tome and Principe",
+      "speaker": "Ilza Maria dos Santos Amado Vaz",
+      "file": "pipeline/out/81/2026-09-26/M_173.txt",
+      "char_index": 6460,
+      "term": "women",
+      "context": "no sustainable development without these conditions, nor without the full participation of women and men in political, economic and social life. It is in this"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "sao-tome-and-principe",
+      "country": "Sao Tome and Principe",
+      "speaker": "Ilza Maria dos Santos Amado Vaz",
+      "file": "pipeline/out/81/2026-09-26/M_173.txt",
+      "char_index": 7226,
+      "term": "women",
+      "context": "which is a significant step towards strengthening the inclusion and participation of women. With women accounting for 41.4% of confirmed candidacies. Above the legal threshold"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "sao-tome-and-principe",
+      "country": "Sao Tome and Principe",
+      "speaker": "Ilza Maria dos Santos Amado Vaz",
+      "file": "pipeline/out/81/2026-09-26/M_173.txt",
+      "char_index": 7239,
+      "term": "women",
+      "context": "a significant step towards strengthening the inclusion and participation of women. With women accounting for 41.4% of confirmed candidacies. Above the legal threshold of 40%,"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "zambia",
+      "country": "Zambia",
+      "speaker": "Mulambo Hamakuni Haimbe",
+      "file": "pipeline/out/81/2026-09-26/M_174.txt",
+      "char_index": 10139,
+      "term": "women",
+      "context": "Zambia is equally committed to promoting gender equality and economic empowerment of women and girls. We are expanding opportunities in education, skills development, entrepreneurship, financial"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "zambia",
+      "country": "Zambia",
+      "speaker": "Mulambo Hamakuni Haimbe",
+      "file": "pipeline/out/81/2026-09-26/M_174.txt",
+      "char_index": 10369,
+      "term": "women",
+      "context": "first time in our history, Parliament now provides for proportional representation of women, you ng people and persons with disabilities, reflecting our conviction that their"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "zambia",
+      "country": "Zambia",
+      "speaker": "Mulambo Hamakuni Haimbe",
+      "file": "pipeline/out/81/2026-09-26/M_174.txt",
+      "char_index": 11282,
+      "term": "women",
+      "context": "continental commitments to drive domestic action. By investing in our people, particularly women, girls and young people, we are investing in Zambia's future. When we"
+    },
+    {
+      "date": "2026-09-26",
+      "slug": "zambia",
+      "country": "Zambia",
+      "speaker": "Mulambo Hamakuni Haimbe",
+      "file": "pipeline/out/81/2026-09-26/M_174.txt",
+      "char_index": 11452,
+      "term": "women",
+      "context": "strengthen our nation; and when we invest in Africa's young people and women, we invest in the prosperity of our continent and the world. Our"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "mali",
+      "country": "Mali",
+      "speaker": "Abdoulaye Diop",
+      "file": "pipeline/out/81/2026-09-28/M_177.txt",
+      "char_index": 11920,
+      "term": "women",
+      "context": "access to basic services and training and employment for young people and women in particular. And this ambition requires greater local processing of our natural"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "burkina-faso",
+      "country": "Burkina Faso",
+      "speaker": "Karamoko Jean Marie Traoré",
+      "file": "pipeline/out/81/2026-09-28/M_179.txt",
+      "char_index": 1134,
+      "term": "women",
+      "context": "is with my heart full of the memory of thousands of children women and men from Burkina Faso Mali and Niger, innocent victims of terrorism"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "burkina-faso",
+      "country": "Burkina Faso",
+      "speaker": "Karamoko Jean Marie Traoré",
+      "file": "pipeline/out/81/2026-09-28/M_179.txt",
+      "char_index": 14405,
+      "term": "women",
+      "context": "and health systems, supporting industrialisation, ensuring the effective participation of youth and women in decision making. International solidarity is necessary. However, the experience of the"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "algeria",
+      "country": "Algeria",
+      "speaker": "Ahmed Attaf",
+      "file": "pipeline/out/81/2026-09-28/M_180.txt",
+      "char_index": 6888,
+      "term": "women and children",
+      "context": "The Israeli occupation continues to kill Palestinian civilians, including large numbers of women and children, in a scene in a scene that should never become a normalized"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "malawi",
+      "country": "Malawi",
+      "speaker": "George Chapatula Chaponda",
+      "file": "pipeline/out/81/2026-09-28/M_182.txt",
+      "char_index": 11063,
+      "term": "women",
+      "context": "play its part in global peace operations, deploying our brave men and women to U nited Nations peacekeeping missions to safeguard stability on our continent."
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "sudan",
+      "country": "Sudan",
+      "speaker": "Mohieldin Salim Ahmed Ibrahim",
+      "file": "pipeline/out/81/2026-09-28/M_185.txt",
+      "char_index": 2151,
+      "term": "women",
+      "context": "against militia funded by the UAE that killed their people, raped their women, raped their women, destroy their infrastructure and use UAVs against them day"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "sudan",
+      "country": "Sudan",
+      "speaker": "Mohieldin Salim Ahmed Ibrahim",
+      "file": "pipeline/out/81/2026-09-28/M_185.txt",
+      "char_index": 2170,
+      "term": "women",
+      "context": "by the UAE that killed their people, raped their women, raped their women, destroy their infrastructure and use UAVs against them day and night Therefore."
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "united-arab-emirates",
+      "country": "United Arab Emirates",
+      "speaker": "Khalifa Shaheen Al Marar",
+      "file": "pipeline/out/81/2026-09-28/M_186.txt",
+      "char_index": 9292,
+      "term": "women",
+      "context": "together diverse nationalities and faiths. We are building a society in which women participate fully, equally, and meaningfully, and in which young people are genuine"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "turkmenistan",
+      "country": "Turkmenistan",
+      "speaker": "Vepa Hajiyev",
+      "file": "pipeline/out/81/2026-09-28/M_189.txt",
+      "char_index": 9042,
+      "term": "women",
+      "context": "international cooperation. Lasting peace is impossible without the f ull participation of women and young people, the preservation of human dignity, mutual respect and equal"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "turkmenistan",
+      "country": "Turkmenistan",
+      "speaker": "Vepa Hajiyev",
+      "file": "pipeline/out/81/2026-09-28/M_189.txt",
+      "char_index": 9183,
+      "term": "women",
+      "context": "mutual respect and equal opportunities. Our country will continue to advance the Women and Peace and Security agenda, including by developing the Central Asian Women's"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "turkmenistan",
+      "country": "Turkmenistan",
+      "speaker": "Vepa Hajiyev",
+      "file": "pipeline/out/81/2026-09-28/M_189.txt",
+      "char_index": 9262,
+      "term": "women",
+      "context": "Women and Peace and Security agenda, including by developing the Central Asian Women's Dialogue and expanding its cooperation with the United Nations Peacebuilding Commission and"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "turkmenistan",
+      "country": "Turkmenistan",
+      "speaker": "Vepa Hajiyev",
+      "file": "pipeline/out/81/2026-09-28/M_189.txt",
+      "char_index": 9365,
+      "term": "women",
+      "context": "Dialogue and expanding its cooperation with the United Nations Peacebuilding Commission and UN-Women. At the same time, we will support the activities of the Central"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "south-sudan",
+      "country": "South Sudan",
+      "speaker": "Cecilia Adout Majok Adeng",
+      "file": "pipeline/out/81/2026-09-28/M_192.txt",
+      "char_index": 7013,
+      "term": "women",
+      "context": "continue. Security arrangements must advance. Civic and voter education must reach communities. Women and young people must parti cipate meaningfully. Refugees and internally displaced persons"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "south-sudan",
+      "country": "South Sudan",
+      "speaker": "Cecilia Adout Majok Adeng",
+      "file": "pipeline/out/81/2026-09-28/M_192.txt",
+      "char_index": 9368,
+      "term": "women",
+      "context": "the United Nations Mission in South Sudan. We recognize the men and women who have served under the United Nations flag, particularly those who have"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "south-sudan",
+      "country": "South Sudan",
+      "speaker": "Cecilia Adout Majok Adeng",
+      "file": "pipeline/out/81/2026-09-28/M_192.txt",
+      "char_index": 10099,
+      "term": "women",
+      "context": "Invest in education and healthcare; • Invest in infrastructure; • Invest in women and young people; and • Invest in the institutions that will sustain"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "south-sudan",
+      "country": "South Sudan",
+      "speaker": "Cecilia Adout Majok Adeng",
+      "file": "pipeline/out/81/2026-09-28/M_192.txt",
+      "char_index": 12279,
+      "term": "women",
+      "context": "must be reflected not only in commitments, but in implementation. Mr. President, Women and young people remain central to President Kiir’s vision for South Sudan."
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "south-sudan",
+      "country": "South Sudan",
+      "speaker": "Cecilia Adout Majok Adeng",
+      "file": "pipeline/out/81/2026-09-28/M_192.txt",
+      "char_index": 12437,
+      "term": "women",
+      "context": "Sudan. The Revitalized Peace Agreement provided for 35 per cent representation of women in public institutions. South Sudan continuous on working to translate that commitment"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "south-sudan",
+      "country": "South Sudan",
+      "speaker": "Cecilia Adout Majok Adeng",
+      "file": "pipeline/out/81/2026-09-28/M_192.txt",
+      "char_index": 17470,
+      "term": "women",
+      "context": "where political competition does not lead to war. A South Sudan where women participate fully. Where young people have opportunities. Where refugees can return home."
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "denmark",
+      "country": "Denmark",
+      "speaker": "Christina Markus Lassen",
+      "file": "pipeline/out/81/2026-09-28/M_193.txt",
+      "char_index": 5340,
+      "term": "women",
+      "context": "of commitment to the safety and security of the brave men and women who serve under the UN flag. And a clear demonstration that the"
+    },
+    {
+      "date": "2026-09-28",
+      "slug": "president-general-assembly-closing",
+      "country": "President of the General Assembly (closing)",
+      "speaker": "Dr. Khalilur Rahman",
+      "file": "pipeline/out/81/2026-09-28/M_197.txt",
+      "char_index": 3787,
+      "term": "women",
+      "context": "minorities face hatred; wherever migrants and refugees are denied dignity; and wherever women and girls are excluded from education, employment and public life. It was"
+    }
+  ]
+}

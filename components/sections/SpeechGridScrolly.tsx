@@ -79,7 +79,7 @@ export function SpeechGridScrolly({
 }) {
   const sectionRef = useRef<HTMLElement>(null);
   const [lit, setLit] = useState(false);
-  const [activeId, setActiveId] = useState(steps[2]?.id ?? "");
+  const [activeId, setActiveId] = useState(steps[0]?.id ?? "");
   const active = steps.find((step) => step.id === activeId) ?? steps[0];
   const stepIndex = Math.max(0, steps.findIndex((step) => step.id === active?.id));
   const packed = stepIndex >= 1;
