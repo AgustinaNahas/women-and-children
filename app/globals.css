@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-linen: #e8e2d6;
+  --color-ink: #141210;
+  --color-field: #000000;
+  --color-script: #f4efe8;
+  --color-thread: #a71619;
+  --color-thread-soft: #f0c9d0;
+  --color-paper: #f7f4ef;
+  --color-agents: #3d6f8f;
+  --color-victims: #9e3a3a;
+  --color-mixed: #6b7340;
+  --color-phrase: #8fbf9a;
+  --color-petal: #f3ede4;
+  --color-waffle: #7F9AB5;
+  --breakpoint-sheet: 45rem;
+}
+
+@theme inline {
+  --font-script: var(--font-script), cursive;
+  --font-text: var(--font-text), Georgia, "Times New Roman", serif;
+  --font-ui: var(--font-ui), "Open Sans", sans-serif;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 3px solid var(--color-thread-soft);
+    outline-offset: 3px;
+  }
+
+  .bg-field {
+    background-image: url("/tela-negra.jpg");
+    background-repeat: repeat;
+  }
+}
+
+@media not (min-width: 45rem) {
+  .max-sheet\:bg-field {
+    background-image: url("/tela-negra.jpg");
+    background-repeat: repeat;
+  }
+}
+
+@keyframes stitch-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.stitch-await,
+.stitch-hold {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stitch-await {
+    opacity: 1;
+  }
+}
