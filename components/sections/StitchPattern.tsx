@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { stitchSize } from "@/content/stitches";
+import { publicPath } from "@/lib/site";
 
 /** Cuánto tarda cada puntada en pasar de invisible a visible. */
 const FADE_MS = 1800;
@@ -59,7 +60,7 @@ export function StitchPattern({
           style={{
             gridColumn: cell.column,
             gridRow: cell.row,
-            backgroundImage: `url(${tile})`,
+            backgroundImage: `url("${publicPath(tile)}")`,
             animation:
               delays === null
                 ? undefined

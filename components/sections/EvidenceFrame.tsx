@@ -1,6 +1,7 @@
 "use client";
 
 import { useLayoutEffect, useRef, type ReactNode } from "react";
+import { publicPath } from "@/lib/site";
 
 const SPEED = 0.22;
 
@@ -70,7 +71,7 @@ export function EvidenceFrame({
       aria-labelledby="children-title"
     >
       <div ref={frameRef} className="@container relative mx-auto w-full max-w-[34rem] will-change-transform">
-        <img src="/marco.png" alt="" className="pointer-events-none block h-auto w-full select-none" />
+        <img src={publicPath("/marco.png")} alt="" className="pointer-events-none block h-auto w-full select-none" />
         <div className="absolute top-[20%] right-[12%] bottom-[10%] left-[16%] flex flex-col items-center overflow-y-auto text-center text-thread">
           <h2
             id="children-title"

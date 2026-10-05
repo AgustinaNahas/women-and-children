@@ -2,6 +2,7 @@
 
 import { useLayoutEffect, useRef, type CSSProperties, type ReactNode } from "react";
 import type { Locale } from "@/content/types";
+import { publicPath } from "@/lib/site";
 
 export type QuoteCard = {
   slug: string;
@@ -136,12 +137,13 @@ function LaceQuote({
   return (
     <figure
       data-speed={place.speed}
-      className="relative flex w-full max-w-[24rem] flex-col items-center justify-center bg-[url(/puntilla.png)] bg-[length:100%_100%] bg-center bg-no-repeat px-[15%] py-[13%] sheet:absolute sheet:block sheet:aspect-[694/446] sheet:w-(--q-w) sheet:max-w-none sheet:px-0 sheet:py-0 sheet:left-(--q-l) sheet:top-(--q-t)"
+      className="relative flex w-full max-w-[24rem] flex-col items-center justify-center bg-[length:100%_100%] bg-center bg-no-repeat px-[15%] py-[13%] sheet:absolute sheet:block sheet:aspect-[694/446] sheet:w-(--q-w) sheet:max-w-none sheet:px-0 sheet:py-0 sheet:left-(--q-l) sheet:top-(--q-t)"
       style={
         {
           "--q-l": place.left,
           "--q-t": place.top,
           "--q-w": place.width,
+          backgroundImage: `url("${publicPath("/puntilla.png")}")`,
         } as CSSProperties
       }
     >

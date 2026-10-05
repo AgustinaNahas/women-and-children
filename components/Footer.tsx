@@ -5,6 +5,7 @@ import { StitchPattern } from "@/components/sections/StitchPattern";
 import { flowerPattern } from "@/content/flower-pattern";
 import { heroTopRightPattern } from "@/content/hero-pattern";
 import type { BibRun, Content } from "@/content/types";
+import { publicPath } from "@/lib/site";
 
 function Citation({ parts }: { parts: readonly BibRun[] }) {
   return parts.map((part, index) => {
@@ -54,7 +55,8 @@ export function Footer({ content }: { content: Content["footer"] }) {
   return (
     <footer
       ref={footerRef}
-      className="relative bg-linen bg-[url('/tela.png')] bg-contain px-[clamp(1.25rem,5vw,4.5rem)] pt-6 pb-16 text-thread lg:pt-16 lg:pb-24"
+      className="relative bg-linen bg-contain px-[clamp(1.25rem,5vw,4.5rem)] pt-6 pb-16 text-thread lg:pt-16 lg:pb-24"
+      style={{ backgroundImage: `url("${publicPath("/tela.png")}")` }}
     >
       <div
         className="pointer-events-none mb-10 flex flex-col items-end overflow-hidden lg:absolute lg:inset-x-0 lg:top-0 lg:mb-0"

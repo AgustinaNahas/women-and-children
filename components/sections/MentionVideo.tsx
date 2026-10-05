@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { publicPath } from "@/lib/site";
 
 export function MentionVideo({
   label,
@@ -77,7 +78,7 @@ export function MentionVideo({
       <video
         ref={videoRef}
         className="block h-auto w-full"
-        src="/mentions.mp4"
+        src={publicPath("/mentions.mp4")}
         muted
         loop
         playsInline

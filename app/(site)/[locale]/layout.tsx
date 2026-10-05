@@ -9,8 +9,8 @@ import { heroBottomLeftPattern, heroTopRightPattern } from "@/content/hero-patte
 import { getContent } from "@/content";
 import { locales, type Locale } from "@/content/types";
 import { isLocale } from "@/lib/locales";
-import { siteOrigin } from "@/lib/site";
-import "../globals.css";
+import { pageUrl, publicPath, siteOrigin } from "@/lib/site";
+import "../../globals.css";
 
 const pinyon = Pinyon_Script({
   weight: "400",
@@ -32,6 +32,8 @@ const openSans = Open_Sans({
   display: "swap",
 });
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -45,7 +47,8 @@ export async function generateMetadata({
   if (!isLocale(raw)) return {};
 
   const content = getContent(raw);
-  const origin = siteOrigin();
+  const origin = new URL(siteOrigin().origin);
+  const canonical = pageUrl(`${raw}/`);
 
   return {
     metadataBase: origin,
@@ -54,17 +57,17 @@ export async function generateMetadata({
     applicationName: content.meta.title,
     authors: content.footer.credits.map((credit) => ({ name: credit.names })),
     alternates: {
-      canonical: `/${raw}`,
+      canonical,
       languages: {
-        en: "/en",
-        es: "/es",
-        "x-default": "/en",
+        en: pageUrl("en/"),
+        es: pageUrl("es/"),
+        "x-default": pageUrl("en/"),
       },
     },
     openGraph: {
       title: content.meta.title,
       description: content.meta.description,
-      url: `/${raw}`,
+      url: canonical,
       siteName: content.header.script,
       locale: raw === "es" ? "es_ES" : "en_US",
       alternateLocale: raw === "es" ? ["en_US"] : ["es_ES"],
@@ -93,18 +96,18 @@ export default async function LocaleLayout({
   const locale: Locale = isLocale(raw) ? raw : "en";
   const content = getContent(locale);
   const origin = siteOrigin();
-  const pageUrl = new URL(`/${locale}`, origin).href;
+  const url = pageUrl(`${locale}/`);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: content.meta.title,
     description: content.meta.description,
-    url: pageUrl,
+    url,
     inLanguage: locale,
     isPartOf: {
       "@type": "WebSite",
       name: content.header.script,
-      url: origin.origin,
+      url: origin.href,
       inLanguage: ["en", "es"],
     },
     about: {
@@ -121,6 +124,7 @@ export default async function LocaleLayout({
       lang={locale}
       data-scroll-behavior="smooth"
       className={`${pinyon.variable} ${alegreya.variable} ${openSans.variable} scroll-smooth scheme-dark motion-reduce:scroll-auto`}
+      style={{ ["--texture-field" as string]: `url("${publicPath("/tela-negra.jpg")}")` }}
     >
       <body className="bg-field font-text text-lg leading-relaxed text-script">
         <a
@@ -133,7 +137,10 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         />
-        <header className="relative flex min-h-dvh flex-col overflow-x-hidden bg-linen bg-[url('/tela.png')] bg-contain pb-6 text-center text-ink">
+        <header
+          className="relative flex min-h-dvh flex-col overflow-x-hidden bg-linen bg-contain pb-6 text-center text-ink"
+          style={{ backgroundImage: `url("${publicPath("/tela.png")}")` }}
+        >
           <LanguageSwitch
             locale={locale}
             label={content.ui.languageLabel}

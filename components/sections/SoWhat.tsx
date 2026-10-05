@@ -1,9 +1,11 @@
+import { publicPath } from "@/lib/site";
+
 export function SoWhat({ title, paragraphs }: { title: string; paragraphs: string[] }) {
   return (
     <section id="so-what" className="overflow-x-clip bg-field px-5 py-[clamp(4.5rem,12vh,8rem)]" aria-labelledby="so-what-title">
       <div className="mx-auto w-full max-w-[40rem]">
         <div className="relative mx-auto mb-[clamp(2rem,6vh,4.5rem)] w-[min(100%,34rem)] rotate-[7deg]">
-          <img src="/puntilla.png" alt="" className="pointer-events-none block h-auto w-full select-none" />
+          <img src={publicPath("/puntilla.png")} alt="" className="pointer-events-none block h-auto w-full select-none" />
           <h2
             id="so-what-title"
             className="absolute inset-0 m-0 flex items-center justify-center px-[18%] pb-[8%] text-center font-script text-[clamp(2.6rem,9vw,5.4rem)] leading-none font-normal text-balance text-thread"

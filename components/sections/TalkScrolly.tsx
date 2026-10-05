@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { CrossStitch } from "@/components/CrossStitch";
 import { isCategoryId, type CategoryId, type TalkStep } from "@/content/types";
+import { publicPath } from "@/lib/site";
 
 const COLOR: Record<CategoryId, string> = {
   agents: "#7E99B4",
@@ -77,7 +78,7 @@ export function TalkScrolly({ title, steps }: { title: string; steps: TalkStep[]
           <div className={ROW}>
             <div className="flex justify-center">
               <div className="@container relative w-[min(100%,52vh)] max-sheet:w-[min(70%,30dvh)]">
-                <img src="/doily.png" alt="" className="pointer-events-none block h-auto w-full select-none" />
+                <img src={publicPath("/doily.png")} alt="" className="pointer-events-none block h-auto w-full select-none" />
                 <div
                   className="pointer-events-none absolute"
                   style={{ top: "20%", right: "20.2%", bottom: "20%", left: "22.3%" }}

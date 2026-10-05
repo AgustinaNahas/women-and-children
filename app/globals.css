@@ -30,14 +30,14 @@
   }
 
   .bg-field {
-    background-image: url("/tela-negra.jpg");
+    background-image: var(--texture-field);
     background-repeat: repeat;
   }
 }
 
 @media not (min-width: 45rem) {
   .max-sheet\:bg-field {
-    background-image: url("/tela-negra.jpg");
+    background-image: var(--texture-field);
     background-repeat: repeat;
   }
 }

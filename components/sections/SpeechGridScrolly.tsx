@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 
 import { CrossStitch } from "@/components/CrossStitch";
 import { speechGridNarrow, speechGridWide, type SpeechGrid } from "@/content/speech-grid";
 import type { Locale } from "@/content/types";
+import { publicPath } from "@/lib/site";
 import { fill } from "@/lib/text";
 
 type Step = {
@@ -32,7 +33,7 @@ function stitches(grid: SpeechGrid): Mark[] {
 
 const wideMarks = stitches(speechGridWide);
 const narrowMarks = stitches(speechGridNarrow);
-const THREAD = "url(/hilo.png)";
+const THREAD = `url("${publicPath("/hilo.png")}")`;
 
 function sameParity(row: number, col: number) {
   return row % 2 === col % 2;

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Locale } from "@/content/types";
+import { publicPath } from "@/lib/site";
 
 export function LanguageSwitch({
   locale,
@@ -23,9 +24,9 @@ export function LanguageSwitch({
           className="inline-flex min-h-11 items-center px-[0.7rem] font-text text-xl text-thread no-underline aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-[0.28em] gap-2"
           aria-current={code === locale ? "page" : undefined}
         >
-          {code === locale ? <img src="/motif-tile.svg" alt="" className="h-3 w-3" /> : null}
+          {code === locale ? <img src={publicPath("/motif-tile.svg")} alt="" className="h-3 w-3" /> : null}
           {names[code]}
-          {code === locale ? <img src="/motif-tile.svg" alt="" className="h-3 w-3" /> : null} 
+          {code === locale ? <img src={publicPath("/motif-tile.svg")} alt="" className="h-3 w-3" /> : null} 
                   </Link>
       ))}
     </nav>
