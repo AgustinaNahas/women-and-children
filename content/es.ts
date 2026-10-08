@@ -68,9 +68,16 @@ const es: Content = {
         caption: "del total de discursos mencionan a las mujeres.",
       },
       {
+        id: "asked",
+        title: "",
+        body: "",
+        figure: null,
+        caption: "Y cuando preguntamos cómo se menciona a las mujeres, vimos que...",
+      },
+      {
         id: "outline",
         title: "",
-        body: "Y cuando preguntamos cómo se menciona a las mujeres, vimos que en",
+        body: "",
         figure: "43%",
         caption: "de las menciones de mujeres también mencionan a niños o niñas.",
       },

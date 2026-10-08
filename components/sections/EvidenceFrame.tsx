@@ -79,7 +79,7 @@ export function EvidenceFrame({
           >
             {script}
           </h2>
-          <p className="mt-24 max-w-[30ch] font-text text-[clamp(0.92rem,4.2cqi,1.35rem)] leading-snug">
+          <p className="mt-24 max-w-[30ch] font-text text-[clamp(0.92rem,4.2cqi,2rem)] leading-snug">
             {emphasize(body, emphasis)}
           </p>
 
@@ -87,7 +87,6 @@ export function EvidenceFrame({
           <p className="mt-4 mb-0 font-text text-[clamp(0.68rem,2.15cqi,0.8rem)] leading-snug sheet:mt-12 px-12">
             {source}
           </p>
-          <div className="min-h-4 flex-[0.45]" />
         </div>
       </div>
     </section>

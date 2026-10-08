@@ -14,14 +14,14 @@ export function LanguageSwitch({
   const codes: Locale[] = ["en", "es"];
 
   return (
-    <nav className="flex w-full justify-center gap-1 px-4 pt-3 font-ui" aria-label={label}>
+    <nav className="flex w-full justify-start gap-1 px-4 pt-3 font-ui max-w-[1200px] mx-auto -mb-18" aria-label={label}>
       {codes.map((code) => (
         <Link
           key={code}
           href={`/${code}`}
           hrefLang={code}
           lang={code}
-          className="inline-flex min-h-11 items-center px-[0.7rem] font-text text-xl text-thread no-underline aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-[0.28em] gap-2"
+          className="inline-flex min-h-11 items-center px-[0.7rem] font-text text-xl text-thread no-underline aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-[0.28em] gap-2 z-10 relative"
           aria-current={code === locale ? "page" : undefined}
         >
           {code === locale ? <img src={publicPath("/motif-tile.svg")} alt="" className="h-3 w-3" /> : null}

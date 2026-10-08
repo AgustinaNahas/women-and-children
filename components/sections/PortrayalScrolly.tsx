@@ -87,6 +87,7 @@ export function PortrayalScrolly({
   mixedLabel,
   victimsLabel,
   intro,
+  flowerRef,
   grouped,
   card,
   mentions,
@@ -96,15 +97,18 @@ export function PortrayalScrolly({
   mixedLabel: string;
   victimsLabel: string;
   intro: string;
+  flowerRef: string;
   grouped: string;
   card: string;
   mentions: PortrayalMention[];
 }) {
   const sectionRef = useRef<HTMLElement>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
   const hideTip = useRef(0);
   const [step, setStep] = useState<StepId>("order");
   const [tip, setTip] = useState<Tip | null>(null);
   const [pinned, setPinned] = useState<PlacedMention | null>(null);
+  const [reveal, setReveal] = useState(false);
   const placed = place(mentions);
   const rows = Math.max(1, Math.ceil(placed.length / COLUMNS));
   const counts: Record<PortrayalKind, number> = { agents: 0, mixed: 0, victims: 0 };
@@ -117,7 +121,24 @@ export function PortrayalScrolly({
   };
   const sorted = step !== "order";
   const braced = step === "share";
-  const live = step === "share" ? card : step === "grouped" ? grouped : intro;
+  const live = step === "share" ? card : step === "grouped" ? grouped : "";
+
+  useEffect(() => {
+    const node = chartRef.current;
+    if (!node) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry?.isIntersecting) return;
+        setReveal(true);
+        observer.disconnect();
+      },
+      { threshold: 0.35 },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const nodes = () => [...(sectionRef.current?.querySelectorAll<HTMLElement>("[data-step]") ?? [])];
@@ -170,20 +191,26 @@ export function PortrayalScrolly({
 
   return (
     <section ref={sectionRef} id="portrayal" className="mx-auto w-full max-w-6xl px-5" aria-labelledby="portrayal-title">
-      <h2 id="portrayal-title" className="sr-only">
-        {intro}
-      </h2>
+      <p className="mx-auto mt-6 max-w-2xl text-center font-text text-2xl leading-snug ">
+            {intro}
+          </p>
       <div className="relative">
         <div className="sticky top-0 z-0 flex h-dvh items-center justify-center">
           <div
             className="@container mx-auto w-full max-w-5xl"
-            style={{ width: `min(100%, calc((100svh - 18rem) * ${COLUMNS} / ${rows * ROW_FACTOR}))` }}
+            style={{ width: `min(90%, calc((100svh - 18rem) * 0.9 * ${COLUMNS} / ${rows * ROW_FACTOR}))` }}
           >
             <ul className="mb-4 flex list-none flex-wrap justify-center gap-x-5 gap-y-2 p-0 font-ui text-[15px] text-script sheet:gap-x-8">
               {(["agents", "mixed", "victims"] as const).map((kind) => (
                 <li key={kind} className="flex items-center gap-2">
-                  <span className="size-2.5 shrink-0 rounded-full" style={{ backgroundColor: COLOR[kind] }} aria-hidden="true" />
-                  <span>
+                  <span className="size-4">
+                  
+                    <CrossStitch
+                        className={`block h-auto w-full}`}
+                        fill={COLOR[kind]}
+                      />
+                  </span>
+                <span className="font-text text-2xl leading-snug " >
                     {labels[kind]}
                     {sorted ? (
                       <span className="ml-1.5 tabular-nums sheet:sr-only">{share(counts[kind], placed.length, locale)}</span>
@@ -192,8 +219,15 @@ export function PortrayalScrolly({
                 </li>
               ))}
             </ul>
-            <div className="relative sheet:pt-[2.85rem] sheet:pl-[4.6rem]">
-              <div className="relative w-full" style={{ aspectRatio: `${COLUMNS} / ${rows * ROW_FACTOR}` }}>
+            <div className="flex items-center gap-2 mx-auto justify-center">
+              <LegendCluster fill={"#ffffff"} />
+              <p className="font-text text-lg leading-snug ">
+                {flowerRef}
+              </p>
+            </div>
+
+            <div className="relative sheet:pt-[2.85rem] ">
+              <div ref={chartRef} className="relative w-full" style={{ aspectRatio: `${COLUMNS} / ${rows * ROW_FACTOR}` }}>
                 <Braces
                   shown={braced}
                   rows={rows}
@@ -222,12 +256,15 @@ export function PortrayalScrolly({
                     <button
                       key={mention.source}
                       type="button"
-                      className="@container absolute m-0 grid cursor-pointer grid-rows-[auto_minmax(0,1fr)] justify-items-center gap-px overflow-hidden border-0 bg-transparent p-0.5 transition-[left,top] duration-700 ease-in-out motion-reduce:transition-none!"
+                      className={`@container absolute m-0 grid cursor-pointer grid-rows-[auto_minmax(0,1fr)] justify-items-center gap-px overflow-hidden border-0 bg-transparent p-0.5 transition-[left,top] duration-700 ease-in-out motion-reduce:animate-none! motion-reduce:opacity-100! motion-reduce:transition-none! ${reveal ? "" : "stitch-await"}`}
                       style={{
                         width: `${100 / COLUMNS}%`,
                         height: `${100 / rows}%`,
                         left: `${(column / COLUMNS) * 100}%`,
                         top: `${(row / rows) * 100}%`,
+                        animation: reveal
+                          ? `stitch-fade-in 460ms ease-out ${mention.source * 80}ms both`
+                          : undefined,
                       }}
                       aria-label={`${mention.iso}, ${labels[mention.kind]}`}
                       aria-expanded={pinned?.source === mention.source}
@@ -255,7 +292,7 @@ export function PortrayalScrolly({
                       </span>
                       <span className="grid h-full min-h-0 w-full grid-cols-2 grid-rows-2 self-stretch" aria-hidden="true">
                         {Array.from({ length: 4 }, (_, stitch) => (
-                          <CrossStitch key={stitch} className="h-full w-full min-h-0" fill={COLOR[mention.kind]} />
+                          <CrossStitch key={stitch} className={`h-full w-full min-h-0 ${stitch > 1 ? "-translate-y-5" : ""} ${stitch % 2 != 0 ? "-translate-x-1" : ""}`} fill={COLOR[mention.kind]} />
                         ))}
                       </span>
                     </button>
@@ -263,24 +300,29 @@ export function PortrayalScrolly({
                 })}
               </div>
             </div>
-            <div className="mt-4 min-h-[6.5rem] sheet:mt-8 sheet:min-h-[7.5rem]">
-              <article
-                id="portrayal-detail"
-                className="mx-auto max-w-xl rounded-xl border-2 border-dotted border-white bg-[#F6F2E7] p-4 text-center font-text text-lg leading-snug text-ink sheet:p-6 sheet:text-xl"
-              >
-                {pinned ? (
-                  <>
-                    <p className="m-0">{highlight(pinned.quote)}</p>
-                    <p className="mt-3 mb-0 border-t border-ink/15 pt-2 font-ui text-[0.82rem] leading-snug">
-                      <span className="block font-semibold">{pinned.iso}</span>
-                      <span className="block">{pinned.speaker}</span>
-                      <span className="block">{pinned.title}</span>
-                    </p>
-                  </>
-                ) : (
-                  <p className="m-0">{live}</p>
-                )}
-              </article>
+            <div className="mt-5 flex min-h-[4.75rem] items-start justify-center sheet:mt-8 sheet:min-h-[6.5rem]">
+              {pinned ? (
+                <article
+                  id="portrayal-detail"
+                  className="mx-auto max-w-xl rounded-xl border-2 border-dotted border-white bg-[#F6F2E7] p-4 text-center font-text text-lg leading-snug text-ink sheet:p-6 sheet:text-xl"
+                >
+                  <p className="m-0">{highlight(pinned.quote)}</p>
+                  <p className="mt-3 mb-0 border-t border-ink/15 pt-2 font-ui text-[0.82rem] leading-snug">
+                    <span className="block font-semibold">{pinned.iso}</span>
+                    <span className="block">{pinned.speaker}</span>
+                    <span className="block">{pinned.title}</span>
+                  </p>
+                </article>
+              ) : live ? (
+                <p
+                  id="portrayal-detail"
+                  className="mx-auto max-w-2xl text-center font-text text-xl leading-snug text-balance text-script sheet:text-3xl"
+                >
+                  {live}
+                </p>
+              ) : (
+                <p id="portrayal-detail" className="sr-only" />
+              )}
             </div>
             <p className="sr-only" aria-live="polite">
               {live}
@@ -304,6 +346,22 @@ export function PortrayalScrolly({
         </div>
       </div>
     </section>
+  );
+}
+
+function LegendCluster({ fill }: { fill: string }) {
+  return (
+    <span className="relative block size-8 shrink-0" aria-hidden="true">
+      <span className="absolute top-1/2 left-1/2 grid w-16 -translate-x-1/2 -translate-y-1/2 scale-[0.36] grid-cols-2 grid-rows-2">
+        {Array.from({ length: 4 }, (_, stitch) => (
+          <CrossStitch
+            key={stitch}
+            className={`block h-auto w-full ${stitch > 1 ? "-translate-y-1" : ""} ${stitch % 2 !== 0 ? "-translate-x-1" : ""}`}
+            fill={fill}
+          />
+        ))}
+      </span>
+    </span>
   );
 }
 

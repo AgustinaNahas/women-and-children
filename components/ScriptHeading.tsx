@@ -20,22 +20,24 @@ export function ScriptHeading({
 
   return (
     <header className="mb-8">
-      <Tag
-        id={id}
-        className={`m-0 block w-full text-center font-script leading-none font-normal text-balance ${scriptTone}`}
-      >
-        {script}
-      </Tag>
       {lede ? (
-        <p className="mx-auto mt-6 mb-4 max-w-[40rem] text-[clamp(1.15rem,2vw,1.45rem)] leading-snug">
+        <p className="mx-auto mt-36 mb-4 max-w-xl 
+        text-[clamp(1.15rem,2vw,1.45rem)] leading-snug">
           {lede}
         </p>
       ) : null}
       {body ? (
-        <p className="mx-auto mt-4 mb-2 max-w-[40rem] text-[clamp(1.15rem,2vw,1.45rem)] leading-snug">
+        <p className="mx-auto mt-12 mb-18 max-w-xl text-[clamp(1.15rem,2vw,1.45rem)] leading-snug">
           {body}
         </p>
       ) : null}
+
+      <Tag
+        id={id}
+        className={`mb-48 block w-full text-center font-script leading-none font-normal text-balance ${scriptTone}`}
+      >
+        {script}
+      </Tag>
     </header>
   );
 }

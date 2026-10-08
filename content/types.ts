@@ -106,9 +106,11 @@ export type Content = {
     intro: string;
     grouped: string;
     card: string;
+    flowerRef: string;
   };
   talk: {
     title: string;
+    description: string;
     steps: TalkStep[];
   };
   categories: {

@@ -19,6 +19,7 @@ export const heroBottomRightPattern = {
     "-----------------------------------x--xxx--xx----",
     "---------------x-------xx---x-----xx--xx-xx-x-xx-",
     "---------------xx--x-xxxx-x-xx----xx--xx-xx-x-xxx",
+    "---------------xx-x-xxxx-x--xx----x-x-x-x-x-x-x-x",
   ],
 } as const;
 
@@ -37,12 +38,14 @@ export const heroBottomLeftPattern = {
     "----xx--xxx--x-----------------------------------",
     "-xx-x-xx-xx--xx-----x---xx-------x---------------",
     "xxx-x-xx-xx--xx----xx-x-xxxx-x--xx---------------",
+    "x-x-x-x-x-x-x-x----xx-x-xxxx-x--xx---------------",
   ],
 } as const;
 
 export const heroTopLeftPattern = {
   tile: "/motif-tile.svg",
   rows: [
+    "x-x-x-x-x-x-x-x----xx-x-xxxx-x--xx---------------",
     "xxx-x-xx-xx--xx----xx-x-xxxx-x--xx---------------",
     "-xx-x-xx-xx--xx-----x---xx-------x---------------",
     "----xx--xxx--x-----------------------------------",
@@ -61,6 +64,7 @@ export const heroTopLeftPattern = {
 export const heroTopRightPattern = {
   tile: "/motif-tile.svg",
   rows: [
+    "---------------xx-x-xxxx-x--xx----x-x-x-x-x-x-x-x",
     "---------------xx--x-xxxx-x-xx----xx--xx-xx-x-xxx",
     "---------------x-------xx---x-----xx--xx-xx-x-xx-",
     "-----------------------------------x--xxx--xx----",

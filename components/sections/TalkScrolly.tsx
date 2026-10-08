@@ -17,7 +17,7 @@ const TITLE =
 const ROW =
   "grid min-h-0 w-full flex-1 grid-cols-2 items-center px-[clamp(1rem,4vw,3.5rem)] max-sheet:grid-cols-1 max-sheet:content-center max-sheet:gap-4 max-sheet:overflow-y-auto";
 
-export function TalkScrolly({ title, steps }: { title: string; steps: TalkStep[] }) {
+export function TalkScrolly({ title, description, steps }: { title: string; description: string; steps: TalkStep[] }) {
   const sectionRef = useRef<HTMLElement>(null);
   const [active, setActive] = useState<CategoryId>(steps[0]?.id ?? "agents");
   const current = steps.find((step) => step.id === active) ?? steps[0];
@@ -69,12 +69,17 @@ export function TalkScrolly({ title, steps }: { title: string; steps: TalkStep[]
   }, []);
 
   return (
-    <section ref={sectionRef} id="talk" className="w-full" aria-labelledby="talk-title">
+    <section ref={sectionRef} id="talk" className="w-full mt-60" aria-labelledby="talk-title">
       <div className="relative">
-        <div className="sticky top-0 z-0 flex h-dvh flex-col max-sheet:overflow-y-auto">
-          <h2 id="talk-title" className={TITLE}>
+      <h2 id="talk-title" className={TITLE}>
             {title}
           </h2>
+
+          <p className="mx-auto mt-6 max-w-2xl font-text text-2xl leading-snug ">
+            {description}
+          </p>
+
+        <div className="sticky top-0 z-0 flex h-dvh flex-col max-sheet:overflow-y-auto">
           <div className={ROW}>
             <div className="flex justify-center">
               <div className="@container relative w-[min(100%,52vh)] max-sheet:w-[min(70%,30dvh)]">
@@ -95,9 +100,9 @@ export function TalkScrolly({ title, steps }: { title: string; steps: TalkStep[]
                       >
                         {step.label}
                       </p>
-                      <span className="mt-[0.55em] grid w-[46%] grid-cols-2 gap-[0.28em]">
+                      <span className="mt-[0.55em] grid w-[20%] grid-cols-2 gap-[0.28em]">
                         {Array.from({ length: 4 }, (_, stitch) => (
-                          <CrossStitch key={stitch} className="block h-auto w-full" fill={COLOR[step.id]} />
+                          <CrossStitch key={stitch} className={`block h-auto w-full ${stitch > 1 ? "-translate-y-2" : ""} ${stitch % 2 != 0 ? "-translate-x-2" : ""}`} fill={COLOR[step.id]}  />
                         ))}
                       </span>
                     </div>

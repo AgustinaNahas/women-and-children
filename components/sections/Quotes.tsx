@@ -1,6 +1,7 @@
 "use client";
 
-import { useLayoutEffect, useRef, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 import type { Locale } from "@/content/types";
 import { publicPath } from "@/lib/site";
 
@@ -25,6 +26,33 @@ const PLACES = [
 ] as const;
 
 const PHRASE = /women and children|women, children/i;
+const GROW = "560ms cubic-bezier(0.16, 1, 0.3, 1)";
+const LACE = { width: 623, height: 400 };
+
+function fitLace(viewportWidth: number, viewportHeight: number): Origin {
+  const ratio = LACE.width / LACE.height;
+  const maxWidth = viewportWidth * 0.8;
+  const maxHeight = viewportHeight * 0.8;
+  let width = maxWidth;
+  let height = width / ratio;
+  if (height > maxHeight) {
+    height = maxHeight;
+    width = height * ratio;
+  }
+  return {
+    top: (viewportHeight - height) / 2,
+    left: (viewportWidth - width) / 2,
+    width,
+    height,
+  };
+}
+
+type Origin = {
+  top: number;
+  left: number;
+  width: number;
+  height: number;
+};
 
 export function Quotes({
   locale,
@@ -38,6 +66,8 @@ export function Quotes({
   translationLabel: string;
 }) {
   const sectionRef = useRef<HTMLElement>(null);
+  const openerRef = useRef<HTMLButtonElement>(null);
+  const [open, setOpen] = useState<{ quote: QuoteCard; origin: Origin } | null>(null);
   const stageHeight =
     quotes.length > 6
       ? "sheet:h-[108vh] 2xl:h-[135vh]"
@@ -115,10 +145,27 @@ export function Quotes({
               locale={locale}
               translationLabel={translationLabel}
               place={place}
+              hidden={open?.quote.slug === quote.slug}
+              onOpen={(origin, opener) => {
+                openerRef.current = opener;
+                setOpen({ quote, origin });
+              }}
             />
           );
         })}
       </div>
+      {open ? (
+        <QuoteStage
+          quote={open.quote}
+          origin={open.origin}
+          locale={locale}
+          translationLabel={translationLabel}
+          onClose={() => {
+            setOpen(null);
+            openerRef.current?.focus();
+          }}
+        />
+      ) : null}
     </section>
   );
 }
@@ -128,16 +175,22 @@ function LaceQuote({
   locale,
   translationLabel,
   place,
+  hidden,
+  onOpen,
 }: {
   quote: QuoteCard;
   locale: Locale;
   translationLabel: string;
   place: (typeof PLACES)[number];
+  hidden: boolean;
+  onOpen: (origin: Origin, opener: HTMLButtonElement) => void;
 }) {
+  const quoteId = `quote-${quote.slug}`;
+
   return (
     <figure
       data-speed={place.speed}
-      className="relative flex w-full max-w-[24rem] flex-col items-center justify-center bg-[length:100%_100%] bg-center bg-no-repeat px-[15%] py-[13%] sheet:absolute sheet:block sheet:aspect-[694/446] sheet:w-(--q-w) sheet:max-w-none sheet:px-0 sheet:py-0 sheet:left-(--q-l) sheet:top-(--q-t)"
+      className={`relative flex w-full max-w-[24rem] flex-col items-center justify-center bg-[length:100%_100%] bg-center bg-no-repeat px-[15%] py-[13%] sheet:absolute sheet:block sheet:aspect-[694/446] sheet:w-(--q-w) sheet:max-w-none sheet:px-0 sheet:py-0 sheet:left-(--q-l) sheet:top-(--q-t) ${hidden ? "invisible" : ""}`}
       style={
         {
           "--q-l": place.left,
@@ -148,14 +201,15 @@ function LaceQuote({
       }
     >
       <blockquote
-        className="m-0 flex w-full flex-col items-center justify-center gap-2 text-center text-ink sheet:absolute sheet:top-[22%] sheet:right-[16%] sheet:bottom-[24%] sheet:left-[16%] sheet:w-auto"
+        id={quoteId}
+        className="m-0 flex w-full flex-col items-center justify-center gap-2 text-center text-ink sheet:absolute sheet:top-[26%] sheet:right-[18%] sheet:bottom-[24%] sheet:left-[18%] sheet:w-auto"
         lang="en"
       >
-        <p className="m-0 font-text text-[1.05rem] leading-snug text-thread sheet:text-[clamp(calc(0.72rem-2px),calc(0.95vw-2px),calc(0.98rem-2px))] 2xl:text-[clamp(calc(0.9rem-2px),calc(1.2vw-2px),calc(1.25rem-2px))]">
+        <p className="m-0 pt-4 font-text text-[1.05rem] leading-snug text-thread sheet:text-[clamp(calc(0.72rem-2px),calc(0.95vw-2px),calc(0.98rem-2px))] 2xl:text-[clamp(calc(0.9rem-2px),calc(1.2vw-2px),calc(1.25rem-2px))]">
           {emphasize(quote.text)}
         </p>
         <footer>
-          <cite className="font-text text-sm not-italic text-thread sheet:text-[calc(0.72rem-2px)] 2xl:text-[calc(1rem-2px)]">
+          <cite className="font-text text-sm not-italic text-thread sheet:text-[calc(0.72rem-2px)]">
             <span className="sheet:sr-only">{`${quote.speaker}. `}</span>
             {quote.country}
           </cite>
@@ -166,7 +220,174 @@ function LaceQuote({
           {`${translationLabel}. ${quote.translation}`}
         </p>
       ) : null}
+      <button
+        type="button"
+        className="absolute inset-0 cursor-pointer border-0 bg-transparent p-0"
+        aria-haspopup="dialog"
+        aria-expanded={hidden}
+        aria-labelledby={quoteId}
+        onClick={(event) => {
+          const figure = event.currentTarget.parentElement;
+          if (!figure) return;
+          const rect = figure.getBoundingClientRect();
+          onOpen(
+            { top: rect.top, left: rect.left, width: rect.width, height: rect.height },
+            event.currentTarget,
+          );
+        }}
+      />
     </figure>
+  );
+}
+
+function QuoteStage({
+  quote,
+  origin,
+  locale,
+  translationLabel,
+  onClose,
+}: {
+  quote: QuoteCard;
+  origin: Origin;
+  locale: Locale;
+  translationLabel: string;
+  onClose: () => void;
+}) {
+  const panelRef = useRef<HTMLDivElement>(null);
+  const onCloseRef = useRef(onClose);
+  const closeRef = useRef<() => void>(() => {});
+  const closing = useRef(false);
+  const reduce = useRef(false);
+  const timer = useRef(0);
+  const [grown, setGrown] = useState(false);
+  const [viewport, setViewport] = useState({ width: 0, height: 0 });
+  const textId = "quote-stage-text";
+
+  onCloseRef.current = onClose;
+  closeRef.current = () => {
+    if (closing.current) return;
+    closing.current = true;
+    if (reduce.current) {
+      onCloseRef.current();
+      return;
+    }
+    setGrown(false);
+    timer.current = window.setTimeout(() => onCloseRef.current(), 620);
+  };
+
+  useLayoutEffect(() => {
+    const measure = () => setViewport({ width: window.innerWidth, height: window.innerHeight });
+    measure();
+    window.addEventListener("resize", measure);
+    reduce.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const id = reduce.current ? 0 : window.setTimeout(() => setGrown(true), 32);
+    if (reduce.current) setGrown(true);
+    return () => {
+      window.clearTimeout(id);
+      window.removeEventListener("resize", measure);
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    const gap = window.innerWidth - root.clientWidth;
+    const previousOverflow = root.style.overflow;
+    const previousPadding = document.body.style.paddingRight;
+    root.style.overflow = "hidden";
+    if (gap > 0) document.body.style.paddingRight = `${gap}px`;
+    return () => {
+      root.style.overflow = previousOverflow;
+      document.body.style.paddingRight = previousPadding;
+    };
+  }, []);
+
+  useEffect(() => {
+    panelRef.current?.focus();
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape" || event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        closeRef.current();
+      }
+      if (event.key === "Tab") event.preventDefault();
+    };
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      window.clearTimeout(timer.current);
+    };
+  }, []);
+
+  const fitted = fitLace(viewport.width, viewport.height);
+  const frame: CSSProperties = grown
+    ? fitted
+    : { top: origin.top, left: origin.left, width: origin.width, height: origin.height };
+
+  return createPortal(
+    <div className="fixed inset-0 z-[70] cursor-pointer">
+      <div
+        className="absolute inset-0 bg-black"
+        style={{
+          opacity: grown ? 1 : 0,
+          transition: reduce.current ? undefined : `opacity ${GROW}`,
+        }}
+        onClick={() => closeRef.current()}
+      />
+      <div
+        ref={panelRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={textId}
+        tabIndex={-1}
+        className="absolute overflow-hidden bg-[length:100%_100%] bg-center bg-no-repeat outline-none"
+        style={{
+          ...frame,
+          backgroundImage: `url("${publicPath("/puntilla.png")}")`,
+          transition: reduce.current ? undefined : `top ${GROW}, left ${GROW}, width ${GROW}, height ${GROW}`,
+        }}
+        onClick={() => closeRef.current()}
+      >
+        <blockquote
+          className="absolute top-[22%] right-[18%] bottom-[22%] left-[18%] m-0 flex flex-col items-center justify-center gap-[clamp(0.75rem,2vh,1.5rem)] text-center"
+          lang="en"
+        >
+          <p
+            id={textId}
+            className="m-0 font-text leading-snug text-thread"
+            style={{
+              fontSize: grown ? "clamp(1.45rem, 3.15vw, 2.85rem)" : "clamp(0.72rem, 0.95vw, 1.05rem)",
+              transition: reduce.current ? undefined : `font-size ${GROW}`,
+            }}
+          >
+            {emphasize(quote.text)}
+          </p>
+          <footer>
+            <cite
+              className="font-text not-italic text-thread"
+              style={{
+                fontSize: grown ? "clamp(1rem, 1.7vw, 1.4rem)" : "0.72rem",
+                transition: reduce.current ? undefined : `font-size ${GROW}`,
+              }}
+            >
+              <span className="sr-only">{`${quote.speaker}. `}</span>
+              {quote.country}
+            </cite>
+          </footer>
+          {quote.translation ? (
+            <p
+              className="m-0 max-w-[36ch] font-text leading-snug text-thread"
+              lang={locale}
+              style={{
+                fontSize: grown ? "clamp(0.95rem, 1.45vw, 1.25rem)" : "0.72rem",
+                transition: reduce.current ? undefined : `font-size ${GROW}`,
+              }}
+            >
+              {`${translationLabel}. ${quote.translation}`}
+            </p>
+          ) : null}
+        </blockquote>
+      </div>
+    </div>,
+    document.body,
   );
 }
 

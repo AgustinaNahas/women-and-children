@@ -138,7 +138,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         />
         <header
-          className="relative flex min-h-dvh flex-col overflow-x-hidden bg-linen bg-contain pb-6 text-center text-ink"
+          className="relative flex min-h-[85vh] flex-col overflow-x-hidden bg-linen bg-contain pb-6 text-center text-ink"
           style={{ backgroundImage: `url("${publicPath("/tela.png")}")` }}
         >
           <LanguageSwitch
@@ -146,15 +146,15 @@ export default async function LocaleLayout({
             label={content.ui.languageLabel}
             names={content.ui.languages}
           />
-          <div className="flex flex-1 flex-col justify-center gap-[clamp(0.75rem,2vh,1.5rem)] px-5 py-4 pb-6">
+          <div className="flex flex-1 flex-col justify-center gap-[clamp(0.75rem,2vh,1.5rem)] px-5 ">
             <div className="flex w-full min-w-0 translate-x-8 justify-end overflow-hidden">
               <StitchPattern rows={heroTopRightPattern.rows} tile={heroTopRightPattern.tile} reveal />
             </div>
-            <div className="mx-auto max-w-[1200px]">
-              <h1 className="mt-2 block font-script text-[clamp(3.25rem,14vw,9.375rem)] leading-none font-normal text-balance text-thread">
+            <div className="w-full mx-auto max-w-[1200px]">
+              <h1 className="mt-2 block font-script text-[clamp(3.25rem,14vw,9.375rem)] leading-none font-normal text-balance text-thread text-left">
                 {content.header.script}
               </h1>
-              <p className="mt-3 max-w-lg text-left font-text text-[clamp(1.35rem,5vw,2.25rem)] leading-snug font-normal text-balance text-thread">
+              <p className="mt-3 max-w-xl text-left font-text text-[clamp(1.35rem,5vw,2.25rem)] leading-snug font-normal text-balance text-thread">
                 {content.header.title}
               </p>
             </div>

@@ -70,9 +70,16 @@ const en: Content = {
         caption: "of total speeches mentioned women.",
       },
       {
+        id: "asked",
+        title: "",
+        body: "",
+        figure: null,
+        caption: "And when we asked how women are mentioned, we saw that...",
+      },
+      {
         id: "outline",
         title: "",
-        body: "And when we asked how women are mentioned, we saw that in",
+        body: "",
         figure: "43%",
         caption: "of mentions of women also mentioned children or girls.",
       },
@@ -139,12 +146,14 @@ const en: Content = {
     mixedLabel: "Mixed",
     victimsLabel: "Victims",
     intro:
-      "Each cluster is a mention of women and children. Color shows how that mention portrays them.",
-    grouped: "Mentions ordered as agents, then mixed, then victims.",
+      "In UNGA 81, these categories were reflected as follows:",
+    flowerRef: "Each flower represents whenever 'women and children' was mentioned in a country's speech.",
+    grouped: "This is how 'women and children' were mentioned in the speeches.",
     card: "We saw that in {percent}% of the cases Women & Children are portrayed as victims.",
   },
   talk: {
-    title: "How do we talk about woman?",
+    title: "How are women perceived?",
+    description: "When we analysed the speeches, we identified three categories.",
     steps: [
       {
         id: "agents",

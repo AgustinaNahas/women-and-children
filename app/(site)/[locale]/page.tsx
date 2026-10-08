@@ -16,6 +16,7 @@ import { Flower } from "@/components/charts/Flower";
 import { getContent } from "@/content";
 import { countCategories, getFigures, getMosaicCells, getSpeech } from "@/lib/charts";
 import { getPortrayalMentions } from "@/lib/portrayals";
+import { getSpeechTiles } from "@/lib/speeches";
 import { isLocale } from "@/lib/locales";
 import { fill, formatDate } from "@/lib/text";
 
@@ -36,6 +37,7 @@ export default async function Page({
     percent: Math.round((figures.withWomen / figures.scanned) * 100),
   };
   const portrayals = getPortrayalMentions();
+  const speeches = getSpeechTiles();
   const victimShare = portrayals.filter((mention) => mention.kind === "victims").length;
   const victimPercent = new Intl.NumberFormat(raw, {
     minimumFractionDigits: 1,
@@ -51,7 +53,7 @@ export default async function Page({
   return (
     <main id="content">
       <section id="opening" aria-labelledby="opening-title">
-        <div className="px-5 pt-[clamp(3rem,8vw,6rem)]">
+        <div className="w-full mx-auto max-w-[1200px] px-5 pt-[clamp(3rem,8vw,6rem)]">
           <ScriptHeading
             id="opening-title"
             as="h2"
@@ -92,6 +94,7 @@ export default async function Page({
         scanned={figures.scanned}
         withWomen={figures.withWomen}
         phrase={figures.phrase}
+        speeches={speeches}
       />
 
       <Quotes
@@ -108,7 +111,10 @@ export default async function Page({
         source={content.frame.source}
       />
 
+      <TalkScrolly title={content.talk.title} description={content.talk.description} steps={content.talk.steps} />
+
       <PortrayalScrolly
+        flowerRef={content.portrayal.flowerRef}
         locale={raw}
         agentsLabel={content.portrayal.agentsLabel}
         mixedLabel={content.portrayal.mixedLabel}
@@ -118,8 +124,6 @@ export default async function Page({
         card={fill(content.portrayal.card, { percent: victimPercent }, raw)}
         mentions={portrayals}
       />
-
-      <TalkScrolly title={content.talk.title} steps={content.talk.steps} />
 
       <OrientationScrolly
         title={content.orientation.title}

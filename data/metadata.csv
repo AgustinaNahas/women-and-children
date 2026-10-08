@@ -1,0 +1,592 @@
+id_speech,num_of_appearance,date_time,iso_country,country,region,subregion,security_council_member,g20_member,speaker_name,speaker_level,speaker_pronouns,speaker_gender,ficha_url,statement_web_url,transcript_url,source,original language,transformation
+M_1,1,22/09/2026,,Secretary-General of the United Nations,,,,,"His Excellency
+António Guterres
+Secretary-General",SG,he/him,male,https://gadebate.un.org/en/81/secretary-general-united-nations,https://gadebate.un.org/sites/default/files/gastatements/81/unsg_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_1.txt,pdf_en,,none
+M_2,2,22/09/2026,,President of the General Assembly (opening),,,,,"His Excellency
+Dr. Khalilur Rahman
+President of the General Assembly",PGA,he/him,male,https://gadebate.un.org/en/81/president-general-assembly-opening,https://gadebate.un.org/sites/default/files/gastatements/81/pgaopening_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_2.txt,pdf_en,english,none
+M_3,3,22/09/2026,BRA,Brazil,Latin America and the Caribbean,South America,Not member,Member,"His Excellency
+Luiz Inácio Lula Da Silva
+President",HS,he/him,male,https://gadebate.un.org/en/81/brazil,https://gadebate.un.org/en/node/81024/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_3.txt,transcript_ai,english,none
+M_4,4,22/09/2026,USA,United States of America,Latin America and the Caribbean,Northern America,Permanent member,Member,"His Excellency
+Donald Trump
+President",HS,he/him,male,https://gadebate.un.org/en/81/united-states-america,https://gadebate.un.org/en/node/81193/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_4.txt,transcript_ai,english,none
+M_5,5,22/09/2026,JOR,Jordan,Asia,Western Asia,Not member,Not member,"His Majesty
+His Majesty Abdullah II ibn Al Hussein
+King",HS,he/him,male,https://gadebate.un.org/en/81/jordan,https://gadebate.un.org/sites/default/files/gastatements/81/jo_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_5.txt,pdf_en,arabic,none
+M_6,6,22/09/2026,TUR,Türkiye,Asia,Western Asia,Not member,Member,"His Excellency
+Recep Tayyip Erdoğan
+President",HS,he/him,male,https://gadebate.un.org/en/81/turkiye,https://gadebate.un.org/sites/default/files/gastatements/81/tr_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_6.txt,pdf_en,english,none
+M_7,7,22/09/2026,KGZ,Kyrgyzstan,Asia,Central Asia,Not member,Not member,"His Excellency
+Sadyr Zhaparov
+President",HS,he/him,male,https://gadebate.un.org/en/81/kyrgyzstan,https://gadebate.un.org/sites/default/files/gastatements/81/kg_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_7.txt,pdf_en,,none
+M_8,8,22/09/2026,QAT,Qatar,Asia,Western Asia,Not member,Not member,"His Highness
+His Highness Sheikh Tamim bin Hamad Al Thani
+Amir",HS,he/him,male,https://gadebate.un.org/en/81/qatar,https://gadebate.un.org/en/node/81144/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_8.txt,transcript_ai,english,none
+M_9,9,22/09/2026,LTU,Lithuania,Europe,Northern Europe,Not member,Not member,"His Excellency
+Gitanas Nausėda
+President",HS,he/him,male,https://gadebate.un.org/en/81/lithuania,https://gadebate.un.org/sites/default/files/gastatements/81/lt_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_9.txt,pdf_en,english,none
+M_10,10,22/09/2026,PER,Peru,Latin America and the Caribbean,South America,Not member,Not member,"Her Excellency
+Keiko Sofia Fujimori Higuchi
+President",HS,she/her,female,https://gadebate.un.org/en/81/peru,https://gadebate.un.org/en/node/81213/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_10.txt,transcript_ai,english,none
+M_11,11,22/09/2026,CHL,Chile,Latin America and the Caribbean,South America,Not member,Not member,"His Excellency
+José Antonio Kast
+President",HS,he/him,male,https://gadebate.un.org/en/81/chile,https://gadebate.un.org/en/node/81035/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_11.txt,transcript_ai,spanish,none
+M_12,12,22/09/2026,FRA,France,Europe,Western Europe,Permanent member,Member,"His Excellency
+Emmanuel Macron
+President",HS,he/him,male,https://gadebate.un.org/en/81/france,https://gadebate.un.org/en/node/81064/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_12.txt,transcript_ai,french,none
+M_13,13,22/09/2026,FIN,Finland,Europe,Northern Europe,Not member,Not member,"His Excellency
+Alexander Stubb
+President",HS,he/him,male,https://gadebate.un.org/en/81/finland,https://gadebate.un.org/sites/default/files/gastatements/81/fi_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_13.txt,pdf_en,english,none
+M_14,14,22/09/2026,LUX,Luxembourg,Europe,Western Europe,Not member,Not member,"His Royal Highness
+His Royal Highness Guillaume of Luxembourg
+Grand Duke",HS,he/him,male,https://gadebate.un.org/en/81/luxembourg,https://gadebate.un.org/en/node/81104/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_14.txt,transcript_ai,,none
+M_15,15,22/09/2026,AGO,Angola,Africa,Middle Africa,Not member,Not member,"His Excellency
+João Manuel Gonçalves Lourenço
+President",HS,he/him,male,https://gadebate.un.org/en/81/angola,https://gadebate.un.org/sites/default/files/gastatements/81/ao_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_15.txt,pdf_en,english,none
+M_16,16,22/09/2026,MNG,Mongolia,Asia,Eastern Asia,Not member,Not member,"His Excellency
+Khurelsukh Ukhnaa
+President",HS,he/him,male,https://gadebate.un.org/en/81/mongolia,https://gadebate.un.org/sites/default/files/gastatements/81/mn_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_16.txt,pdf_en,english,none
+M_17,17,22/09/2026,KOR,Republic of Korea,Asia,Eastern Asia,Not member,Not member,"His Excellency
+Lee Jae Myung
+President",HS,he/him,male,https://gadebate.un.org/en/81/republic-korea,https://gadebate.un.org/sites/default/files/gastatements/81/kr_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_17.txt,pdf_en,english,none
+M_18,18,22/09/2026,SUR,Suriname,Latin America and the Caribbean,South America,Not member,Not member,"Her Excellency
+Jennifer Geerlings-Simons
+President",HS,she/her,female,https://gadebate.un.org/en/81/suriname,https://gadebate.un.org/sites/default/files/gastatements/81/sr_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_18.txt,pdf_en,english,none
+M_19,19,22/09/2026,SLE,Sierra Leone,Africa,Southern Africa,Not member,Not member,"His Excellency
+Julius Maada Bio
+President",HS,he/him,male,https://gadebate.un.org/en/81/sierra-leone,https://gadebate.un.org/sites/default/files/gastatements/81/sl_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_19.txt,pdf_en,english,none
+M_20,20,22/09/2026,BIH,Bosnia and Herzegovina,Europe,Southern Europe,Not member,Not member,"His Excellency
+Denis Bećirović
+Chairman of the Presidency",HS,he/him,male,https://gadebate.un.org/en/81/bosnia-and-herzegovina,https://gadebate.un.org/sites/default/files/gastatements/81/ba_en_0.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_20.txt,pdf_en,english,none
+M_21,21,22/09/2026,DMA,Dominica,Latin America and the Caribbean,Caribbean,Not member,Not member,"Her Excellency
+Sylvanie Burton
+President",HS,she/her,female,https://gadebate.un.org/en/81/dominica,https://gadebate.un.org/sites/default/files/gastatements/81/dm_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_21.txt,pdf_en,english,none
+M_22,22,22/09/2026,CHE,Switzerland,Europe,Western Europe,Not member,Not member,"His Excellency
+Guy Parmelin
+President",HS,he/him,male,https://gadebate.un.org/en/81/switzerland,https://gadebate.un.org/en/node/81175/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_22.txt,transcript_ai,english,none
+M_23,23,22/09/2026,VNM,Viet Nam,Asia,South-eastern Asia,Not member,Not member,"His Excellency
+To Lam
+President",HS,he/him,male,https://gadebate.un.org/en/81/viet-nam,https://gadebate.un.org/sites/default/files/gastatements/81/vn_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_23.txt,pdf_en,english,none
+M_24,24,22/09/2026,SYC,Seychelles,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Mathew Antonio Patrick Herminie
+President",HS,he/him,male,https://gadebate.un.org/en/81/seychelles,https://gadebate.un.org/sites/default/files/gastatements/81/sc_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_24.txt,pdf_en,english,none
+M_25,25,22/09/2026,NRU,Naoero,Oceania,Micronesia,Not member,Not member,"His Excellency
+David Ranibok Adeang
+President",HS,he/him,male,https://gadebate.un.org/en/81/naoero,https://gadebate.un.org/sites/default/files/gastatements/81/nr_en_0.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_25.txt,pdf_en,english,none
+M_26,26,22/09/2026,TZA,United Republic of Tanzania,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Deogratius Ndejembi
+Vice-President",HS,she/her,female,https://gadebate.un.org/en/81/united-republic-tanzania,https://gadebate.un.org/sites/default/files/gastatements/81/tz_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_26.txt,pdf_en,english,none
+M_27,27,22/09/2026,BTN,Bhutan,Asia,Southern Asia,Not member,Not member,"His Excellency
+Tshering Tobgay
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/bhutan,https://gadebate.un.org/sites/default/files/gastatements/81/bt_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_27.txt,pdf_en,english,none
+M_28,28,22/09/2026,TTO,Trinidad and Tobago,Latin America and the Caribbean,Caribbean,Not member,Not member,"Her Excellency
+Kamla Persad-Bissessar
+Prime Minister",HG,she/her,female,https://gadebate.un.org/en/81/trinidad-and-tobago,https://gadebate.un.org/en/node/81183/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_28.txt,transcript_ai,english,none
+M_29,29,22/09/2026,JPN,Japan,Asia,Eastern Asia,Not member,Member,"Her Excellency
+Takaichi Sanae
+Prime Minister",HG,she/her,female,https://gadebate.un.org/en/81/japan,https://gadebate.un.org/sites/default/files/gastatements/81/jp_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_29.txt,pdf_en,english,none
+M_30,30,22/09/2026,GBR,United Kingdom of Great Britain and Northern Ireland,Europe,Northern Europe,Permanent member,Member,"His Excellency
+Andy Burnham
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/united-kingdom-great-britain-and-northern-ireland,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_GB_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_30.txt,audio_en,english,whisper
+M_31,31,22/09/2026,HRV,Croatia,Europe,Southern Europe,Not member,Not member,"His Excellency
+Andrej Plenković
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/croatia,https://gadebate.un.org/sites/default/files/gastatements/81/hr_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_31.txt,pdf_en,english,none
+M_32,32,22/09/2026,BEL,Belgium,Europe,Western Europe,Not member,Not member,"His Excellency
+Maxime Prévot
+Deputy Prime Minister",CD,he/him,male,https://gadebate.un.org/en/81/belgium,https://gadebate.un.org/sites/default/files/gastatements/81/be_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_32.txt,pdf_en,french,none
+M_33,33,22/09/2026,MAR,Morocco,Africa,Northern Africa,Not member,Not member,"His Excellency
+Nasser Bourita
+Minister of Foreign Affairs, African Cooperation and Moroccans Abroad",CD,he/him,male,https://gadebate.un.org/en/81/morocco,https://gadebate.un.org/en/node/81119/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-22/M_33.txt,transcript_ai,english,none
+M_34,1,23/09/2026,SYR,Syrian Arab Republic,Asia,Western Asia,Not member,Not member,"His Excellency
+Ahmad Al-Sharaa
+President",HS,he/him,male,https://gadebate.un.org/en/81/syrian-arab-republic,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_SY_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_34.txt,audio_en,arabic,whisper
+M_35,2,23/09/2026,LVA,Latvia,Europe,Northern Europe,Non-permanent member,Not member,"His Excellency
+Edgars Rinkēvičs
+President",HS,he/him,male,https://gadebate.un.org/en/81/latvia,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_LV_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_35.txt,audio_en,english,whisper
+M_36,3,23/09/2026,ROU,Romania,Europe,Eastern Europe,Not member,Not member,"His Excellency
+Nicuşor-Daniel Dan
+President",HS,he/him,male,https://gadebate.un.org/en/81/romania,https://gadebate.un.org/sites/default/files/gastatements/81/ro_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_36.txt,pdf_en,,none
+M_37,4,23/09/2026,BDI,Burundi,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Évariste Ndayishimiye
+President",HS,he/him,male,https://gadebate.un.org/en/81/burundi,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_BI_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_37.txt,audio_en,french,whisper
+M_38,5,23/09/2026,IRN,Iran (Islamic Republic of),Asia,Southern Asia,Not member,Not member,"His Excellency
+Masoud Pezeshkian
+President",HS,he/him,male,https://gadebate.un.org/en/81/iran-islamic-republic,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_IR_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_38.txt,audio_en,english,whisper
+M_39,6,23/09/2026,PRY,Paraguay,Latin America and the Caribbean,South America,Not member,Not member,"His Excellency
+Santiago Peña Palacios
+President",HS,he/him,male,https://gadebate.un.org/en/81/paraguay,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_PY_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_39.txt,audio_en,,whisper
+M_40,7,23/09/2026,CZE,Czechia,Europe,Eastern Europe,Not member,Not member,"His Excellency
+Petr Pavel
+President",HS,he/him,male,https://gadebate.un.org/en/81/czechia,https://gadebate.un.org/sites/default/files/gastatements/81/cz_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_40.txt,pdf_en,czech,none
+M_41,8,23/09/2026,ARG,Argentina,Latin America and the Caribbean,South America,Not member,Member,"His Excellency
+Javier Gerardo Milei
+President",HS,he/him,male,https://gadebate.un.org/en/81/argentina,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_AR_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_41.txt,audio_en,spanish,whisper
+M_42,9,23/09/2026,EST,Estonia,Europe,Northern Europe,Not member,Not member,"His Excellency
+Alar Karis
+President",HS,he/him,male,https://gadebate.un.org/en/81/estonia,https://gadebate.un.org/sites/default/files/gastatements/81/ee_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_42.txt,pdf_en,english,none
+M_43,10,23/09/2026,TLS,Timor-Leste,Asia,South-eastern Asia,Not member,Not member,"His Excellency
+José Ramos-Horta
+President",HS,he/him,male,https://gadebate.un.org/en/81/timor-leste,https://gadebate.un.org/sites/default/files/gastatements/81/tl_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_43.txt,pdf_en,english,none
+M_44,11,23/09/2026,LBY,Libya,Africa,Northern Africa,Not member,Not member,"His Excellency
+Mohamed Younis Menfi
+President",HS,he/him,male,https://gadebate.un.org/en/81/libya,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_LY_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_44.txt,audio_en,arabic,whisper
+M_45,12,23/09/2026,PLW,Palau,Oceania,Micronesia,Not member,Not member,"His Excellency
+Surangel Whipps
+President",HS,he/him,male,https://gadebate.un.org/en/81/palau,https://gadebate.un.org/sites/default/files/gastatements/81/pw_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_45.txt,pdf_en,english,none
+M_46,13,23/09/2026,CYP,Cyprus,Asia,Western Asia,Not member,Not member,"His Excellency
+Nikos Christodoulides
+President",HS,he/him,male,https://gadebate.un.org/en/81/cyprus,https://gadebate.un.org/sites/default/files/gastatements/81/cy_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_46.txt,pdf_en,english,none
+M_47,14,23/09/2026,DOM,Dominican Republic,Latin America and the Caribbean,Caribbean,Not member,Not member,"His Excellency
+Luis Rodolfo Abinader Corona
+President",HS,he/him,male,https://gadebate.un.org/en/81/dominican-republic,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_DR_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_47.txt,audio_en,english,whisper
+M_48,15,23/09/2026,BWA,Botswana,Africa,Southern Africa,Not member,Not member,"His Excellency
+Duma Gideon Boko
+President",HS,he/him,male,https://gadebate.un.org/en/81/botswana,https://gadebate.un.org/sites/default/files/gastatements/81/bw_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_48.txt,pdf_en,english,none
+M_49,16,23/09/2026,ECU,Ecuador,Latin America and the Caribbean,South America,Not member,Not member,"His Excellency
+Daniel Roy-Gilchrist Noboa Azin
+Constitutional President",HS,he/him,male,https://gadebate.un.org/en/81/ecuador,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_EC_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_49.txt,audio_en,english,whisper
+M_50,17,23/09/2026,UKR,Ukraine,Europe,Eastern Europe,Not member,Not member,"His Excellency
+Volodymyr Zelenskyy
+President",HS,he/him,male,https://gadebate.un.org/en/81/ukraine,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_UA_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_50.txt,audio_en,english,whisper
+M_51,18,23/09/2026,BGR,Bulgaria,Europe,Eastern Europe,Not member,Not member,"Her Excellency
+Iliana Iotova
+President",HS,she/her,female,https://gadebate.un.org/en/81/bulgaria,https://gadebate.un.org/sites/default/files/gastatements/81/bg_fr.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_51.txt,pdf_other,french,translate
+M_52,19,23/09/2026,CAF,Central African Republic,Africa,Middle Africa,Not member,Not member,"His Excellency
+Faustin Archange Touadera
+Head of State",HS,he/him,male,https://gadebate.un.org/en/81/central-african-republic,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_CF_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_52.txt,audio_en,english,whisper
+M_53,20,23/09/2026,PAN,Panama,Latin America and the Caribbean,Central America,Non-permanent member,Not member,"His Excellency
+José Raúl Mulino Quintero
+President",HS,he/him,male,https://gadebate.un.org/en/81/panama,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_PA_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_53.txt,audio_en,english,whisper
+M_54,21,23/09/2026,ETH,Ethiopia,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Taye Atskeselassie Amde
+President",HS,he/him,male,https://gadebate.un.org/en/81/ethiopia,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_ET_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_54.txt,audio_en,english,whisper
+M_55,22,23/09/2026,POL,Poland,Europe,Eastern Europe,Not member,Not member,"His Excellency
+Karol Nawrocki
+President",HS,he/him,male,https://gadebate.un.org/en/81/poland,https://gadebate.un.org/sites/default/files/gastatements/81/pl_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_55.txt,pdf_en,english,none
+M_56,23,23/09/2026,NAM,Namibia,Africa,Southern Africa,Not member,Not member,"Her Excellency
+Netumbo Nandi-Ndaitwah
+President",HS,she/her,female,https://gadebate.un.org/en/81/namibia,https://gadebate.un.org/sites/default/files/gastatements/81/na_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_56.txt,pdf_en,english,none
+M_57,24,23/09/2026,SVK,Slovakia,Europe,Eastern Europe,Not member,Not member,"His Excellency
+Peter Pellegrini
+President",HS,he/him,male,https://gadebate.un.org/en/81/slovakia,https://gadebate.un.org/sites/default/files/gastatements/81/sk_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_57.txt,pdf_en,english,none
+M_58,25,23/09/2026,KEN,Kenya,Africa,Eastern Africa,Not member,Not member,"His Excellency
+William Samoei Ruto
+President",HS,he/him,male,https://gadebate.un.org/en/81/kenya,https://gadebate.un.org/sites/default/files/gastatements/81/ke_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_58.txt,pdf_en,english,none
+M_59,26,23/09/2026,SRB,Serbia,Europe,Southern Europe,Not member,Not member,"His Excellency
+Aleksandar Vučić
+President",HS,he/him,male,https://gadebate.un.org/en/81/serbia,https://gadebate.un.org/sites/default/files/gastatements/81/rs_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_59.txt,pdf_en,english,none
+M_60,27,23/09/2026,MOZ,Mozambique,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Daniel Francisco Chapo
+President",HS,he/him,male,https://gadebate.un.org/en/81/mozambique,https://gadebate.un.org/sites/default/files/gastatements/81/mz_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_60.txt,pdf_en,english,none
+M_61,28,23/09/2026,GIN,Guinea,Africa,Southern Africa,Not member,Not member,"His Excellency
+Mamadi Doumbouya
+President",HS,he/him,male,https://gadebate.un.org/en/81/guinea,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_GN_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_61.txt,audio_en,french,whisper
+M_62,29,23/09/2026,SWZ,Eswatini,Africa,Southern Africa,Not member,Not member,"His Majesty
+King Mswati III
+Head of State",HS,he/him,male,https://gadebate.un.org/en/81/eswatini,https://gadebate.un.org/sites/default/files/gastatements/81/sz_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_62.txt,pdf_en,english,none
+M_63,30,23/09/2026,HND,Honduras,Latin America and the Caribbean,Central America,Not member,Not member,"His Excellency
+Nasry Juan Asfura Zablah
+President",HS,he/him,male,https://gadebate.un.org/en/81/honduras,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_HN_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_63.txt,audio_en,spanish,whisper
+M_64,31,23/09/2026,MNE,Montenegro,Europe,Southern Europe,Not member,Not member,"His Excellency
+Jakov Milatović
+President",HS,he/him,male,https://gadebate.un.org/en/81/montenegro,https://gadebate.un.org/sites/default/files/gastatements/81/me_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_64.txt,pdf_en,english,none
+M_65,32,23/09/2026,VEN,Venezuela (Bolivarian Republic of),Latin America and the Caribbean,South America,Not member,Not member,"Her Excellency
+Delcy Eloína Rodríguez Gómez
+Acting President",HS,he/him,male,https://gadebate.un.org/en/81/venezuela-bolivarian-republic,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_VE_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_65.txt,audio_en,spanish,whisper
+M_66,33,23/09/2026,UGA,Uganda,Africa,Eastern Africa,Not member,Not member,"Her Excellency
+Jessica Rose Epel Alupo
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/uganda,https://gadebate.un.org/sites/default/files/gastatements/81/ug_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_66.txt,pdf_en,english,none
+M_67,34,23/09/2026,RWA,Rwanda,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Justin Nsengiyumva
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/rwanda,https://gadebate.un.org/sites/default/files/gastatements/81/rw_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_67.txt,pdf_en,english,none
+M_68,35,23/09/2026,ESP,Spain,Europe,Southern Europe,Not member,Not member,"His Excellency
+Pedro Sánchez Pérez-Castejón
+President",HG,he/him,male,https://gadebate.un.org/en/81/spain,https://gadebate.un.org/sites/default/files/gastatements/81/es_es.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_68.txt,pdf_other,spanish,translate
+M_69,36,23/09/2026,AND,Andorra,Europe,Southern Europe,Not member,Not member,"His Excellency
+Xavier Espot Zamora
+Head of Government",HG,he/him,male,https://gadebate.un.org/en/81/andorra,https://gadebate.un.org/sites/default/files/gastatements/81/ad_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_69.txt,pdf_en,french,none
+M_70,37,23/09/2026,COD,Democratic Republic of the Congo,Africa,Middle Africa,Non-permanent member,Not member,"Her Excellency
+Judith Suminwa Tuluka
+Prime Minister",HG,she/her,female,https://gadebate.un.org/en/81/democratic-republic-congo,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_CD_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_70.txt,audio_en,french,whisper
+M_71,38,23/09/2026,ITA,Italy,Europe,Southern Europe,Not member,Member,"His Excellency
+Antonio Tajani
+Deputy Prime Minister",CD,he/him,male,https://gadebate.un.org/en/81/italy,https://gadebate.un.org/sites/default/files/gastatements/81/it_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_71.txt,pdf_en,english,none
+M_72,39,23/09/2026,UZB,Uzbekistan,Asia,Central Asia,Not member,Not member,"Her Excellency
+Saida Mirziyoyeva
+Head of Administration of the President",HS,he/him,female,https://gadebate.un.org/en/81/uzbekistan,https://gadebate.un.org/sites/default/files/gastatements/81/uz_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-23/M_72.txt,pdf_en,english,none
+M_73,1,24/09/2026,ZWE,Zimbabwe,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Emmerson Dambudzo Mnangagwa
+President",HS,he/him,male,https://gadebate.un.org/en/81/zimbabwe,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_ZW_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_73.txt,audio_en,english,whisper
+M_74,2,24/09/2026,MDG,Madagascar,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Michaël Randrianirina
+President of the Refoundation of the Republic",HS,he/him,male,https://gadebate.un.org/en/81/madagascar,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_MG_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_74.txt,audio_en,french,whisper
+M_75,3,24/09/2026,GHA,Ghana,Africa,Southern Africa,Not member,Not member,"His Excellency
+John Dramani Mahama
+President",HS,he/him,male,https://gadebate.un.org/en/81/ghana,https://gadebate.un.org/sites/default/files/gastatements/81/gh_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_75.txt,pdf_en,english,none
+M_76,4,24/09/2026,PSE,State of Palestine,Asia,Western Asia,Not member,Not member,"His Excellency
+Mahmoud Abbas
+President",HS,he/him,male,https://gadebate.un.org/en/81/palestine-state,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_PS_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_76.txt,audio_en,arabic,whisper
+M_77,5,24/09/2026,GUY,Guyana,Latin America and the Caribbean,South America,Not member,Not member,"His Excellency
+Mohamed Irfaan Ali
+President",HS,he/him,male,https://gadebate.un.org/en/81/guyana,https://gadebate.un.org/sites/default/files/gastatements/81/gy_en_0.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_77.txt,pdf_en,english,none
+M_78,6,24/09/2026,SOM,Somalia,Africa,Eastern Africa,Non-permanent member,Not member,"His Excellency
+Hassan Sheikh Mohamud
+President",HS,he/him,male,https://gadebate.un.org/en/81/somalia,https://gadebate.un.org/sites/default/files/gastatements/81/so_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_78.txt,pdf_en,english,none
+M_79,7,24/09/2026,COM,Comoros,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Azali Assoumani
+President",HS,he/him,male,https://gadebate.un.org/en/81/comoros,https://gadebate.un.org/en/node/81038/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_79.txt,transcript_ai,french,none
+M_80,8,24/09/2026,LBR,Liberia,Africa,Southern Africa,Non-permanent member,Not member,"His Excellency
+Joseph Nyuma Boakai
+President",HS,he/him,male,https://gadebate.un.org/en/81/liberia,https://gadebate.un.org/en/node/81100/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_80.txt,transcript_ai,english,none
+M_81,9,24/09/2026,BOL,Bolivia (Plurinational State of),Latin America and the Caribbean,South America,Not member,Not member,"His Excellency
+Rodrigo Paz Pereira
+Constitutional President",HS,he/him,male,https://gadebate.un.org/en/81/bolivia-plurinational-state,https://gadebate.un.org/en/node/81021/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_81.txt,transcript_ai,english,none
+M_82,10,24/09/2026,HUN,Hungary,Europe,Eastern Europe,Not member,Not member,"His Excellency
+András Bálint Baka
+President",HS,he/him,male,https://gadebate.un.org/en/81/hungary,https://gadebate.un.org/sites/default/files/gastatements/81/hu_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_82.txt,pdf_en,english,none
+M_83,11,24/09/2026,URY,Uruguay,Latin America and the Caribbean,South America,Not member,Not member,"His Excellency
+Yamandú Orsi
+President",HS,he/him,male,https://gadebate.un.org/en/81/uruguay,https://gadebate.un.org/en/node/81194/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_83.txt,transcript_ai,spanish,none
+M_84,12,24/09/2026,,European Union,Europe,,Not member,Member,"His Excellency
+António Costa
+President of the European Council",HS,he/him,male,https://gadebate.un.org/en/81/european-union,https://gadebate.un.org/sites/default/files/gastatements/81/eu_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_84.txt,pdf_en,french,none
+M_85,13,24/09/2026,GNQ,Equatorial Guinea,Africa,Middle Africa,Not member,Not member,"His Excellency
+Teodoro Nguema Obiang Mangue
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/equatorial-guinea,https://gadebate.un.org/en/node/81056/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_85.txt,transcript_ai,spanish,none
+M_86,14,24/09/2026,GMB,Gambia,Africa,Southern Africa,Not member,Not member,"His Excellency
+Mohammed Jallow
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/gambia-republic,https://gadebate.un.org/sites/default/files/gastatements/81/gm_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_86.txt,pdf_en,english,none
+M_87,15,24/09/2026,COL,Colombia,Latin America and the Caribbean,South America,Non-permanent member,Not member,"His Excellency
+José Manuel Restrepo
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/colombia,https://gadebate.un.org/en/node/81037/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_87.txt,transcript_ai,english,none
+M_88,16,24/09/2026,ISR,Israel,Asia,Western Asia,Not member,Not member,"His Excellency
+Benjamin Netanyahu
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/israel,https://gadebate.un.org/en/node/81086/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_88.txt,transcript_ai,english,none
+M_89,17,24/09/2026,PRT,Portugal,Europe,Southern Europe,Not member,Not member,"His Excellency
+Luís Montenegro
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/portugal,https://gadebate.un.org/en/node/81141/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_89.txt,transcript_ai,english,none
+M_90,18,24/09/2026,SEN,Senegal,Africa,Southern Africa,Not member,Not member,"His Excellency
+Bassirou Diomaye Diakhar Faye
+President",HS,he/him,male,https://gadebate.un.org/en/81/senegal,https://gadebate.un.org/en/node/81158/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_90.txt,transcript_ai,english,none
+M_91,19,24/09/2026,FJI,Fiji,Oceania,Melanesia,Not member,Not member,"His Excellency
+Ratu Naiqama Tawakecolati Lalabalavu
+President",HS,he/him,male,https://gadebate.un.org/en/81/fiji,https://gadebate.un.org/sites/default/files/gastatements/81/fj_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_91.txt,pdf_en,english,none
+M_92,20,24/09/2026,CIV,Côte d’Ivoire,Africa,Southern Africa,Not member,Not member,"His Excellency
+Tiémoko Meyliet Koné
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/cote-divoire,https://gadebate.un.org/en/node/81042/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_92.txt,transcript_ai,french,none
+M_93,21,24/09/2026,NGA,Nigeria,Africa,Southern Africa,Not member,Not member,"His Excellency
+Kashim Shettima
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/nigeria,https://gadebate.un.org/sites/default/files/gastatements/81/ng_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_93.txt,pdf_en,english,none
+M_94,22,24/09/2026,YEM,Yemen,Asia,Western Asia,Not member,Not member,"His Excellency
+Abdullah Abdulkader Al Alimi-Bawzer
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/yemen,https://gadebate.un.org/en/node/81199/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_94.txt,transcript_ai,arabic,none
+M_95,23,24/09/2026,KWT,Kuwait,Asia,Western Asia,Not member,Not member,"His Highness
+Sheikh Sabah Al-Khaled Al-Hamad Al-Mubarak Al-Sabah
+Crown Prince",CD,he/him,male,https://gadebate.un.org/en/81/kuwait,https://gadebate.un.org/en/node/81094/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_95.txt,transcript_ai,arabic,none
+M_96,24,24/09/2026,BRB,Barbados,Latin America and the Caribbean,Caribbean,Not member,Not member,"Her Excellency
+Mia Amor Mottley
+Prime Minister",HG,she/her,female,https://gadebate.un.org/en/81/barbados,https://gadebate.un.org/en/node/81015/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_96.txt,transcript_ai,english,none
+M_97,25,24/09/2026,ARM,Armenia,Asia,Western Asia,Not member,Not member,"His Excellency
+Nikol Pashinyan
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/armenia,https://gadebate.un.org/sites/default/files/gastatements/81/am_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_97.txt,pdf_en,english,none
+M_98,26,24/09/2026,THA,Thailand,Asia,South-eastern Asia,Not member,Not member,"His Excellency
+Anutin Charnvirakul
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/thailand,https://gadebate.un.org/en/node/81178/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_98.txt,transcript_ai,english,none
+M_99,27,24/09/2026,GEO,Georgia,Asia,Western Asia,Not member,Not member,"His Excellency
+Irakli Kobakhidzhe
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/georgia,https://gadebate.un.org/sites/default/files/gastatements/81/ge_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_99.txt,pdf_en,english,none
+M_100,28,24/09/2026,BGD,Bangladesh,Asia,Southern Asia,Not member,Not member,"His Excellency
+Tarique Rahman
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/bangladesh,https://gadebate.un.org/sites/default/files/gastatements/81/bd_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_100.txt,pdf_en,bd,none
+M_101,29,24/09/2026,NLD,Netherlands (Kingdom of the),Europe,Western Europe,Not member,Not member,"His Excellency
+Rob Jetten
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/netherlands-kingdom,https://gadebate.un.org/sites/default/files/gastatements/81/nl_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_101.txt,pdf_en,english,none
+M_102,30,24/09/2026,SVN,Slovenia,Europe,Southern Europe,Not member,Not member,"His Excellency
+Janez Janša
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/slovenia,https://gadebate.un.org/sites/default/files/gastatements/81/si_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_102.txt,pdf_en,english,none
+M_103,31,24/09/2026,GRC,Greece,Europe,Southern Europe,Non-permanent member,Not member,"His Excellency
+Kyriakos Mitsotakis
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/greece,https://gadebate.un.org/sites/default/files/gastatements/81/gr_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_103.txt,pdf_en,english,none
+M_104,32,24/09/2026,AUS,Australia,Oceania,Australia and New Zealand,Not member,Not member,"His Excellency
+Anthony Albanese
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/australia,https://gadebate.un.org/en/node/81009/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_104.txt,transcript_ai,english,none
+M_105,33,24/09/2026,IRL,Ireland,Europe,Northern Europe,Not member,Not member,"His Excellency
+Micheál Martin
+Taoiseach",HG,he/him,male,https://gadebate.un.org/en/81/ireland,https://gadebate.un.org/sites/default/files/gastatements/81/ie_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_105.txt,pdf_en,english,none
+M_106,34,24/09/2026,NPL,Nepal,Asia,Southern Asia,Not member,Not member,"His Excellency
+Balendra Shah
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/nepal,https://gadebate.un.org/sites/default/files/gastatements/81/np_en_0.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_106.txt,pdf_en,english,none
+M_107,35,24/09/2026,AUT,Austria,Europe,Western Europe,Not member,Member,"Her Excellency
+Beate Meinl-Reisinger
+Federal Minister for European and International Affairs",CD,she/her,female,https://gadebate.un.org/en/81/austria,https://gadebate.un.org/sites/default/files/gastatements/81/at_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_107.txt,pdf_en,english,none
+M_108,36,24/09/2026,ZAF,South Africa,Africa,Southern Africa,Not member,Not member,"His Excellency
+Ronald Ozzy Lamola
+Minister for International Relations and Cooperation",CD,he/him,male,https://gadebate.un.org/en/81/south-africa,https://gadebate.un.org/sites/default/files/gastatements/81/za_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-24/M_108.txt,pdf_en,english,none
+M_109,1,25/09/2026,KIR,Kiribati,Oceania,Micronesia,Not member,Not member,"His Excellency
+Taneti Maamau
+President",HS,he/him,male,https://gadebate.un.org/en/81/kiribati,https://gadebate.un.org/sites/default/files/gastatements/81/ki_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_109.txt,pdf_en,english,none
+M_110,2,25/09/2026,MDV,Maldives,Asia,Southern Asia,Not member,Not member,"His Excellency
+Hussain Mohamed Latheef
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/maldives,https://gadebate.un.org/sites/default/files/gastatements/81/mv_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_110.txt,pdf_en,english,none
+M_111,3,25/09/2026,IRQ,Iraq,Asia,Western Asia,Not member,Not member,"His Excellency
+Ali Falih Al-Zaidi
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/iraq,https://gadebate.un.org/en/node/81084/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_111.txt,transcript_ai,arabic,none
+M_112,4,25/09/2026,LBN,Lebanon,Asia,Western Asia,Not member,Not member,"His Excellency
+Nawaf Salam
+President of the Council of Ministers",HG,he/him,male,https://gadebate.un.org/en/81/lebanon,https://gadebate.un.org/en/node/81098/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_112.txt,transcript_ai,arabic,none
+M_113,5,25/09/2026,MCO,Monaco,Europe,Western Europe,Not member,Not member,"His Excellency
+Christophe Mirmand
+Minister of State",HG,he/him,male,https://gadebate.un.org/en/81/monaco,https://gadebate.un.org/en/node/81116/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_113.txt,transcript_ai,english,none
+M_114,6,25/09/2026,MHL,Marshall Islands,Oceania,Micronesia,Not member,Not member,"Her Excellency
+Hilda Heine
+President",HS,she/her,female,https://gadebate.un.org/en/81/marshall-islands,https://gadebate.un.org/sites/default/files/gastatements/81/mh_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_114.txt,pdf_en,english,none
+M_115,7,25/09/2026,MLT,Malta,Europe,Southern Europe,Not member,Not member,"His Excellency
+Robert Abela
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/malta,https://gadebate.un.org/en/node/81110/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_115.txt,transcript_ai,english,none
+M_116,8,25/09/2026,LSO,Lesotho,Africa,Southern Africa,Not member,Not member,"His Excellency
+Samuel Ntsokoane Matekane
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/lesotho,https://gadebate.un.org/sites/default/files/gastatements/81/ls_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_116.txt,pdf_en,english,none
+M_117,9,25/09/2026,TUV,Tuvalu,Oceania,Polynesia,Not member,Not member,"His Excellency
+Feleti Teo
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/tuvalu,https://gadebate.un.org/sites/default/files/gastatements/81/tv_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_117.txt,pdf_en,english,none
+M_118,10,25/09/2026,MKD,North Macedonia,Europe,Southern Europe,Not member,Not member,"His Excellency
+Hristijan Mickoski
+President of the Government",HG,he/him,male,https://gadebate.un.org/en/81/north-macedonia,https://gadebate.un.org/sites/default/files/gastatements/81/mk_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_118.txt,pdf_en,english,none
+M_119,11,25/09/2026,SLB,Solomon Islands,Oceania,Melanesia,Not member,Not member,"His Excellency
+Matthew Cooper Wale
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/solomon-islands,https://gadebate.un.org/sites/default/files/gastatements/81/sb_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_119.txt,pdf_en,english,none
+M_120,12,25/09/2026,LCA,Saint Lucia,Latin America and the Caribbean,Caribbean,Not member,Not member,"His Excellency
+Philip J. Pierre
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/saint-lucia,https://gadebate.un.org/sites/default/files/gastatements/81/lc_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_120.txt,pdf_en,english,none
+M_121,13,25/09/2026,ALB,Albania,Europe,Southern Europe,Not member,Not member,"His Excellency
+Edi Rama
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/albania,https://gadebate.un.org/sites/default/files/gastatements/81/al_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_121.txt,pdf_en,english,none
+M_122,14,25/09/2026,PAK,Pakistan,Asia,Southern Asia,Non-permanent member,Not member,"His Excellency
+Muhammad Shehbaz Sharif
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/pakistan,https://gadebate.un.org/sites/default/files/gastatements/81/pk_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_122.txt,pdf_en,english,none
+M_123,15,25/09/2026,PNG,Papua New Guinea,Oceania,Melanesia,Not member,Not member,"His Excellency
+James Marape
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/papua-new-guinea,https://gadebate.un.org/sites/default/files/gastatements/81/pg_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_123.txt,pdf_en,english,none
+M_124,16,25/09/2026,NER,Niger,Africa,Southern Africa,Not member,Not member,"His Excellency
+Lamine Zeine Ali Mahaman
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/niger,https://gadebate.un.org/en/node/81128/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_124.txt,transcript_ai,french,none
+M_125,17,25/09/2026,BHS,Bahamas,Latin America and the Caribbean,Caribbean,Not member,Not member,"His Excellency
+Philip Edward Davis
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/bahamas,https://gadebate.un.org/sites/default/files/gastatements/81/bs_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_125.txt,pdf_en,english,none
+M_126,18,25/09/2026,HTI,Haiti,Latin America and the Caribbean,Caribbean,Not member,Not member,"His Excellency
+Alix Didier Fils-Aimé
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/haiti,https://gadebate.un.org/en/node/81076/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_126.txt,transcript_ai,french,none
+M_127,19,25/09/2026,GNB,Guinea-Bissau,Africa,Southern Africa,Not member,Not member,"His Excellency
+Ilídio Vieira Té
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/guinea-bissau,https://gadebate.un.org/en/node/81074/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_127.txt,transcript_ai,english,none
+M_128,20,25/09/2026,EGY,Egypt,Africa,Northern Africa,Not member,Not member,"His Excellency
+Moustafa Kamal Madbouly
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/egypt,https://s3.amazonaws.com/downloads.unmultimedia.org/radio/library/ltd/mp3/ga/2026/81_EG_EN.mp3,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_128.txt,audio_en,arabic,whisper
+M_129,21,25/09/2026,VCT,Saint Vincent and the Grenadines,Latin America and the Caribbean,Caribbean,Not member,Not member,"His Excellency
+Godwin Friday
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/saint-vincent-and-grenadines,https://gadebate.un.org/sites/default/files/gastatements/81/vc_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_129.txt,pdf_en,english,none
+M_130,22,25/09/2026,TON,Tonga,Oceania,Polynesia,Not member,Not member,"His Excellency
+Lord Fakafanua
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/tonga,https://gadebate.un.org/sites/default/files/gastatements/81/to_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_130.txt,pdf_en,english,none
+M_131,23,25/09/2026,WSM,Samoa,Oceania,Polynesia,Not member,Not member,"Her Excellency
+Mulipola Anarosa Ale Molioo
+Deputy Prime Minister",HG,he/him,female,https://gadebate.un.org/en/81/samoa,https://gadebate.un.org/sites/default/files/gastatements/81/wc_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_131.txt,pdf_en,english,none
+M_132,24,25/09/2026,KNA,Saint Kitts and Nevis,Latin America and the Caribbean,Caribbean,Not member,Not member,"His Excellency
+Geoffrey Hanley
+Deputy Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/saint-kitts-and-nevis,https://gadebate.un.org/sites/default/files/gastatements/81/kn_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_132.txt,pdf_en,english,none
+M_133,25,25/09/2026,BHR,Bahrain,Asia,Western Asia,Non-permanent member,Not member,"His Excellency
+Abdullatif bin Rashid Al Zayani
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/bahrain,https://gadebate.un.org/sites/default/files/gastatements/81/bh_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_133.txt,pdf_en,arabic,none
+M_134,26,25/09/2026,AZE,Azerbaijan,Asia,Western Asia,Not member,Not member,"His Excellency
+Jeyhun Aziz oglu Bayramov
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/azerbaijan,https://gadebate.un.org/sites/default/files/gastatements/81/az_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_134.txt,pdf_en,english,none
+M_135,27,25/09/2026,KAZ,Kazakhstan,Asia,Central Asia,Not member,Not member,"His Excellency
+Mukhtar Tileuberdi
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/kazakhstan,https://gadebate.un.org/sites/default/files/gastatements/81/kz_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_135.txt,pdf_en,english,none
+M_136,28,25/09/2026,MRT,Mauritania,Africa,Southern Africa,Not member,Not member,"His Excellency
+Mohamed Salem Merzoug
+Minister for Foreign Affairs, African Cooperation and Mauritanians Abroad",CD,he/him,male,https://gadebate.un.org/en/81/mauritania,https://gadebate.un.org/en/node/81112/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_136.txt,transcript_ai,english,none
+M_137,29,25/09/2026,MEX,Mexico,Latin America and the Caribbean,Central America,Not member,Member,"His Excellency
+Roberto Velasco Álvarez
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/mexico,https://gadebate.un.org/en/node/81114/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_137.txt,transcript_ai,english,none
+M_138,30,25/09/2026,MUS,Mauritius,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Dhananjay Ramful
+Minister of Foreign Affairs, Regional Integration and International Trade",CD,he/him,male,https://gadebate.un.org/en/81/mauritius,https://gadebate.un.org/sites/default/files/gastatements/81/mu_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_138.txt,pdf_en,english,none
+M_139,31,25/09/2026,TCD,Chad,Africa,Middle Africa,Not member,Not member,"His Excellency
+Abdelmadjid Abdelrahim Mahamat
+Minister of Public Health and Prevention",,he/him,male,https://gadebate.un.org/en/81/chad,https://gadebate.un.org/en/node/81034/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_139.txt,transcript_ai,french,none
+M_140,32,25/09/2026,NOR,Norway,Europe,Northern Europe,Not member,Not member,"His Excellency
+Espen Barth Eide
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/norway,https://gadebate.un.org/sites/default/files/gastatements/81/no_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_140.txt,pdf_en,english,none
+M_141,33,25/09/2026,GTM,Guatemala,Latin America and the Caribbean,Central America,Not member,Not member,"His Excellency
+Carlos Ramiro Martínez Alvarado
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/guatemala,https://gadebate.un.org/en/node/81072/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_141.txt,transcript_ai,spanish,none
+M_142,34,25/09/2026,SWE,Sweden,Europe,Northern Europe,Not member,Not member,"Her Excellency
+Maria Malmer Stenergard
+Minister for Foreign Affairs",CD,she/her,female,https://gadebate.un.org/en/81/sweden,https://gadebate.un.org/sites/default/files/gastatements/81/se_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_142.txt,pdf_en,english,none
+M_143,35,25/09/2026,TGO,Togo,Africa,Southern Africa,Not member,Not member,"His Excellency
+Robert Komlan Edo Dussey
+Minister of Foreign Affairs, Regional Integration, and Togolese Abroad",CD,he/him,male,https://gadebate.un.org/en/81/togo,https://gadebate.un.org/en/node/81181/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_143.txt,transcript_ai,english,none
+M_144,36,25/09/2026,LIE,Liechtenstein,Europe,Western Europe,Not member,Not member,"Her Excellency
+Sabine Monauni
+Deputy Prime Minister",CD,she/her,female,https://gadebate.un.org/en/81/liechtenstein,https://gadebate.un.org/sites/default/files/gastatements/81/li_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-25/M_144.txt,pdf_en,english,none
+M_145,1,26/09/2026,CHN,China,Asia,Eastern Asia,Permanent member,Member,"His Excellency
+Han Zheng
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/china,https://gadebate.un.org/en/node/81036/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_145.txt,transcript_ai,english,none
+M_146,2,26/09/2026,FSM,Micronesia (Federated States of),Oceania,Micronesia,Not member,Not member,"His Excellency
+Aren Palik
+Vice President",HS,he/him,male,https://gadebate.un.org/en/81/micronesia-federated-states,https://gadebate.un.org/sites/default/files/gastatements/81/fm_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_146.txt,pdf_en,english,none
+M_147,3,26/09/2026,BLZ,Belize,Latin America and the Caribbean,Central America,Not member,Not member,"His Excellency
+John Briceño
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/belize,https://gadebate.un.org/sites/default/files/gastatements/81/bz_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_147.txt,pdf_en,english,none
+M_148,4,26/09/2026,CPV,Cabo Verde,Africa,Southern Africa,Not member,Not member,"His Excellency
+Francisco Avelino Vieira de Carvalho
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/cabo-verde,https://gadebate.un.org/sites/default/files/gastatements/81/cv_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_148.txt,pdf_en,english,none
+M_149,5,26/09/2026,MDA,Republic of Moldova,Europe,Eastern Europe,Not member,Not member,"His Excellency
+Vasile Tofan
+Prime Minister",HG,he/him,male,https://gadebate.un.org/en/81/republic-moldova,https://gadebate.un.org/sites/default/files/gastatements/81/md_en_0.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_149.txt,pdf_en,english,none
+M_150,6,26/09/2026,VAT,Holy See,Europe,Southern Europe,Not member,Not member,"His Eminence
+His Eminence Cardinal Pietro Parolin
+Secretary of State",HG,he/him,male,https://gadebate.un.org/en/81/holy-see,https://gadebate.un.org/en/node/81077/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_150.txt,transcript_ai,english,none
+M_151,7,26/09/2026,LAO,Lao People's Democratic Republic,Asia,South-eastern Asia,Not member,Not member,"His Excellency
+Thongsavanh Phomvihane
+Deputy Prime Minister",CD,he/him,male,https://gadebate.un.org/en/81/lao-peoples-democratic-republic,https://gadebate.un.org/sites/default/files/gastatements/81/la_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_151.txt,pdf_en,english,none
+M_152,8,26/09/2026,KHM,Cambodia,Asia,South-eastern Asia,Not member,Not member,"His Excellency
+Sokhonn Prak
+Deputy Prime Minister",CD,he/him,male,https://gadebate.un.org/en/81/cambodia,https://gadebate.un.org/en/node/81030/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_152.txt,transcript_ai,,none
+M_153,9,26/09/2026,RUS,Russian Federation,Europe,Eastern Europe,Permanent member,Member,"His Excellency
+Sergey Lavrov
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/russian-federation,https://gadebate.un.org/en/node/81148/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_153.txt,transcript_ai,english,none
+M_154,10,26/09/2026,PHL,Philippines,Asia,South-eastern Asia,Not member,Not member,"Her Excellency
+Ma. Theresa Lazaro
+Secretary for Foreign Affairs",CD,she/her,female,https://gadebate.un.org/en/81/philippines,https://gadebate.un.org/en/node/81139/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_154.txt,transcript_ai,english,none
+M_155,11,26/09/2026,CUB,Cuba,Latin America and the Caribbean,Caribbean,Not member,Not member,"His Excellency
+Bruno Eduardo Rodríguez Parrilla
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/cuba,https://gadebate.un.org/sites/default/files/gastatements/81/cu_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_155.txt,pdf_en,spanish,none
+M_156,12,26/09/2026,BRN,Brunei Darussalam,Asia,South-eastern Asia,Not member,Not member,"His Royal Highness
+Prince 'Abdul Mateen
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/brunei-darussalam,https://gadebate.un.org/en/node/81025/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_156.txt,transcript_ai,english,none
+M_157,13,26/09/2026,SAU,Saudi Arabia,Asia,Western Asia,Not member,Member,"His Highness
+Prince Faisal bin Farhan Al Saud
+Minister for Foreign Affairs",HG,he/him,male,https://gadebate.un.org/en/81/saudi-arabia,https://gadebate.un.org/en/node/81156/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_157.txt,transcript_ai,english,none
+M_158,14,26/09/2026,SGP,Singapore,Asia,South-eastern Asia,Not member,Not member,"His Excellency
+Vivian Balakrishnan
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/singapore,https://gadebate.un.org/en/node/81162/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_158.txt,transcript_ai,english,none
+M_159,15,26/09/2026,ISL,Iceland,Europe,Northern Europe,Not member,Not member,"Her Excellency
+Thorgerdur Katrín Gunnarsdóttir
+Minister for Foreign Affairs",CD,she/her,female,https://gadebate.un.org/en/81/iceland,https://gadebate.un.org/sites/default/files/gastatements/81/is_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_159.txt,pdf_en,english,none
+M_160,16,26/09/2026,NIC,Nicaragua,Latin America and the Caribbean,Central America,Not member,Not member,"His Excellency
+Valdrack Ludwing Jaentschke Whitaker
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/nicaragua,https://gadebate.un.org/en/node/81127/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_160.txt,transcript_ai,english,none
+M_161,17,26/09/2026,IND,India,Asia,Southern Asia,Not member,Member,"His Excellency
+Subrahmanyam Jaishankar
+Minister for External Affairs",CD,he/him,male,https://gadebate.un.org/en/81/india,https://gadebate.un.org/en/node/81081/right-of-reply/3334/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_161.txt,transcript_ai,english,none
+M_162,18,26/09/2026,DEU,Germany,Europe,Western Europe,Not member,Member,"His Excellency
+Johann Wadephul
+Federal Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/germany,https://gadebate.un.org/sites/default/files/gastatements/81/de_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_162.txt,pdf_en,english,none
+M_163,19,26/09/2026,TJK,Tajikistan,Asia,Central Asia,Not member,Not member,"His Excellency
+Sirojiddin Muhriddin
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/tajikistan,https://gadebate.un.org/en/node/81177/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_163.txt,transcript_ai,english,none
+M_164,20,26/09/2026,SMR,San Marino,Europe,Southern Europe,Not member,Not member,"His Excellency
+Luca Beccari
+Minister for Foreign Affairs, Political Affairs, International Economic Cooperation and Digital Transition",CD,he/him,male,https://gadebate.un.org/en/81/san-marino,https://gadebate.un.org/sites/default/files/gastatements/81/sm_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_164.txt,pdf_en,english,none
+M_165,21,26/09/2026,DJI,Djibouti,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Abdoulkader Houssein Omar
+Minister for Foreign Affairs and International Cooperation",CD,he/him,male,https://gadebate.un.org/en/81/djibouti,https://gadebate.un.org/en/node/81050/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_165.txt,transcript_ai,french,none
+M_166,22,26/09/2026,BLR,Belarus,Europe,Eastern Europe,Not member,Not member,"His Excellency
+Maxim Ryzhenkov
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/belarus,https://gadebate.un.org/en/node/81016/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_166.txt,transcript_ai,russian,none
+M_167,23,26/09/2026,MYS,Malaysia,Asia,South-eastern Asia,Not member,Not member,"His Excellency
+Mohamad Haji Hasan
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/malaysia,https://gadebate.un.org/en/node/81107/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_167.txt,transcript_ai,english,none
+M_168,24,26/09/2026,OMN,Oman,Asia,Western Asia,Not member,Not member,"His Excellency
+Sayyid Badr bin Hamad bin Hamood Albusaidi
+Foreign Minister",CD,he/him,male,https://gadebate.un.org/en/81/oman,https://gadebate.un.org/sites/default/files/gastatements/81/om_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_168.txt,pdf_en,arabic,none
+M_169,25,26/09/2026,TUN,Tunisia,Africa,Northern Africa,Not member,Not member,"His Excellency
+Mohamed Ali Nafti
+Minister of Foreign Affairs, Migration and Tunisians abroad",CD,he/him,male,https://gadebate.un.org/en/81/tunisia,https://gadebate.un.org/en/node/81184/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_169.txt,transcript_ai,english,none
+M_170,26,26/09/2026,CAN,Canada,Latin America and the Caribbean,Northern America,Not member,Member,"Her Excellency
+Anita Anand
+Minister for Foreign Affairs",CD,she/her,female,https://gadebate.un.org/en/81/canada,https://gadebate.un.org/en/node/81032/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_170.txt,transcript_ai,english,none
+M_171,27,26/09/2026,GAB,Gabon,Africa,Middle Africa,Not member,Not member,"Her Excellency
+Marie-Édith Tassyla-Ye-Doumbeneny
+Minister for Foreign Affairs and Cooperation, in charge of Integration and the Diaspora",CD,she/her,female,https://gadebate.un.org/en/81/gabon,https://gadebate.un.org/en/node/81065/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_171.txt,transcript_ai,french,none
+M_172,28,26/09/2026,JAM,Jamaica,Latin America and the Caribbean,Caribbean,Not member,Not member,"Her Excellency
+Kamina Johnson Smith
+Minister for Foreign Affairs and Foreign Trade",CD,she/her,female,https://gadebate.un.org/en/81/jamaica,https://gadebate.un.org/sites/default/files/gastatements/81/jm_en_0.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_172.txt,pdf_en,english,none
+M_173,29,26/09/2026,STP,Sao Tome and Principe,Africa,Middle Africa,Not member,Not member,"Her Excellency
+Ilza Maria dos Santos Amado Vaz
+Minister of State and for Foreign Affairs, Cooperation and Communities",CD,she/her,female,https://gadebate.un.org/en/81/sao-tome-and-principe,https://gadebate.un.org/en/node/81155/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_173.txt,transcript_ai,portuguese,none
+M_174,30,26/09/2026,ZMB,Zambia,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Mulambo Hamakuni Haimbe
+Minister for Foreign Affairs and International Cooperation",CD,he/him,male,https://gadebate.un.org/en/81/zambia,https://gadebate.un.org/sites/default/files/gastatements/81/zm_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_174.txt,pdf_en,english,none
+M_175,31,26/09/2026,IDN,Indonesia,Asia,South-eastern Asia,Not member,Member,"His Excellency
+Sugiono
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/indonesia,https://gadebate.un.org/en/node/81082/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_175.txt,transcript_ai,english,none
+M_176,32,26/09/2026,CMR,Cameroon,Africa,Middle Africa,Not member,Not member,"His Excellency
+Lejeune Mbella Mbella
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/cameroon,https://gadebate.un.org/en/node/81031/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-26/M_176.txt,transcript_ai,french,none
+M_177,1,28/09/2026,MLI,Mali,Africa,Southern Africa,Not member,Not member,"His Excellency
+Abdoulaye Diop
+Minister for Foreign Affairs and International Cooperation",CD,he/him,male,https://gadebate.un.org/en/81/mali,https://gadebate.un.org/en/node/81109/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_177.txt,transcript_ai,french,none
+M_178,2,28/09/2026,ERI,Eritrea,Africa,Eastern Africa,Not member,Not member,"His Excellency
+Osman Saleh Mohammed
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/eritrea,https://gadebate.un.org/sites/default/files/gastatements/81/er_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_178.txt,pdf_en,english,none
+M_179,3,28/09/2026,BFA,Burkina Faso,Africa,Southern Africa,Not member,Not member,"His Excellency
+Karamoko Jean Marie Traoré
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/burkina-faso,https://gadebate.un.org/en/node/81027/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_179.txt,transcript_ai,french,none
+M_180,4,28/09/2026,DZA,Algeria,Africa,Northern Africa,Not member,Not member,"His Excellency
+Ahmed Attaf
+Minister of State",CD,he/him,male,https://gadebate.un.org/en/81/algeria,https://gadebate.un.org/en/node/81003/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_180.txt,transcript_ai,arabic,none
+M_181,5,28/09/2026,SLV,El Salvador,Latin America and the Caribbean,Central America,Not member,Not member,"Her Excellency
+Alexandra Hill Tinoco
+Minister for Foreign Affairs",CD,she/her,female,https://gadebate.un.org/en/81/el-salvador,https://gadebate.un.org/en/node/81055/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_181.txt,transcript_ai,spanish,none
+M_182,6,28/09/2026,MWI,Malawi,Africa,Eastern Africa,Not member,Not member,"His Excellency
+George Chapatula Chaponda
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/malawi,https://gadebate.un.org/sites/default/files/gastatements/81/mw_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_182.txt,pdf_en,english,none
+M_183,7,28/09/2026,LKA,Sri Lanka,Asia,Southern Asia,Not member,Not member,"His Excellency
+Vijitha Herath
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/sri-lanka,https://gadebate.un.org/sites/default/files/gastatements/81/lk_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_183.txt,pdf_en,english,none
+M_184,8,28/09/2026,COG,Congo,Africa,Middle Africa,Not member,Not member,"His Excellency
+Constant Serge Bounda
+Minister for Foreign Affairs, La Francophonie and Congolese Abroad",CD,he/him,male,https://gadebate.un.org/en/81/congo,https://gadebate.un.org/en/node/81039/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_184.txt,transcript_ai,french,none
+M_185,9,28/09/2026,SDN,Sudan,Africa,Northern Africa,Not member,Not member,"His Excellency
+Mohieldin Salim Ahmed Ibrahim
+Minister for Foreign Affairs",CD,he/him,male,https://gadebate.un.org/en/81/sudan,https://gadebate.un.org/en/node/81171/right-of-reply/3350/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_185.txt,transcript_ai,arabic,none
+M_186,10,28/09/2026,ARE,United Arab Emirates,Asia,Western Asia,Not member,Not member,"His Excellency
+Khalifa Shaheen Al Marar
+Minister of State",,he/him,male,https://gadebate.un.org/en/81/united-arab-emirates,https://gadebate.un.org/sites/default/files/gastatements/81/ae_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_186.txt,pdf_en,arabic,none
+M_187,11,28/09/2026,PRK,Democratic People's Republic of Korea,Asia,Eastern Asia,Not member,Member,"His Excellency
+Kim Son Gyong
+Vice Minister for Foreign Affairs",CD,she/her,female,https://gadebate.un.org/en/81/democratic-peoples-republic-korea,https://gadebate.un.org/sites/default/files/gastatements/81/kp_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_187.txt,pdf_en,english,none
+M_188,12,28/09/2026,NZL,New Zealand,Oceania,Australia and New Zealand,Not member,Not member,"Her Excellency
+Victoria Louise Hallum
+Permanent Representative to the United Nations",,she/her,female,https://gadebate.un.org/en/81/new-zealand,https://gadebate.un.org/sites/default/files/gastatements/81/nz_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_188.txt,pdf_en,english,none
+M_189,13,28/09/2026,TKM,Turkmenistan,Asia,Central Asia,Not member,Not member,"His Excellency
+Vepa Hajiyev
+Permanent Representative to the United Nations",,he/him,male,https://gadebate.un.org/en/81/turkmenistan,https://gadebate.un.org/sites/default/files/gastatements/81/tm_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_189.txt,pdf_en,english,none
+M_190,14,28/09/2026,ATG,Antigua and Barbuda,Latin America and the Caribbean,Caribbean,Not member,Not member,"His Excellency
+Walton Alfonso Webson
+Permanent Representative to the United Nations",,he/him,male,https://gadebate.un.org/en/81/antigua-and-barbuda,https://gadebate.un.org/sites/default/files/gastatements/81/ag_en_0.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_190.txt,pdf_en,english,none
+M_191,15,28/09/2026,GRD,Grenada,Latin America and the Caribbean,Caribbean,Not member,Not member,"Her Excellency
+Ingrid Jackson
+Permanent Representative to the United Nations",,she/her,female,https://gadebate.un.org/en/81/grenada,https://gadebate.un.org/sites/default/files/gastatements/81/gd_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_191.txt,pdf_en,english,none
+M_192,16,28/09/2026,SSD,South Sudan,Africa,Eastern Africa,Not member,Not member,"Her Excellency
+Cecilia Adout Majok Adeng
+Permanent Representative to the United Nations",,she/her,female,https://gadebate.un.org/en/81/south-sudan,https://gadebate.un.org/sites/default/files/gastatements/81/ss_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_192.txt,pdf_en,english,none
+M_193,17,28/09/2026,DNK,Denmark,Europe,Northern Europe,Non-permanent member,Not member,"Her Excellency
+Christina Markus Lassen
+Permanent Representative to the United Nations",,she/her,female,https://gadebate.un.org/en/81/denmark,https://gadebate.un.org/sites/default/files/gastatements/81/dk_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_193.txt,pdf_en,english,none
+M_194,18,28/09/2026,CRI,Costa Rica,Latin America and the Caribbean,Central America,Not member,Not member,"His Excellency
+Boris Vasir Marchegiani Carrero
+Permanent Representative to the United Nations",,he/him,male,https://gadebate.un.org/en/81/costa-rica,https://gadebate.un.org/en/node/81041/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_194.txt,transcript_ai,spanish,none
+M_195,19,28/09/2026,VUT,Vanuatu,Oceania,Melanesia,Not member,Not member,"His Excellency
+Odo Tevi
+Permanent Representative to the United Nations",,he/him,male,https://gadebate.un.org/en/81/vanuatu,https://gadebate.un.org/sites/default/files/gastatements/81/vu_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_195.txt,pdf_en,english,none
+M_196,20,28/09/2026,BEN,Benin,Africa,Southern Africa,Not member,Not member,"His Excellency
+Marc Hermanne Gninadoou Araba
+Permanent Representative to the United Nations",,he/him,male,https://gadebate.un.org/en/81/benin,https://gadebate.un.org/en/node/81019/transcript/en/prepare-download,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_196.txt,transcript_ai,french,none
+M_197,21,28/09/2026,,President of the General Assembly (closing),,,,,"His Excellency
+Dr. Khalilur Rahman
+President of the General Assembly",PGA,he/him,male,https://gadebate.un.org/en/81/president-general-assembly-closing,https://gadebate.un.org/sites/default/files/gastatements/81/pgaclosing_en.pdf,https://github.com/sociopublico/gwl-bot/blob/main/pipeline/out/81/2026-09-28/M_197.txt,pdf_en,english,none

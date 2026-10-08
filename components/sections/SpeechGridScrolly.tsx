@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { createPortal } from "react-dom";
 import { CrossStitch } from "@/components/CrossStitch";
-import { speechGridNarrow, speechGridWide, type SpeechGrid } from "@/content/speech-grid";
+import { layoutSpeeches, speechGridNarrow, speechGridWide, type SpeechGrid } from "@/content/speech-grid";
 import type { Locale } from "@/content/types";
-import { publicPath } from "@/lib/site";
+import type { SpeechTile } from "@/lib/speeches";
 import { fill } from "@/lib/text";
 
 type Step = {
@@ -15,29 +16,11 @@ type Step = {
   caption: string;
 };
 
-type Mark = { index: number; col: number; row: number };
-
-function stitches(grid: SpeechGrid): Mark[] {
-  const marks: Mark[] = [];
-
-  grid.pattern.forEach((line, row) => {
-    if (row >= grid.rows) return;
-    [...line].forEach((cell, col) => {
-      if (col >= grid.columns || cell !== "x") return;
-      marks.push({ index: marks.length, col, row });
-    });
-  });
-
-  return marks;
-}
-
-const wideMarks = stitches(speechGridWide);
-const narrowMarks = stitches(speechGridNarrow);
-const THREAD = `url("${publicPath("/hilo.png")}")`;
-
-function sameParity(row: number, col: number) {
-  return row % 2 === col % 2;
-}
+type Tip = {
+  id: string;
+  step: number;
+  rect: { left: number; top: number; width: number; height: number };
+};
 
 export function SpeechGridScrolly({
   locale,
@@ -48,16 +31,7 @@ export function SpeechGridScrolly({
   showing,
   steps,
   summary,
-  scannedLabel,
-  mentionLabel,
-  filledLabel,
-  tableCaption,
-  groupLabel,
-  valueLabel,
-  source,
-  scanned,
-  withWomen,
-  phrase,
+  speeches,
 }: {
   locale: Locale;
   title: string;
@@ -77,14 +51,14 @@ export function SpeechGridScrolly({
   scanned: number;
   withWomen: number;
   phrase: number;
+  speeches: SpeechTile[];
 }) {
   const sectionRef = useRef<HTMLElement>(null);
   const [lit, setLit] = useState(false);
   const [activeId, setActiveId] = useState(steps[0]?.id ?? "");
   const active = steps.find((step) => step.id === activeId) ?? steps[0];
   const stepIndex = Math.max(0, steps.findIndex((step) => step.id === active?.id));
-  const packed = stepIndex >= 1;
-  const outlined = stepIndex >= 2;
+  const outlined = active?.id === "outline";
   useEffect(() => {
     const nodes = () => [...(sectionRef.current?.querySelectorAll<HTMLElement>("[data-step]") ?? [])];
     const charts = () => [...(sectionRef.current?.querySelectorAll<HTMLElement>("[data-chart]") ?? [])];
@@ -147,48 +121,59 @@ export function SpeechGridScrolly({
     <section
       id="record"
       ref={sectionRef}
-      className="mx-auto w-full max-w-6xl px-4 py-[clamp(2.5rem,10vw,8rem)] sheet:px-5"
+      className="mx-auto w-full max-w-[1200px] px-4 py-[clamp(2.5rem,10vw,8rem)] sheet:px-5"
       aria-labelledby="record-title"
     >
       <h2 id="record-title" className="mb-2 text-center font-script text-[clamp(2.4rem,7vw,5rem)] text-balance sheet:-mb-6">
         {title}
       </h2>
       <div className="relative">
-        <div className="sticky top-0 z-0 flex h-dvh items-center justify-center">
-          <figure className="flex max-h-full w-full max-w-2xl flex-col justify-center">
-          <ul className="mb-3 flex shrink-0 list-none flex-wrap justify-start gap-x-5 gap-y-2 p-0 font-ui text-[15px] leading-snug text-script">
+        <div className="sticky top-0 z-1 flex h-dvh items-center justify-center">
+          <figure className="flex max-h-full w-full max-w-xl flex-col justify-start pl-12 sheet:pl-0">
+          <ul className="mb-12 flex shrink-0 list-none flex-col justify-start gap-x-5 gap-y-2 p-0 font-ui text-[13px] leading-snug text-script gap-1 min-h-[6rem]">
             <li className="flex items-center gap-2">
-              <span className="relative size-8 shrink-0 overflow-hidden" aria-hidden="true">
-                <ThreadFill turned={false} />
+              <span className="relative size-7 overflow-visible" aria-hidden="true">
+                <ThreadFill />
               </span>
               {squareLabel}
             </li>
             <li className="flex items-center gap-2">
-              <span className="relative size-9 shrink-0 overflow-hidden" aria-hidden="true">
-                <span className="absolute inset-0">
-                  <StitchMark outlined={false} />
+              <span className="relative size-7 overflow-visible" aria-hidden="true">
+                <span className="absolute inset-0.5">
+                  <StackedStitch hollow={outlined} />
                 </span>
               </span>
-              {outlined ? stitchLabelChildren : stitchLabel}
+              {stitchLabel}
             </li>
+            {outlined ? (
+              <li className="flex items-center gap-2">
+                <span className="relative size-7 overflow-visible" aria-hidden="true">
+                  <span className="absolute p-0.5">
+                    <StitchMark outlined={false} />
+                  </span>
+                </span>
+                {stitchLabelChildren}
+              </li>
+            ) : null}
           </ul>
           <SpeechChart
             grid={speechGridNarrow}
-            marks={narrowMarks}
-            packed={packed}
-            outlined={outlined}
+            speeches={speeches}
+            stepIndex={stepIndex}
+            stepId={active?.id ?? ""}
             lit={lit}
-            className="mx-auto sheet:hidden"
+            className="w-full sheet:hidden"
             style={{
-              width: `min(100%, calc((100svh - 14rem) * ${speechGridNarrow.columns} / ${speechGridNarrow.rows}))`,
+              width: "100%",
+              maxWidth: `calc((100svh - 14rem) * ${speechGridNarrow.columns} / ${speechGridNarrow.rows})`,
               maxHeight: "calc(100svh - 14rem)",
             }}
           />
           <SpeechChart
             grid={speechGridWide}
-            marks={wideMarks}
-            packed={packed}
-            outlined={outlined}
+            speeches={speeches}
+            stepIndex={stepIndex}
+            stepId={active?.id ?? ""}
             lit={lit}
             className="hidden w-full sheet:block"
           />
@@ -215,14 +200,14 @@ export function SpeechGridScrolly({
           </p>
           </figure>
         </div>
-        <ol className="relative z-10 -mt-dvh m-0 flex list-none flex-col items-center gap-[18vh] px-0 pt-[14vh] sheet:gap-[36vh] sheet:pt-[30vh]">
+        <ol className="pointer-events-none relative z-10 -mt-dvh m-0 flex list-none flex-col items-center gap-[18vh] px-0 pt-[14vh] sheet:gap-[36vh] sheet:pt-[30vh]">
           {steps.map((step, index) => (
             <li key={step.id} className={index === steps.length - 1 ? "w-full pb-[72dvh] sheet:px-16 sheet:pb-[100dvh]" : "w-full sheet:px-16"}>
               {step.body ? (
                 <article
                   id={step.id}
                   data-step={step.id}
-                  className="rounded-xl border-2 border-dotted border-white bg-waffle p-4 text-center text-lg text-white sheet:p-6 sheet:text-xl"
+                  className="pointer-events-auto rounded-xl border-2 border-dotted border-white bg-waffle p-4 text-center text-lg text-white sheet:p-6 sheet:text-xl"
                 >
                   {step.title ? (
                     <h3 className="mb-3 font-text text-[clamp(1.6rem,3vw,2.2rem)]">{step.title}</h3>
@@ -242,150 +227,216 @@ export function SpeechGridScrolly({
 
 function SpeechChart({
   grid,
-  marks,
-  packed,
-  outlined,
+  speeches,
+  stepIndex,
+  stepId,
   lit,
   className,
   style,
 }: {
   grid: SpeechGrid;
-  marks: Mark[];
-  packed: boolean;
-  outlined: boolean;
+  speeches: SpeechTile[];
+  stepIndex: number;
+  stepId: string;
   lit: boolean;
   className?: string;
   style?: CSSProperties;
 }) {
-  const outlineFrom = Math.max(0, marks.length - grid.outlineCount);
+  const placed = useMemo(() => layoutSpeeches(grid, speeches), [grid, speeches]);
+  const outlined = stepId === "outline";
+  const quiet = stepId === "asked" || stepId === "outline";
+  const stitchedCells = useMemo(() => {
+    const cells = new Set<string>();
+    if (!quiet) return cells;
+    for (const speech of placed) {
+      if (speech.mention === "none") continue;
+      const cell = stepId === "outline" ? speech.grouped : speech.packed;
+      cells.add(`${cell.row}:${cell.col}`);
+    }
+    return cells;
+  }, [placed, quiet, stepId]);
+  const [tip, setTip] = useState<Tip | null>(null);
+  const pointerStart = useRef<{ x: number; y: number } | null>(null);
+  const activeTip = tip?.step === stepIndex ? tip : null;
+  const hovered = activeTip ? placed.find((speech) => speech.id === activeTip.id) : undefined;
 
   return (
-    <div
-      data-chart=""
-      className={`relative overflow-hidden bg-waffle ${className ?? ""}`}
-      style={{ aspectRatio: `${grid.columns} / ${grid.rows}`, ...style }}
-      aria-hidden="true"
-    >
-      <div
-        className="grid h-full w-full gap-0 overflow-hidden bg-waffle"
-        style={{
-          gridTemplateColumns: `repeat(${grid.columns}, minmax(0, 1fr))`,
-          gridTemplateRows: `repeat(${grid.rows}, minmax(0, 1fr))`,
-        }}
-      >
-        {Array.from({ length: grid.columns * grid.rows }, (_, index) => {
-          const col = index % grid.columns;
-          const row = Math.floor(index / grid.columns);
+    <div className={`relative ${className ?? ""}`} style={{ aspectRatio: `${grid.columns} / ${grid.rows}`, ...style }}>
+      <PercentAxis />
+      <div data-chart="" className="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div
+          className="grid h-full w-full gap-0 overflow-hidden"
+          style={{
+            gridTemplateColumns: `repeat(${grid.columns}, minmax(0, 1fr))`,
+            gridTemplateRows: `repeat(${grid.rows}, minmax(0, 1fr))`,
+          }}
+        >
+          {Array.from({ length: grid.columns * grid.rows }, (_, index) => {
+            const row = Math.floor(index / grid.columns);
+            const col = index % grid.columns;
+            const dim = quiet && !stitchedCells.has(`${row}:${col}`);
+            return (
+              <span key={index} className="relative overflow-hidden border-0">
+                <ThreadFill dim={dim} />
+              </span>
+            );
+          })}
+        </div>
+        <div
+          className={`absolute inset-0 transition-opacity duration-700 ease-in-out motion-reduce:transition-none! ${lit ? "opacity-100" : "pointer-events-none opacity-0"}`}
+        >
+          {placed.map((speech) => {
+            const cell = stepId === "pattern" ? speech.pattern : stepId === "outline" ? speech.grouped : speech.packed;
+            const hollow = outlined && speech.mention === "women";
+            const silent = speech.mention === "none";
+            const twin = speech.sharesPattern && stepId === "pattern";
 
-          return (
-            <span key={index} className="relative overflow-hidden border-0">
-              <ThreadFill turned={!sameParity(row, col)} />
-            </span>
-          );
-        })}
-      </div>
-      <div
-        className={`pointer-events-none absolute inset-0 transition-opacity duration-700 ease-in-out motion-reduce:transition-none! ${lit ? "opacity-100" : "opacity-0"}`}
-      >
-        {marks.map((mark) => {
-          const packedCol = mark.index % grid.columns;
-          const packedRow = Math.floor(mark.index / grid.columns);
-          const stays = packedCol === mark.col && packedRow === mark.row;
-          const becomesOutline = mark.index >= outlineFrom;
-          const hideFill = becomesOutline && outlined;
-
-          return (
-            <span key={mark.index} className="contents">
-              {stays ? null : (
-                <StitchSlot grid={grid} col={mark.col} row={mark.row} shown={!packed} fade>
-                  <StitchMark outlined={false} />
-                </StitchSlot>
-              )}
-              <StitchSlot
-                grid={grid}
-                col={stays ? mark.col : packedCol}
-                row={stays ? mark.row : packedRow}
-                shown={stays ? !hideFill : packed && !hideFill}
-                fade
-                slow={hideFill}
+            return (
+              <button
+                key={speech.id}
+                type="button"
+                tabIndex={-1}
+                data-speech={speech.id}
+                className={`absolute overflow-hidden border-0 bg-transparent p-0 transition-[left,top] duration-700 ease-in-out motion-reduce:transition-none! ${twin ? "pointer-events-none" : "cursor-pointer"}`}
+                style={{
+                  left: `${(cell.col / grid.columns) * 100}%`,
+                  top: `${(cell.row / grid.rows) * 100}%`,
+                  width: `${100 / grid.columns}%`,
+                  height: `${100 / grid.rows}%`,
+                  zIndex: silent || twin ? 1 : 2,
+                }}
+                onPointerEnter={(event) => {
+                  if (event.pointerType !== "mouse") return;
+                  setTip({ id: speech.id, step: stepIndex, rect: readRect(event.currentTarget) });
+                }}
+                onPointerLeave={(event) => {
+                  if (event.pointerType !== "mouse") return;
+                  setTip((current) => (current?.id === speech.id ? null : current));
+                }}
+                onPointerDown={(event) => {
+                  pointerStart.current = { x: event.clientX, y: event.clientY };
+                }}
+                onPointerUp={(event) => {
+                  if (event.pointerType === "mouse") return;
+                  const origin = pointerStart.current;
+                  pointerStart.current = null;
+                  if (!origin || Math.hypot(event.clientX - origin.x, event.clientY - origin.y) > 8) return;
+                  const rect = readRect(event.currentTarget);
+                  setTip((current) => (current?.id === speech.id && current.step === stepIndex ? null : { id: speech.id, step: stepIndex, rect }));
+                }}
               >
-                <StitchMark outlined={false} />
-              </StitchSlot>
-              {becomesOutline ? (
-                <StitchSlot
-                  grid={grid}
-                  col={stays ? mark.col : packedCol}
-                  row={stays ? mark.row : packedRow}
-                  shown={outlined && (stays || packed)}
-                  fade
-                  delayIn={false}
-                  slow
-                >
-                  <StitchMark outlined />
-                </StitchSlot>
-              ) : null}
-            </span>
-          );
-        })}
+                <span className={`block h-full w-full ${silent ? "opacity-0" : "opacity-100"}`}>
+                  {speech.mention === "women" ? <StackedStitch hollow={hollow} /> : <StitchMark outlined={false} />}
+                </span>
+              </button>
+            );
+          })}
+        </div>
       </div>
+      {hovered && activeTip ? <SpeechTip speech={hovered} rect={activeTip.rect} /> : null}
     </div>
   );
 }
 
-function StitchSlot({
-  grid,
-  col,
-  row,
-  shown,
-  fade,
-  delayIn = true,
-  slow = false,
-  children,
-}: {
-  grid: SpeechGrid;
-  col: number;
-  row: number;
-  shown: boolean;
-  fade: boolean;
-  delayIn?: boolean;
-  slow?: boolean;
-  children: ReactNode;
-}) {
-  const duration = slow ? "duration-700" : "duration-[400ms]";
-  const delay = fade && delayIn && shown ? "delay-[400ms]" : "delay-0";
+function readRect(element: HTMLElement): Tip["rect"] {
+  const rect = element.getBoundingClientRect();
+  return { left: rect.left, top: rect.top, width: rect.width, height: rect.height };
+}
 
-  return (
-    <span
-      className={
-        fade
-          ? `pointer-events-none absolute overflow-hidden transition-opacity ease-in-out motion-reduce:transition-none! motion-reduce:delay-0! ${duration} ${shown ? "opacity-100" : "opacity-0"} ${delay}`
-          : "pointer-events-none absolute overflow-hidden opacity-100"
-      }
+function SpeechTip({ speech, rect }: { speech: SpeechTile; rect: Tip["rect"] }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [pos, setPos] = useState<{ left: number; top: number } | null>(null);
+
+  useLayoutEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+    const margin = 12;
+    const width = element.offsetWidth;
+    const height = element.offsetHeight;
+    let left = rect.left + rect.width / 2 - width / 2;
+    const maxLeft = window.innerWidth - width - margin;
+    if (left < margin) left = margin;
+    if (left > maxLeft) left = Math.max(margin, maxLeft);
+    let top = rect.top - height - margin;
+    if (top < margin) top = Math.min(rect.top + rect.height + margin, window.innerHeight - height - margin);
+    setPos({ left, top });
+  }, [rect, speech]);
+
+  return createPortal(
+    <div
+      ref={ref}
+      role="tooltip"
+      className="pointer-events-none fixed z-50 w-max max-w-[min(18rem,calc(100vw-1.5rem))] rounded-xl border-2 border-dotted border-white bg-[#F6F2E7] px-3 py-2 text-left font-text text-[0.95rem] leading-snug text-ink"
       style={{
-        left: `${(col / grid.columns) * 100}%`,
-        top: `${(row / grid.rows) * 100}%`,
-        width: `${100 / grid.columns}%`,
-        height: `${100 / grid.rows}%`,
+        left: pos?.left ?? 0,
+        top: pos?.top ?? 0,
+        visibility: pos ? "visible" : "hidden",
       }}
     >
-      {children}
-    </span>
+      {speech.speaker ? <p className="m-0 font-semibold">{speech.speaker}</p> : null}
+      <p className="m-0">{speech.title}</p>
+      <p className="m-0 text-ink/70">{speech.country}</p>
+    </div>,
+    document.body,
   );
 }
 
-function ThreadFill({ turned }: { turned: boolean }) {
+function PercentAxis() {
+  const ticks = [100, 50, 0];
+
+  return (
+    <div className="absolute inset-y-0 right-[calc(100%+0.375rem)] w-12" aria-hidden="true">
+      <span className="absolute inset-y-0 right-0 w-px bg-script/70" />
+      {ticks.map((tick) => (
+        <span
+          key={tick}
+          className="absolute right-0 flex items-center gap-1 font-ui text-[11px] leading-none whitespace-nowrap text-script"
+          style={{
+            top: `${100 - tick}%`,
+            transform: tick === 100 ? "translateY(0)" : tick === 0 ? "translateY(-100%)" : "translateY(-50%)",
+          }}
+        >
+          {tick}%
+          <span className="h-px w-1.5 shrink-0 bg-script/70" />
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function ThreadFill({ dim = false }: { dim?: boolean }) {
   return (
     <span
-      className={turned ? "absolute -inset-px rotate-90 border-0 bg-cover bg-center" : "absolute -inset-px border-0 bg-cover bg-center"}
-      style={{ backgroundImage: THREAD }}
+      className={`absolute -inset-px border-2 border-white/30 bg-waffle bg-center transition-opacity duration-700 ease-in-out motion-reduce:transition-none ${dim ? "opacity-30" : "opacity-100"}`}
     />
+  );
+}
+
+function StackedStitch({ hollow }: { hollow: boolean }) {
+  return (
+    <span className="relative block h-full w-full">
+      <span
+        className={`absolute inset-0 motion-reduce:transition-none! motion-reduce:delay-0! ${
+          hollow ? "opacity-100" : "opacity-0 transition-opacity delay-700 duration-0"
+        }`}
+      >
+        <StitchMark outlined />
+      </span>
+      <span
+        className={`absolute inset-0 transition-opacity duration-700 ease-in-out motion-reduce:transition-none! ${
+          hollow ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        <StitchMark outlined={false} />
+      </span>
+    </span>
   );
 }
 
 function StitchMark({ outlined }: { outlined: boolean }) {
   return (
     <CrossStitch
-      className="h-full w-full"
+      className="h-full w-full overflow-visible"
       preserveAspectRatio="none"
       fill={outlined ? "none" : "#fff"}
       stroke="#fff"
