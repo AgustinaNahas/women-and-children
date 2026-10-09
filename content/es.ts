@@ -160,11 +160,14 @@ const es: Content = {
     victimsLabel: "Víctimas",
     intro:
       "Cada grupo es una mención de mujeres y niños. El color muestra cómo esa mención las retrata.",
+    flowerRef:
+      "Cada flor representa cada vez que se mencionó «mujeres y niños» en el discurso de un país.",
     grouped: "Menciones ordenadas como agentes, luego mixto y luego víctimas.",
     card: "Vimos que en el {percent}% de los casos las mujeres y los niños se retratan como víctimas.",
   },
   talk: {
     title: "¿Cómo hablamos de las mujeres?",
+    description: "Cuando analizamos los discursos, identificamos tres categorías.",
     steps: [
       {
         id: "agents",
