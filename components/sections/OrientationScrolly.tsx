@@ -152,11 +152,10 @@ export function OrientationScrolly({
           </ul>
           <div className="relative min-h-0 flex-1">
             <div
-              className="@container absolute inset-0 m-auto max-w-full"
+              className="@container absolute inset-0 m-auto max-w-full [--orientation-offset:10rem] min-[640px]:[--orientation-offset:25rem]"
               style={{
                 aspectRatio: `${STAGE_COLS} / ${STAGE_ROWS}`,
-                width: `min(100%, calc((100svh - ${window.innerWidth < 640 ? '10rem' : '25rem'}) * ${STAGE_COLS} / ${STAGE_ROWS}))`,
-           
+                width: `min(100%, calc((100svh - var(--orientation-offset)) * ${STAGE_COLS} / ${STAGE_ROWS}))`,
                 maxHeight: "100%",
               }}
             >
