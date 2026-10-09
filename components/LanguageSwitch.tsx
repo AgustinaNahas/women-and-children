@@ -14,7 +14,7 @@ export function LanguageSwitch({
   const codes: Locale[] = ["en", "es"];
 
   return (
-    <nav className="flex w-full justify-start gap-1 px-4 pt-3 font-ui max-w-[1200px] mx-auto -mb-18" aria-label={label}>
+    <nav className="flex w-full justify-start gap-1 px-4 sheet:translate-y-0 translate-y-[20vh] pt-3 font-ui max-w-[1200px] mx-auto -mb-18" aria-label={label}>
       {codes.map((code) => (
         <Link
           key={code}

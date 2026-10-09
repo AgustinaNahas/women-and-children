@@ -129,16 +129,16 @@ export function SpeechGridScrolly({
       </h2>
       <div className="relative">
         <div className="sticky top-0 z-1 flex h-dvh items-center justify-center">
-          <figure className="flex max-h-full w-full max-w-xl flex-col justify-start pl-12 sheet:pl-0">
+          <figure className="@container flex max-h-full w-full max-w-xl flex-col justify-start pl-12 sheet:pl-0">
           <ul className="mb-12 flex shrink-0 list-none flex-col justify-start gap-x-5 gap-y-2 p-0 font-ui text-[13px] leading-snug text-script gap-1 min-h-[6rem]">
             <li className="flex items-center gap-2">
-              <span className="relative size-7 overflow-visible" aria-hidden="true">
+              <span className="relative size-7 min-w-7 overflow-visible" aria-hidden="true">
                 <ThreadFill />
               </span>
               {squareLabel}
             </li>
             <li className="flex items-center gap-2">
-              <span className="relative size-7 overflow-visible" aria-hidden="true">
+              <span className="relative size-7 min-w-7 overflow-visible" aria-hidden="true">
                 <span className="absolute inset-0.5">
                   <StackedStitch hollow={outlined} />
                 </span>
@@ -147,7 +147,7 @@ export function SpeechGridScrolly({
             </li>
             {outlined ? (
               <li className="flex items-center gap-2">
-                <span className="relative size-7 overflow-visible" aria-hidden="true">
+                <span className="relative size-7 min-w-7 overflow-visible" aria-hidden="true">
                   <span className="absolute p-0.5">
                     <StitchMark outlined={false} />
                   </span>
@@ -165,8 +165,9 @@ export function SpeechGridScrolly({
             className="w-full sheet:hidden"
             style={{
               width: "100%",
-              maxWidth: `calc((100svh - 14rem) * ${speechGridNarrow.columns} / ${speechGridNarrow.rows})`,
-              maxHeight: "calc(100svh - 14rem)",
+              aspectRatio: "auto",
+              height: `min(calc(100cqw * ${speechGridNarrow.rows} / ${speechGridNarrow.columns}), calc(100svh - 22rem))`,
+              maxHeight: "calc(100svh - 22rem)",
             }}
           />
           <SpeechChart
@@ -346,8 +347,18 @@ function readRect(element: HTMLElement): Tip["rect"] {
 function SpeechTip({ speech, rect }: { speech: SpeechTile; rect: Tip["rect"] }) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState<{ left: number; top: number } | null>(null);
+  const [narrow, setNarrow] = useState(false);
 
   useLayoutEffect(() => {
+    const query = window.matchMedia("(max-width: 45rem)");
+    const apply = () => setNarrow(query.matches);
+    apply();
+    query.addEventListener("change", apply);
+    return () => query.removeEventListener("change", apply);
+  }, []);
+
+  useLayoutEffect(() => {
+    if (narrow) return;
     const element = ref.current;
     if (!element) return;
     const margin = 12;
@@ -360,23 +371,34 @@ function SpeechTip({ speech, rect }: { speech: SpeechTile; rect: Tip["rect"] }) 
     let top = rect.top - height - margin;
     if (top < margin) top = Math.min(rect.top + rect.height + margin, window.innerHeight - height - margin);
     setPos({ left, top });
-  }, [rect, speech]);
+  }, [rect, speech, narrow]);
 
   return createPortal(
-    <div
-      ref={ref}
-      role="tooltip"
-      className="pointer-events-none fixed z-50 w-max max-w-[min(18rem,calc(100vw-1.5rem))] rounded-xl border-2 border-dotted border-white bg-[#F6F2E7] px-3 py-2 text-left font-text text-[0.95rem] leading-snug text-ink"
-      style={{
-        left: pos?.left ?? 0,
-        top: pos?.top ?? 0,
-        visibility: pos ? "visible" : "hidden",
-      }}
-    >
-      {speech.speaker ? <p className="m-0 font-semibold">{speech.speaker}</p> : null}
-      <p className="m-0">{speech.title}</p>
-      <p className="m-0 text-ink/70">{speech.country}</p>
-    </div>,
+    narrow ? (
+      <div
+        role="tooltip"
+        className="pointer-events-none fixed inset-x-0 bottom-0 z-50 bg-black px-4 py-3 text-center font-text text-base leading-snug text-white"
+      >
+        {speech.speaker ? <p className="m-0 font-semibold">{speech.speaker}</p> : null}
+        <p className="m-0">{speech.title}</p>
+        <p className="m-0 text-white/70">{speech.country}</p>
+      </div>
+    ) : (
+      <div
+        ref={ref}
+        role="tooltip"
+        className="pointer-events-none fixed z-50 w-max max-w-[min(18rem,calc(100vw-1.5rem))] rounded-xl border-2 border-dotted border-white bg-[#F6F2E7] px-3 py-2 text-left font-text text-[0.95rem] leading-snug text-ink"
+        style={{
+          left: pos?.left ?? 0,
+          top: pos?.top ?? 0,
+          visibility: pos ? "visible" : "hidden",
+        }}
+      >
+        {speech.speaker ? <p className="m-0 font-semibold">{speech.speaker}</p> : null}
+        <p className="m-0">{speech.title}</p>
+        <p className="m-0 text-ink/70">{speech.country}</p>
+      </div>
+    ),
     document.body,
   );
 }

@@ -75,16 +75,16 @@ export function EvidenceFrame({
         <div className="absolute top-[20%] right-[12%] bottom-[10%] left-[16%] flex flex-col items-center overflow-y-auto text-center text-thread">
           <h2
             id="children-title"
-            className="m-0 font-script text-[clamp(2.35rem,11cqi,4rem)] leading-none font-normal text-balance"
+            className="m-0 font-script text-[clamp(2.35rem,11cqi,4rem)] leading-none font-normal text-balance max-[22rem]:text-[2rem]"
           >
             {script}
           </h2>
-          <p className="mt-24 max-w-[30ch] font-text text-[clamp(0.92rem,4.2cqi,2rem)] leading-snug">
+          <p className="mt-14 max-w-[30ch] font-text text-[clamp(0.92rem,4.2cqi,2rem)] leading-snug max-[22rem]:mt-4 max-[22rem]:text-[0.82rem] sheet:mt-24 sheet:text-[clamp(0.92rem,4.2cqi,2rem)]">
             {emphasize(body, emphasis)}
           </p>
 
           <div className="min-h-4 flex-1" />
-          <p className="mt-4 mb-0 font-text text-[clamp(0.68rem,2.15cqi,0.8rem)] leading-snug sheet:mt-12 px-12">
+          <p className="mt-4 mb-0 px-3 font-text text-[clamp(0.68rem,2.15cqi,0.8rem)] leading-snug max-[22rem]:mt-2 sheet:mt-12 sheet:px-12">
             {source}
           </p>
         </div>

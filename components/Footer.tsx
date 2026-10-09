@@ -59,7 +59,7 @@ export function Footer({ content }: { content: Content["footer"] }) {
       style={{ backgroundImage: `url("${publicPath("/tela.png")}")` }}
     >
       <div
-        className="pointer-events-none mb-10 flex flex-col items-end overflow-hidden lg:absolute lg:inset-x-0 lg:top-0 lg:mb-0"
+        className="pointer-events-none -mx-[clamp(1.25rem,5vw,4.5rem)] mb-10 flex flex-col items-end overflow-hidden lg:absolute lg:inset-x-0 lg:top-0 lg:mx-0 lg:mb-0"
         aria-hidden="true"
       >
         <div className="-translate-y-2 translate-x-8">
@@ -70,7 +70,7 @@ export function Footer({ content }: { content: Content["footer"] }) {
             hold
           />
         </div>
-        <div className="-mt-8 mr-[clamp(0.5rem,3vw,2.5rem)]">
+        <div className="-mt-8 lg:mr-[clamp(0.5rem,3vw,2.5rem)]">
           <StitchPattern rows={flowerPattern.rows} tile={flowerPattern.tile} reveal={reveal} hold />
         </div>
       </div>

@@ -188,55 +188,56 @@ function LaceQuote({
   const quoteId = `quote-${quote.slug}`;
 
   return (
-    <figure
-      data-speed={place.speed}
-      className={`relative flex w-full max-w-[24rem] flex-col items-center justify-center bg-[length:100%_100%] bg-center bg-no-repeat px-[15%] py-[13%] sheet:absolute sheet:block sheet:aspect-[694/446] sheet:w-(--q-w) sheet:max-w-none sheet:px-0 sheet:py-0 sheet:left-(--q-l) sheet:top-(--q-t) ${hidden ? "invisible" : ""}`}
-      style={
-        {
-          "--q-l": place.left,
-          "--q-t": place.top,
-          "--q-w": place.width,
-          backgroundImage: `url("${publicPath("/puntilla.png")}")`,
-        } as CSSProperties
-      }
-    >
-      <blockquote
-        id={quoteId}
-        className="m-0 flex w-full flex-col items-center justify-center gap-2 text-center text-ink sheet:absolute sheet:top-[26%] sheet:right-[18%] sheet:bottom-[24%] sheet:left-[18%] sheet:w-auto"
-        lang="en"
+    <div className={`flex w-full max-w-[24rem] flex-col items-center gap-3 sheet:contents ${hidden ? "invisible" : ""}`}>
+      <figure
+        data-speed={place.speed}
+        className="@container relative aspect-[623/400] w-full bg-[length:100%_100%] bg-center bg-no-repeat sheet:absolute sheet:block sheet:aspect-[694/446] sheet:w-(--q-w) sheet:max-w-none sheet:left-(--q-l) sheet:top-(--q-t)"
+        style={
+          {
+            "--q-l": place.left,
+            "--q-t": place.top,
+            "--q-w": place.width,
+            backgroundImage: `url("${publicPath("/puntilla.png")}")`,
+          } as CSSProperties
+        }
       >
-        <p className="m-0 pt-4 font-text text-[1.05rem] leading-snug text-thread sheet:text-[clamp(calc(0.72rem-2px),calc(0.95vw-2px),calc(0.98rem-2px))] 2xl:text-[clamp(calc(0.9rem-2px),calc(1.2vw-2px),calc(1.25rem-2px))]">
-          {emphasize(quote.text)}
-        </p>
-        <footer>
-          <cite className="font-text text-sm not-italic text-thread sheet:text-[calc(0.72rem-2px)]">
-            <span className="sheet:sr-only">{`${quote.speaker}. `}</span>
-            {quote.country}
-          </cite>
-        </footer>
-      </blockquote>
-      {quote.translation ? (
-        <p className="mt-2 mb-0 max-w-[28ch] text-center font-text text-sm leading-snug text-thread sheet:sr-only" lang={locale}>
-          {`${translationLabel}. ${quote.translation}`}
-        </p>
-      ) : null}
-      <button
-        type="button"
-        className="absolute inset-0 cursor-pointer border-0 bg-transparent p-0"
-        aria-haspopup="dialog"
-        aria-expanded={hidden}
-        aria-labelledby={quoteId}
-        onClick={(event) => {
-          const figure = event.currentTarget.parentElement;
-          if (!figure) return;
-          const rect = figure.getBoundingClientRect();
-          onOpen(
-            { top: rect.top, left: rect.left, width: rect.width, height: rect.height },
-            event.currentTarget,
-          );
-        }}
-      />
-    </figure>
+        <blockquote
+          id={quoteId}
+          className="absolute top-[20%] right-[16%] bottom-[18%] left-[16%] m-0 flex flex-col items-center justify-center text-center text-ink sheet:top-[26%] sheet:right-[18%] sheet:bottom-[24%] sheet:left-[18%] sheet:w-auto sheet:gap-2"
+          lang="en"
+        >
+          <p className="m-0 font-text text-[clamp(0.78rem,4.4cqi,1rem)] leading-snug text-thread sheet:pt-4 sheet:text-[clamp(calc(0.72rem-2px),calc(0.95vw-2px),calc(0.98rem-2px))] 2xl:text-[clamp(calc(0.9rem-2px),calc(1.2vw-2px),calc(1.25rem-2px))]">
+            {emphasize(quote.text)}
+          </p>
+          <footer className="max-sheet:hidden">
+            <cite className="font-text text-sm not-italic text-thread sheet:text-[calc(0.72rem-2px)]">
+              <span className="sr-only">{`${quote.speaker}. `}</span>
+              {quote.country}
+            </cite>
+          </footer>
+        </blockquote>
+        <button
+          type="button"
+          className="absolute inset-0 cursor-pointer border-0 bg-transparent p-0"
+          aria-haspopup="dialog"
+          aria-expanded={hidden}
+          aria-labelledby={quoteId}
+          onClick={(event) => {
+            const figure = event.currentTarget.parentElement;
+            if (!figure) return;
+            const rect = figure.getBoundingClientRect();
+            onOpen(
+              { top: rect.top, left: rect.left, width: rect.width, height: rect.height },
+              event.currentTarget,
+            );
+          }}
+        />
+      </figure>
+      <p className="m-0 max-w-[34ch] px-1 text-center font-text text-[0.95rem] leading-snug text-script sheet:sr-only" lang={locale}>
+        <span className="block sheet:hidden">{`${quote.speaker}. ${quote.country}`}</span>
+        {quote.translation ? <span className="mt-1 block">{`${translationLabel}. ${quote.translation}`}</span> : null}
+      </p>
+    </div>
   );
 }
 
@@ -261,13 +262,14 @@ function QuoteStage({
   const timer = useRef(0);
   const [grown, setGrown] = useState(false);
   const [viewport, setViewport] = useState({ width: 0, height: 0 });
+  const [narrow, setNarrow] = useState(false);
   const textId = "quote-stage-text";
 
   onCloseRef.current = onClose;
   closeRef.current = () => {
     if (closing.current) return;
     closing.current = true;
-    if (reduce.current) {
+    if (reduce.current || window.matchMedia("(max-width: 45rem)").matches) {
       onCloseRef.current();
       return;
     }
@@ -276,7 +278,10 @@ function QuoteStage({
   };
 
   useLayoutEffect(() => {
-    const measure = () => setViewport({ width: window.innerWidth, height: window.innerHeight });
+    const measure = () => {
+      setViewport({ width: window.innerWidth, height: window.innerHeight });
+      setNarrow(window.matchMedia("(max-width: 45rem)").matches);
+    };
     measure();
     window.addEventListener("resize", measure);
     reduce.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -321,6 +326,44 @@ function QuoteStage({
   const frame: CSSProperties = grown
     ? fitted
     : { top: origin.top, left: origin.left, width: origin.width, height: origin.height };
+
+  if (narrow) {
+    return createPortal(
+      <div className="fixed inset-0 z-[70]">
+        <div className="absolute inset-0 bg-black" onClick={() => closeRef.current()} />
+        <div
+          ref={panelRef}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={textId}
+          tabIndex={-1}
+          className="absolute top-1/2 left-1/2 max-h-[92dvh] w-[min(92vw,26rem)] -translate-x-1/2 -translate-y-1/2 overflow-y-auto outline-none"
+          onClick={() => closeRef.current()}
+        >
+          <div
+            className="@container relative aspect-[623/400] w-full bg-[length:100%_100%] bg-center bg-no-repeat"
+            style={{ backgroundImage: `url("${publicPath("/puntilla.png")}")` }}
+          >
+            <blockquote
+              className="absolute top-[20%] right-[16%] bottom-[18%] left-[16%] m-0 flex flex-col items-center justify-center text-center"
+              lang="en"
+            >
+              <p id={textId} className="m-0 font-text text-[clamp(0.85rem,4.6cqi,1.15rem)] leading-snug text-thread">
+                {emphasize(quote.text)}
+              </p>
+            </blockquote>
+          </div>
+          <p className="mt-4 mb-2 px-2 text-center font-text text-base leading-snug text-script" lang={locale}>
+            <span className="block">{`${quote.speaker}. ${quote.country}`}</span>
+            {quote.translation ? (
+              <span className="mt-2 block">{`${translationLabel}. ${quote.translation}`}</span>
+            ) : null}
+          </p>
+        </div>
+      </div>,
+      document.body,
+    );
+  }
 
   return createPortal(
     <div className="fixed inset-0 z-[70] cursor-pointer">

@@ -155,7 +155,8 @@ export function OrientationScrolly({
               className="@container absolute inset-0 m-auto max-w-full"
               style={{
                 aspectRatio: `${STAGE_COLS} / ${STAGE_ROWS}`,
-                width: `min(100%, calc((100svh - 16rem) * ${STAGE_COLS} / ${STAGE_ROWS}))`,
+                width: `min(100%, calc((100svh - ${window.innerWidth < 640 ? '10rem' : '25rem'}) * ${STAGE_COLS} / ${STAGE_ROWS}))`,
+           
                 maxHeight: "100%",
               }}
             >
@@ -176,7 +177,11 @@ export function OrientationScrolly({
                     }}
                     aria-hidden="true"
                   >
-                    <CrossStitch className="block h-full w-full" fill={mark.kind === "green" ? GREEN : BLUE} />
+                    <span className="grid h-full min-h-0 w-full grid-cols-2 grid-rows-2 self-stretch" aria-hidden="true">
+                        {Array.from({ length: 4 }, (_, stitch) => (
+                          <CrossStitch key={stitch} className={`h-full w-full min-h-0 ${stitch > 1 ? "-translate-y-1" : ""} ${stitch % 2 != 0 ? "-translate-x-1" : ""}`} fill={mark.kind === "green" ? GREEN : BLUE} />
+                        ))}
+                    </span>
                   </span>
                 );
               })}
@@ -201,19 +206,17 @@ export function OrientationScrolly({
               </p>
             </div>
           </div>
-          <p
-            className={`mx-auto mt-3 w-full max-w-xl shrink-0 rounded-xl border-2 border-dotted border-white bg-[#F6F2E7] px-4 py-3 text-center font-text text-base leading-snug text-ink transition-opacity duration-700 ease-in-out motion-reduce:transition-none sheet:px-6 sheet:py-4 sheet:text-lg ${bars ? "opacity-100" : "pointer-events-none opacity-0"}`}
-            aria-hidden={bars ? undefined : true}
-          >
-            {body}
-          </p>
           <p className="sr-only" aria-live="polite">
             {live}
           </p>
         </div>
-        <div className="pointer-events-none relative z-10" style={{ marginTop: "-100dvh" }}>
+        <div className="pointer-events-none relative z-10" style={{ marginTop: "-80dvh" }}>
           <div data-step="motif" className="h-dvh" />
-          <div data-step="bars" className="h-[100dvh] sheet:h-[110dvh]" />
+          <div data-step="bars" className="pt-[40dvh] pb-[20dvh]">
+            <p className="pointer-events-auto m-0 max-w-[28rem] px-5 font-text text-base leading-snug text-script sheet:w-[min(35rem,40vw)] sheet:max-w-none sheet:text-[clamp(1.2rem,1.7vw,1.65rem)]">
+              {body}
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -206,7 +206,7 @@ export function PortrayalScrolly({
                   <span className="size-4">
                   
                     <CrossStitch
-                        className={`block h-auto w-full}`}
+                        className="block h-auto w-full"
                         fill={COLOR[kind]}
                       />
                   </span>
@@ -219,7 +219,7 @@ export function PortrayalScrolly({
                 </li>
               ))}
             </ul>
-            <div className="flex items-center gap-2 mx-auto justify-center">
+            <div className="mx-auto flex items-center justify-center gap-2 max-sheet:mb-8">
               <LegendCluster fill={"#ffffff"} />
               <p className="font-text text-lg leading-snug ">
                 {flowerRef}
@@ -292,7 +292,7 @@ export function PortrayalScrolly({
                       </span>
                       <span className="grid h-full min-h-0 w-full grid-cols-2 grid-rows-2 self-stretch" aria-hidden="true">
                         {Array.from({ length: 4 }, (_, stitch) => (
-                          <CrossStitch key={stitch} className={`h-full w-full min-h-0 ${stitch > 1 ? "-translate-y-5" : ""} ${stitch % 2 != 0 ? "-translate-x-1" : ""}`} fill={COLOR[mention.kind]} />
+                          <CrossStitch key={stitch} className={`h-full w-full min-h-0 ${stitch > 1 ? "sheet:-translate-y-5 -translate-y-1" : ""} ${stitch % 2 != 0 ? "-translate-x-1" : ""}`} fill={COLOR[mention.kind]} />
                         ))}
                       </span>
                     </button>
@@ -304,10 +304,10 @@ export function PortrayalScrolly({
               {pinned ? (
                 <article
                   id="portrayal-detail"
-                  className="mx-auto max-w-xl rounded-xl border-2 border-dotted border-white bg-[#F6F2E7] p-4 text-center font-text text-lg leading-snug text-ink sheet:p-6 sheet:text-xl"
+                  className="mx-auto max-w-xl bg-black p-4 text-center font-text text-lg leading-snug text-white sheet:rounded-xl sheet:border-2 sheet:border-dotted sheet:border-white sheet:bg-[#F6F2E7] sheet:p-6 sheet:text-xl sheet:text-ink"
                 >
                   <p className="m-0">{highlight(pinned.quote)}</p>
-                  <p className="mt-3 mb-0 border-t border-ink/15 pt-2 font-ui text-[0.82rem] leading-snug">
+                  <p className="mt-3 mb-0 border-t border-white/25 pt-2 font-ui text-[0.82rem] leading-snug sheet:border-ink/15">
                     <span className="block font-semibold">{pinned.iso}</span>
                     <span className="block">{pinned.speaker}</span>
                     <span className="block">{pinned.title}</span>

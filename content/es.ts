@@ -135,7 +135,7 @@ const es: Content = {
         slug: "bosnia-and-herzegovina",
         depth: 0.32,
         text: "…advancing the rights of women and children.",
-        translation: "…avanzando en los derechos de las mujeres y los niños.",
+        translation: "…promoviendo los derechos de las mujeres y los niños.",
       },
       {
         slug: "mongolia",
@@ -158,15 +158,14 @@ const es: Content = {
     agentsLabel: "Agentes",
     mixedLabel: "Mixto",
     victimsLabel: "Víctimas",
-    intro:
-      "Cada grupo es una mención de mujeres y niños. El color muestra cómo esa mención las retrata.",
+    intro: "En la 81.ª Asamblea General, estas categorías se reflejaron de la siguiente manera:",
     flowerRef:
       "Cada flor representa cada vez que se mencionó «mujeres y niños» en el discurso de un país.",
-    grouped: "Menciones ordenadas como agentes, luego mixto y luego víctimas.",
+    grouped: "Así se mencionó «mujeres y niños» en los discursos.",
     card: "Vimos que en el {percent}% de los casos las mujeres y los niños se retratan como víctimas.",
   },
   talk: {
-    title: "¿Cómo hablamos de las mujeres?",
+    title: "¿Cómo se percibe a las mujeres?",
     description: "Cuando analizamos los discursos, identificamos tres categorías.",
     steps: [
       {
@@ -191,7 +190,7 @@ const es: Content = {
   },
   categories: {
     script: "Tres marcos",
-    title: "¿Cuál es el significado previsto de estas categorías?",
+    title: "¿Cuál es el sentido que se les quiere dar a estas categorías?",
     lede: "Desplázate por las definiciones. El mosaico mantiene la categoría a la vista y deja que las otras retrocedan.",
     summary:
       "Mosaico de tres marcos: agentes, víctimas y mixto. Mientras se lee una definición, las celdas de los otros marcos se atenúan.",
@@ -221,7 +220,7 @@ const es: Content = {
     excerpt:
       "…advancing the rights of women and children; and strengthening gender equality, better healthcare and education.",
     translation:
-      "…avanzando en los derechos de las mujeres y los niños, y fortaleciendo la igualdad de género, una mejor atención de la salud y una mejor educación.",
+      "…promoviendo los derechos de las mujeres y los niños, y fortaleciendo la igualdad de género, una mejor atención de la salud y una mejor educación.",
   },
   flower: {
     script: "La proporción",

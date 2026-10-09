@@ -75,7 +75,7 @@ export function TalkScrolly({ title, description, steps }: { title: string; desc
             {title}
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl font-text text-2xl leading-snug ">
+          <p className="mx-auto mt-6 max-w-2xl px-5 font-text text-2xl leading-snug sheet:px-0">
             {description}
           </p>
 
@@ -112,7 +112,7 @@ export function TalkScrolly({ title, description, steps }: { title: string; desc
             </div>
             {current ? (
               <p
-                className="mx-auto mt-2 max-w-[34rem] rounded-xl border-2 border-dotted border-white bg-[#F6F2E7] px-4 py-3 text-center font-text text-base leading-snug text-ink sheet:hidden"
+                className="mx-auto mt-2 min-h-[8rem] max-w-[34rem] px-4 py-3 text-center font-text text-lg leading-snug text-white sheet:hidden"
                 aria-live="polite"
               >
                 {emphasize(current.body, current.emphasis)}
