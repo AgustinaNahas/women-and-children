@@ -12,6 +12,7 @@ export function LanguageSwitch({
   names: Record<Locale, string>;
 }) {
   const codes: Locale[] = ["en", "es"];
+  const fullNames: Record<Locale, string> = { en: "English", es: "Español" };
 
   return (
     <nav className="flex w-full justify-start gap-1 px-4 sheet:translate-y-0 translate-y-[20vh] pt-3 font-ui max-w-[1200px] mx-auto -mb-18" aria-label={label}>
@@ -25,7 +26,8 @@ export function LanguageSwitch({
           aria-current={code === locale ? "page" : undefined}
         >
           {code === locale ? <img src={publicPath("/motif-tile.svg")} alt="" className="h-3 w-3" /> : null}
-          {names[code]}
+          <span className="sr-only">{fullNames[code]}</span>
+          <span aria-hidden="true">{names[code]}</span>
           {code === locale ? <img src={publicPath("/motif-tile.svg")} alt="" className="h-3 w-3" /> : null} 
                   </Link>
       ))}

@@ -8,13 +8,16 @@ import type { Content } from "./types";
 
 const es: Content = {
   meta: {
-    title: "Mujeres y niños",
+    title: "Mujeres y niños en la 81.ª Asamblea General",
     description:
-      "Una lectura de cómo la 81.ª Asamblea General dice «mujeres y niños», y de los marcos agentes, víctimas y mixto.",
+      "Cómo la 81.ª Asamblea General de la ONU dice «mujeres y niños», y cómo esos discursos enmarcan a las mujeres como agentes, víctimas o ambas.",
   },
   ui: {
     languageLabel: "Idioma",
     skipLabel: "Saltar al contenido",
+    notFoundTitle: "Página no encontrada",
+    closeLabel: "Cerrar",
+    newTabLabel: "se abre en una pestaña nueva",
     languages: { en: "EN", es: "ES" },
     translationLabel: "Traducción",
     sourceLabel: "Fuente",
@@ -38,6 +41,8 @@ const es: Content = {
     videoLabel: "Compilación de discursos que mencionan a las mujeres",
     mute: "Silenciar",
     unmute: "Activar sonido",
+    pause: "Pausar",
+    play: "Reproducir",
   },
   photo: {
     title: "El debate general",
@@ -91,6 +96,14 @@ const es: Content = {
       "Discursos revisados, discursos que mencionan a las mujeres y discursos que dicen «mujeres y niños»",
     source:
       "Debate general, período de sesiones {session}. {scanned} discursos revisados.",
+    speechListCaption:
+      "Discursos revisados, por orador, país y si el discurso menciona a las mujeres o a mujeres y niños",
+    speakerLabel: "Orador",
+    countryLabel: "País",
+    speechTitleLabel: "Discurso",
+    mentionNone: "Sin mención de mujeres",
+    mentionWomen: "Mujeres",
+    mentionBoth: "Mujeres y niños",
   },
   quotes: {
     title: "En sus palabras",
@@ -265,6 +278,12 @@ const es: Content = {
     ],
     bibliographyLabel: "Bibliografía:",
     bibliography,
+    methodLabel: "Método",
+    method:
+      "Esta lectura cubre el debate general del período de sesiones {session} de la Asamblea General de las Naciones Unidas. Se revisaron {scanned} discursos. Las menciones de mujeres se leyeron en los tres marcos definidos en este sitio: agentes, víctimas y mixto. Las filas codificadas están en la base abierta.",
+    citeLabel: "Cómo citar",
+    cite: "Zappe, Macarena, y Agustina Nahas. {title}.",
+    csvLabel: "Descargar la base (CSV)",
     databaseLabel: "Abrir base de datos",
     databaseHref,
   },

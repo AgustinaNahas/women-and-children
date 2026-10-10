@@ -31,7 +31,15 @@ export function SpeechGridScrolly({
   showing,
   steps,
   summary,
+  mentionLabel,
   speeches,
+  speechListCaption,
+  speakerLabel,
+  countryLabel,
+  speechTitleLabel,
+  mentionNone,
+  mentionWomen,
+  mentionBoth,
 }: {
   locale: Locale;
   title: string;
@@ -52,7 +60,15 @@ export function SpeechGridScrolly({
   withWomen: number;
   phrase: number;
   speeches: SpeechTile[];
+  speechListCaption: string;
+  speakerLabel: string;
+  countryLabel: string;
+  speechTitleLabel: string;
+  mentionNone: string;
+  mentionWomen: string;
+  mentionBoth: string;
 }) {
+  const mentionName = { none: mentionNone, women: mentionWomen, both: mentionBoth };
   const sectionRef = useRef<HTMLElement>(null);
   const [lit, setLit] = useState(false);
   const [activeId, setActiveId] = useState(steps[0]?.id ?? "");
@@ -208,7 +224,7 @@ export function SpeechGridScrolly({
                 <article
                   id={step.id}
                   data-step={step.id}
-                  className="pointer-events-auto rounded-xl border-2 border-dotted border-white bg-waffle p-4 text-center text-lg text-white sheet:p-6 sheet:text-xl"
+                  className="pointer-events-auto rounded-xl border-2 border-dotted border-white bg-waffle p-4 text-center text-lg text-ink sheet:p-6 sheet:text-xl"
                 >
                   {step.title ? (
                     <h3 className="mb-3 font-text text-[clamp(1.6rem,3vw,2.2rem)]">{step.title}</h3>
@@ -222,6 +238,27 @@ export function SpeechGridScrolly({
           ))}
         </ol>
       </div>
+      <table className="sr-only">
+        <caption>{speechListCaption}</caption>
+        <thead>
+          <tr>
+            <th scope="col">{speakerLabel}</th>
+            <th scope="col">{countryLabel}</th>
+            <th scope="col">{speechTitleLabel}</th>
+            <th scope="col">{mentionLabel}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {speeches.map((speech) => (
+            <tr key={speech.id}>
+              <td>{speech.speaker}</td>
+              <td>{speech.country}</td>
+              <td>{speech.title}</td>
+              <td>{mentionName[speech.mention]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </section>
   );
 }

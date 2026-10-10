@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-[40rem] flex-col justify-center gap-4 px-5">
       <script dangerouslySetInnerHTML={{ __html: redirectScript }} />
-      <h1 className="font-script text-5xl font-normal text-thread">Women and children</h1>
+      <h1 className="font-script text-5xl font-normal text-script">Women and children</h1>
       <p>
         <Link href="/en" hrefLang="en" lang="en">
           English

@@ -6,9 +6,9 @@ import { isCategoryId, type CategoryId, type TalkStep } from "@/content/types";
 import { publicPath } from "@/lib/site";
 
 const COLOR: Record<CategoryId, string> = {
-  agents: "#7E99B4",
+  agents: "#677D94",
   victims: "#A61C1F",
-  mixed: "#B2987F",
+  mixed: "#8E7A66",
 };
 
 const TITLE =

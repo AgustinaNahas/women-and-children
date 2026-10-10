@@ -66,6 +66,8 @@ export default async function Page({
           label={content.opening.videoLabel}
           mute={content.opening.mute}
           unmute={content.opening.unmute}
+          pause={content.opening.pause}
+          play={content.opening.play}
         />
       </section>
 
@@ -84,6 +86,13 @@ export default async function Page({
           caption: fill(step.caption, values, raw),
         }))}
         summary={fill(content.waffle.summary, values, raw)}
+        speechListCaption={content.waffle.speechListCaption}
+        speakerLabel={content.waffle.speakerLabel}
+        countryLabel={content.waffle.countryLabel}
+        speechTitleLabel={content.waffle.speechTitleLabel}
+        mentionNone={content.waffle.mentionNone}
+        mentionWomen={content.waffle.mentionWomen}
+        mentionBoth={content.waffle.mentionBoth}
         scannedLabel={content.waffle.scannedLabel}
         mentionLabel={content.waffle.mentionLabel}
         filledLabel={content.waffle.filledLabel}
@@ -102,6 +111,7 @@ export default async function Page({
         title={content.quotes.title}
         quotes={quotes}
         translationLabel={content.ui.translationLabel}
+        closeLabel={content.ui.closeLabel}
       />
 
       <EvidenceFrame

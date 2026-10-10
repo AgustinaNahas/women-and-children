@@ -10,13 +10,16 @@ import type { Content } from "./types";
 
 const en: Content = {
   meta: {
-    title: "Women and children",
+    title: "Women and children in the 81st General Assembly",
     description:
-      "A reading of how the 81st General Assembly says women and children, and of the frames agents, victims, and mixed.",
+      "How the 81st UN General Assembly says “women and children,” and how those speeches frame women as agents, victims, or both.",
   },
   ui: {
     languageLabel: "Language",
     skipLabel: "Skip to content",
+    notFoundTitle: "Page not found",
+    closeLabel: "Close",
+    newTabLabel: "opens in a new tab",
     languages: { en: "EN", es: "ES" },
     translationLabel: "Translation",
     sourceLabel: "Source",
@@ -30,16 +33,18 @@ const en: Content = {
   },
   header: {
     script: "Women and children!",
-    title: "How women are portrayed in United Nation’s speeches? ",
+    title: "How women are portrayed in United Nations speeches?",
   },
   opening: {
     script: "How women are portrayed?",
     title: "how women are portrayed?",
-    lede: "Every year, the United Nations organises a General Debate, during which each country delivers a speech. They have 15 minutes to talk. Lots of words can be use.",
+    lede: "Every year, the United Nations organises a General Debate, during which each country delivers a speech. They have 15 minutes to talk. Lots of words can be used.",
     body: "But... we asked ourselves: ",
     videoLabel: "Compilation of speeches that mention women",
     mute: "Mute",
     unmute: "Unmute",
+    pause: "Pause",
+    play: "Play",
   },
   photo: {
     title: "The general debate",
@@ -91,6 +96,13 @@ const en: Content = {
     filledLabel: "Women and children",
     tableCaption: "Speeches scanned, speeches that mention women, and speeches that say women and children",
     source: "General debate, session {session}. {scanned} speeches scanned.",
+    speechListCaption: "Speeches scanned, by speaker, country, and whether the speech mentions women or women and children",
+    speakerLabel: "Speaker",
+    countryLabel: "Country",
+    speechTitleLabel: "Speech",
+    mentionNone: "Women not mentioned",
+    mentionWomen: "Women",
+    mentionBoth: "Women and children",
   },
   quotes: {
     title: "In their words",
@@ -165,7 +177,7 @@ const en: Content = {
         id: "victims",
         label: "Victims",
         emphasis: "victims",
-        body: "When we are talking about victims is because they are framed as victims, targets, or members of vulnerable/protected groups in need of assistance.",
+        body: "When we are talking about victims, it is because they are framed as victims, targets, or members of vulnerable/protected groups in need of assistance.",
       },
       {
         id: "mixed",
@@ -227,7 +239,7 @@ const en: Content = {
     body: "The majority of speeches mention women and children in a general narrative context without specific policy commitments.",
   },
   soWhat: {
-    title: "so what?",
+    title: "So what?",
     paragraphs: [
       "We started this small project because, while listening to the speeches in the General Debate, we noticed that the phrase 'women and children' was mentioned many times. We felt that this was an outdated way of framing two groups with distinct rights, needs, and experiences.",
       "After reviewing academic literature on the subject, we started thinking about the implications of framing children as an extension of women's bodies, and as victims with similar needs. By grouping them together, women can be implicitly infantilised, and positioned at the same level as children, rather than recognised as autonomous political and social actors.",
@@ -247,6 +259,12 @@ const en: Content = {
     ],
     bibliographyLabel: "Bibliography:",
     bibliography,
+    methodLabel: "Method",
+    method:
+      "This reading covers the general debate of session {session} of the United Nations General Assembly. {scanned} speeches were scanned. Mentions of women were read in the three frames defined on this site: agents, victims, and mixed. The coded rows are in the open database.",
+    citeLabel: "Cite this",
+    cite: "Zappe, Macarena, and Agustina Nahas. {title}.",
+    csvLabel: "Download the database (CSV)",
     databaseLabel: "Open database",
     databaseHref,
   },

@@ -7,13 +7,20 @@ export function MentionVideo({
   label,
   mute,
   unmute,
+  pause,
+  play,
 }: {
   label: string;
   mute: string;
   unmute: string;
+  pause: string;
+  play: string;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const userPaused = useRef(false);
+  const userStarted = useRef(false);
   const [muted, setMuted] = useState(true);
+  const [paused, setPaused] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -26,16 +33,24 @@ export function MentionVideo({
       const rect = video.getBoundingClientRect();
       const visible = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
       const span = Math.min(rect.height, window.innerHeight);
-      return span > 0 && visible / span >= 0.5 && !motion.matches;
+      return span > 0 && visible / span >= 0.5;
     };
 
     const sync = () => {
-      if (!onScreen()) {
+      const hold = !onScreen() || userPaused.current || (motion.matches && !userStarted.current);
+      if (hold) {
         video.pause();
+        setPaused(true);
         return;
       }
       void video.play().then(() => {
-        if (!onScreen()) video.pause();
+        const stillHold = !onScreen() || userPaused.current || (motion.matches && !userStarted.current);
+        if (stillHold) {
+          video.pause();
+          setPaused(true);
+          return;
+        }
+        setPaused(false);
       }).catch(() => {});
     };
 
@@ -64,13 +79,26 @@ export function MentionVideo({
     };
   }, []);
 
-  const toggle = () => {
+  const toggleMute = () => {
     const video = videoRef.current;
     if (!video) return;
     const next = !video.muted;
     video.muted = next;
     setMuted(next);
-    if (!next) void video.play().catch(() => {});
+  };
+
+  const togglePause = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      userPaused.current = false;
+      userStarted.current = true;
+      void video.play().then(() => setPaused(false)).catch(() => {});
+      return;
+    }
+    userPaused.current = true;
+    video.pause();
+    setPaused(true);
   };
 
   return (
@@ -82,19 +110,46 @@ export function MentionVideo({
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         aria-label={label}
       />
-      <button
-        type="button"
-        onClick={toggle}
-        aria-pressed={!muted}
-        aria-label={muted ? unmute : mute}
-        className="absolute top-3 right-3 inline-flex size-11 items-center justify-center text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]"
-      >
-        {muted ? <MutedIcon /> : <SoundIcon />}
-      </button>
+      <div className="absolute top-3 right-3 flex gap-2">
+        <button
+          type="button"
+          onClick={togglePause}
+          aria-pressed={!paused}
+          aria-label={paused ? play : pause}
+          className="inline-flex size-11 items-center justify-center text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]"
+        >
+          {paused ? <PlayIcon /> : <PauseIcon />}
+        </button>
+        <button
+          type="button"
+          onClick={toggleMute}
+          aria-pressed={!muted}
+          aria-label={muted ? unmute : mute}
+          className="inline-flex size-11 items-center justify-center text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]"
+        >
+          {muted ? <MutedIcon /> : <SoundIcon />}
+        </button>
+      </div>
     </div>
+  );
+}
+
+function PlayIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="size-5" aria-hidden="true">
+      <path fill="currentColor" d="M8 6.2v11.6L18 12 8 6.2Z" />
+    </svg>
+  );
+}
+
+function PauseIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="size-5" aria-hidden="true">
+      <path fill="currentColor" d="M7 5.5h3.2v13H7v-13Zm6.8 0H17v13h-3.2v-13Z" />
+    </svg>
   );
 }
 

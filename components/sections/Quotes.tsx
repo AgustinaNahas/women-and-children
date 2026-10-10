@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode, type RefObject } from "react";
 import { createPortal } from "react-dom";
 import type { Locale } from "@/content/types";
 import { publicPath } from "@/lib/site";
@@ -59,14 +59,17 @@ export function Quotes({
   title,
   quotes,
   translationLabel,
+  closeLabel,
 }: {
   locale: Locale;
   title: string;
   quotes: QuoteCard[];
   translationLabel: string;
+  closeLabel: string;
 }) {
   const sectionRef = useRef<HTMLElement>(null);
   const openerRef = useRef<HTMLButtonElement>(null);
+  const pendingFocus = useRef<HTMLButtonElement | null>(null);
   const [open, setOpen] = useState<{ quote: QuoteCard; origin: Origin } | null>(null);
   const stageHeight =
     quotes.length > 6
@@ -119,6 +122,12 @@ export function Quotes({
     };
   }, []);
 
+  useEffect(() => {
+    if (open) return;
+    pendingFocus.current?.focus();
+    pendingFocus.current = null;
+  }, [open]);
+
   return (
     <section
       id="words"
@@ -160,9 +169,10 @@ export function Quotes({
           origin={open.origin}
           locale={locale}
           translationLabel={translationLabel}
+          closeLabel={closeLabel}
           onClose={() => {
+            pendingFocus.current = openerRef.current;
             setOpen(null);
-            openerRef.current?.focus();
           }}
         />
       ) : null}
@@ -188,7 +198,10 @@ function LaceQuote({
   const quoteId = `quote-${quote.slug}`;
 
   return (
-    <div className={`flex w-full max-w-[24rem] flex-col items-center gap-3 sheet:contents ${hidden ? "invisible" : ""}`}>
+    <div
+      className={`flex w-full max-w-[24rem] flex-col items-center gap-3 sheet:contents ${hidden ? "invisible" : ""}`}
+      inert={hidden ? true : undefined}
+    >
       <figure
         data-speed={place.speed}
         className="@container relative aspect-[623/400] w-full bg-[length:100%_100%] bg-center bg-no-repeat sheet:absolute sheet:block sheet:aspect-[694/446] sheet:w-(--q-w) sheet:max-w-none sheet:left-(--q-l) sheet:top-(--q-t)"
@@ -222,6 +235,7 @@ function LaceQuote({
           aria-haspopup="dialog"
           aria-expanded={hidden}
           aria-labelledby={quoteId}
+          tabIndex={hidden ? -1 : undefined}
           onClick={(event) => {
             const figure = event.currentTarget.parentElement;
             if (!figure) return;
@@ -246,15 +260,18 @@ function QuoteStage({
   origin,
   locale,
   translationLabel,
+  closeLabel,
   onClose,
 }: {
   quote: QuoteCard;
   origin: Origin;
   locale: Locale;
   translationLabel: string;
+  closeLabel: string;
   onClose: () => void;
 }) {
   const panelRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const onCloseRef = useRef(onClose);
   const closeRef = useRef<() => void>(() => {});
   const closing = useRef(false);
@@ -309,11 +326,22 @@ function QuoteStage({
   useEffect(() => {
     panelRef.current?.focus();
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape" || event.key === "Enter" || event.key === " ") {
+      if (event.key === "Escape") {
         event.preventDefault();
         closeRef.current();
+        return;
       }
-      if (event.key === "Tab") event.preventDefault();
+      if (event.key !== "Tab") return;
+      const panel = panelRef.current;
+      const closeButton = closeButtonRef.current;
+      if (!panel || !closeButton) return;
+      event.preventDefault();
+      const active = document.activeElement;
+      if (event.shiftKey) {
+        (active === closeButton ? panel : closeButton).focus();
+        return;
+      }
+      (active === panel ? closeButton : panel).focus();
     };
     document.addEventListener("keydown", onKey);
     return () => {
@@ -340,6 +368,7 @@ function QuoteStage({
           className="absolute top-1/2 left-1/2 max-h-[92dvh] w-[min(92vw,26rem)] -translate-x-1/2 -translate-y-1/2 overflow-y-auto outline-none"
           onClick={() => closeRef.current()}
         >
+          <CloseQuote closeLabel={closeLabel} buttonRef={closeButtonRef} onClose={() => closeRef.current()} />
           <div
             className="@container relative aspect-[623/400] w-full bg-[length:100%_100%] bg-center bg-no-repeat"
             style={{ backgroundImage: `url("${publicPath("/puntilla.png")}")` }}
@@ -389,6 +418,7 @@ function QuoteStage({
         }}
         onClick={() => closeRef.current()}
       >
+        <CloseQuote closeLabel={closeLabel} buttonRef={closeButtonRef} onClose={() => closeRef.current()} />
         <blockquote
           className="absolute top-[22%] right-[18%] bottom-[22%] left-[18%] m-0 flex flex-col items-center justify-center gap-[clamp(0.75rem,2vh,1.5rem)] text-center"
           lang="en"
@@ -431,6 +461,31 @@ function QuoteStage({
       </div>
     </div>,
     document.body,
+  );
+}
+
+function CloseQuote({
+  closeLabel,
+  buttonRef,
+  onClose,
+}: {
+  closeLabel: string;
+  buttonRef: RefObject<HTMLButtonElement | null>;
+  onClose: () => void;
+}) {
+  return (
+    <button
+      ref={buttonRef}
+      type="button"
+      aria-label={closeLabel}
+      className="absolute top-2 right-2 z-10 inline-flex size-11 items-center justify-center font-text text-3xl leading-none text-thread"
+      onClick={(event) => {
+        event.stopPropagation();
+        onClose();
+      }}
+    >
+      <span aria-hidden="true">×</span>
+    </button>
   );
 }
 

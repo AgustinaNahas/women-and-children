@@ -7,7 +7,7 @@ import { heroTopRightPattern } from "@/content/hero-pattern";
 import type { BibRun, Content } from "@/content/types";
 import { publicPath } from "@/lib/site";
 
-function Citation({ parts }: { parts: readonly BibRun[] }) {
+function Citation({ parts, newTabLabel }: { parts: readonly BibRun[]; newTabLabel: string }) {
   return parts.map((part, index) => {
     if (part.href) {
       return (
@@ -16,9 +16,10 @@ function Citation({ parts }: { parts: readonly BibRun[] }) {
           href={part.href}
           className={`underline decoration-1 underline-offset-[0.18em] ${part.italic ? "italic" : ""}`}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           {part.text}
+          <span className="sr-only"> ({newTabLabel})</span>
         </a>
       );
     }
@@ -31,7 +32,21 @@ function Citation({ parts }: { parts: readonly BibRun[] }) {
   });
 }
 
-export function Footer({ content }: { content: Content["footer"] }) {
+export function Footer({
+  content,
+  newTabLabel,
+  method,
+  cite,
+  citeUrl,
+  csvHref,
+}: {
+  content: Content["footer"];
+  newTabLabel: string;
+  method: string;
+  cite: string;
+  citeUrl: string;
+  csvHref: string;
+}) {
   const footerRef = useRef<HTMLElement>(null);
   const [reveal, setReveal] = useState(false);
 
@@ -92,12 +107,34 @@ export function Footer({ content }: { content: Content["footer"] }) {
               <li key={index} className="grid grid-cols-[1rem_1fr] gap-x-2">
                 <span aria-hidden="true">+</span>
                 <span className="wrap-break-word">
-                  <Citation parts={parts} />
+                  <Citation parts={parts} newTabLabel={newTabLabel} />
                 </span>
               </li>
             ))}
           </ul>
         </div>
+
+        <div className="mt-12">
+          <h2 className="font-script text-[2.35rem] leading-none font-normal">{content.methodLabel}</h2>
+          <p className="mt-3 font-text text-[1.08rem] leading-snug">{method}</p>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="font-script text-[2.35rem] leading-none font-normal">{content.citeLabel}</h2>
+          <p className="mt-3 font-text text-[1.08rem] leading-snug">
+            {cite}{" "}
+            <a href={citeUrl} className="underline decoration-1 underline-offset-[0.18em]">
+              {citeUrl}
+            </a>
+          </p>
+        </div>
+
+        <a
+          href={csvHref}
+          className="mt-12 inline-block font-text text-[1.08rem] leading-snug underline decoration-1 underline-offset-[0.18em]"
+        >
+          {content.csvLabel}
+        </a>
 
         <a
           href={content.databaseHref}
@@ -106,6 +143,7 @@ export function Footer({ content }: { content: Content["footer"] }) {
           rel="noopener noreferrer"
         >
           {content.databaseLabel}
+          <span className="sr-only"> ({newTabLabel})</span>
         </a>
       </div>
 

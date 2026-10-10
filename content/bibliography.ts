@@ -3,7 +3,7 @@ import type { BibRun } from "./types";
 export const bibliography: BibRun[][] = [
   [
     {
-      text: "Peuchguirbal, N. (2004). Women and children: deconstructing a paradigm. ",
+      text: "Puechguirbal, N. (2004). Women and children: deconstructing a paradigm. ",
     },
     { text: "Seton Hall J. Dipl. & Int'l Rel.", italic: true },
     { text: ", 5, 5." },

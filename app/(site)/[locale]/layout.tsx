@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Alegreya, Open_Sans, Pinyon_Script } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { LanguageSwitch } from "@/components/LanguageSwitch";
@@ -8,8 +8,10 @@ import { flowerPattern } from "@/content/flower-pattern";
 import { heroBottomLeftPattern, heroTopRightPattern } from "@/content/hero-pattern";
 import { getContent } from "@/content";
 import { locales, type Locale } from "@/content/types";
+import { getFigures } from "@/lib/charts";
 import { isLocale } from "@/lib/locales";
 import { pageUrl, publicPath, siteOrigin } from "@/lib/site";
+import { fill } from "@/lib/text";
 import "../../globals.css";
 
 const pinyon = Pinyon_Script({
@@ -34,6 +36,24 @@ const openSans = Open_Sans({
 
 export const dynamicParams = false;
 
+export const viewport: Viewport = {
+  themeColor: "#000000",
+};
+
+function creditNames(credits: { names: string }[]): string[] {
+  const seen = new Set<string>();
+  const names: string[] = [];
+  for (const credit of credits) {
+    for (const part of credit.names.split("&")) {
+      const name = part.trim();
+      if (!name || seen.has(name)) continue;
+      seen.add(name);
+      names.push(name);
+    }
+  }
+  return names;
+}
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -49,13 +69,17 @@ export async function generateMetadata({
   const content = getContent(raw);
   const origin = new URL(siteOrigin().origin);
   const canonical = pageUrl(`${raw}/`);
+  const authors = creditNames(content.footer.credits).map((name) => ({ name }));
 
   return {
     metadataBase: origin,
     title: content.meta.title,
     description: content.meta.description,
-    applicationName: content.meta.title,
-    authors: content.footer.credits.map((credit) => ({ name: credit.names })),
+    applicationName: content.header.script,
+    authors,
+    icons: {
+      icon: publicPath("/motif-tile.svg"),
+    },
     alternates: {
       canonical,
       languages: {
@@ -72,11 +96,13 @@ export async function generateMetadata({
       locale: raw === "es" ? "es_ES" : "en_US",
       alternateLocale: raw === "es" ? ["en_US"] : ["es_ES"],
       type: "article",
+      images: [{ url: publicPath("/og.png"), width: 1200, height: 630, alt: "Women and children" }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: content.meta.title,
       description: content.meta.description,
+      images: [publicPath("/og.png")],
     },
     robots: {
       index: true,
@@ -95,8 +121,13 @@ export default async function LocaleLayout({
   const { locale: raw } = await params;
   const locale: Locale = isLocale(raw) ? raw : "en";
   const content = getContent(locale);
+  const figures = getFigures();
   const origin = siteOrigin();
   const url = pageUrl(`${locale}/`);
+  const authors = creditNames(content.footer.credits).map((name) => ({
+    "@type": "Person",
+    name,
+  }));
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -110,12 +141,20 @@ export default async function LocaleLayout({
       url: origin.href,
       inLanguage: ["en", "es"],
     },
-    about: {
-      "@type": "Dataset",
-      name: content.footer.databaseLabel,
+    mainEntity: {
+      "@type": "ScholarlyArticle",
+      headline: content.meta.title,
       description: content.meta.description,
-      url: databaseHref,
-      isAccessibleForFree: true,
+      inLanguage: locale,
+      url,
+      author: authors,
+      isBasedOn: {
+        "@type": "Dataset",
+        name: content.footer.databaseLabel,
+        description: content.meta.description,
+        url: databaseHref,
+        isAccessibleForFree: true,
+      },
     },
   };
 
@@ -171,7 +210,14 @@ export default async function LocaleLayout({
           </div>
         </header>
         {children}
-        <Footer content={content.footer} />
+        <Footer
+          content={content.footer}
+          newTabLabel={content.ui.newTabLabel}
+          method={fill(content.footer.method, figures, locale)}
+          cite={fill(content.footer.cite, { title: content.meta.title }, locale)}
+          citeUrl={url}
+          csvHref={publicPath("/database.csv")}
+        />
       </body>
     </html>
   );

@@ -38,6 +38,9 @@ export type Content = {
   ui: {
     languageLabel: string;
     skipLabel: string;
+    notFoundTitle: string;
+    closeLabel: string;
+    newTabLabel: string;
     languages: Record<Locale, string>;
     translationLabel: string;
     sourceLabel: string;
@@ -60,6 +63,8 @@ export type Content = {
     videoLabel: string;
     mute: string;
     unmute: string;
+    pause: string;
+    play: string;
   };
   photo: {
     title: string;
@@ -86,6 +91,13 @@ export type Content = {
     filledLabel: string;
     tableCaption: string;
     source: string;
+    speechListCaption: string;
+    speakerLabel: string;
+    countryLabel: string;
+    speechTitleLabel: string;
+    mentionNone: string;
+    mentionWomen: string;
+    mentionBoth: string;
   };
   quotes: {
     title: string;
@@ -159,6 +171,11 @@ export type Content = {
     credits: { role: string; names: string }[];
     bibliographyLabel: string;
     bibliography: BibRun[][];
+    methodLabel: string;
+    method: string;
+    citeLabel: string;
+    cite: string;
+    csvLabel: string;
     databaseLabel: string;
     databaseHref: string;
   };
