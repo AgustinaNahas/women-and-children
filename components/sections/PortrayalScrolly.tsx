@@ -297,7 +297,7 @@ export function PortrayalScrolly({
                       </span>
                       <span className="grid h-full min-h-0 w-full grid-cols-2 grid-rows-2 self-stretch" aria-hidden="true">
                         {Array.from({ length: 4 }, (_, stitch) => (
-                          <CrossStitch key={stitch} className={`h-full w-full min-h-0 ${stitch > 1 ? "sheet:-translate-y-5 -translate-y-1" : ""} ${stitch % 2 != 0 ? "-translate-x-1" : ""}`} fill={COLOR[mention.kind]} />
+                          <CrossStitch key={stitch} className={`h-full w-full min-h-0 ${stitch > 1 ? "sheet:-translate-y-[30%] -translate-y-1" : ""} ${stitch % 2 != 0 ? "-translate-x-1" : ""}`} fill={COLOR[mention.kind]} />
                         ))}
                       </span>
                     </button>

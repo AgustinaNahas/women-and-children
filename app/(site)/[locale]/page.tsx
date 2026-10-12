@@ -15,7 +15,7 @@ import { ScriptHeading } from "@/components/ScriptHeading";
 import { Flower } from "@/components/charts/Flower";
 import { getContent } from "@/content";
 import { countCategories, getFigures, getMosaicCells, getSpeech } from "@/lib/charts";
-import { getPortrayalMentions } from "@/lib/portrayals";
+import { getOrientationMentions, getPortrayalMentions } from "@/lib/portrayals";
 import { getSpeechTiles } from "@/lib/speeches";
 import { isLocale } from "@/lib/locales";
 import { fill, formatDate } from "@/lib/text";
@@ -37,6 +37,7 @@ export default async function Page({
     percent: Math.round((figures.withWomen / figures.scanned) * 100),
   };
   const portrayals = getPortrayalMentions();
+  const orientations = getOrientationMentions();
   const speeches = getSpeechTiles();
   const victimShare = portrayals.filter((mention) => mention.kind === "victims").length;
   const victimPercent = new Intl.NumberFormat(raw, {
@@ -142,6 +143,7 @@ export default async function Page({
         policyShare={content.orientation.policyShare}
         rhetoricalShare={content.orientation.rhetoricalShare}
         body={content.orientation.body}
+        mentions={orientations}
       />
 
       <SoWhat title={content.soWhat.title} paragraphs={content.soWhat.paragraphs} />

@@ -11,6 +11,14 @@ export type PortrayalMention = {
   title: string;
 };
 
+export type OrientationKind = "policy" | "rhetorical";
+
+export type OrientationMention = {
+  iso: string;
+  country: string;
+  kind: OrientationKind;
+};
+
 const KINDS: Record<string, PortrayalKind> = {
   "1": "victims",
   "2": "agents",
@@ -18,6 +26,7 @@ const KINDS: Record<string, PortrayalKind> = {
 };
 
 const PHRASE = "Women and Children";
+const POLICY_ACTION = "Policy / Legislative Reform";
 
 const WITH_ARTICLE = new Set([
   "Comoros",
@@ -126,6 +135,32 @@ export function getPortrayalMentions(): PortrayalMention[] {
       quote: extract,
       speaker: speakerById.get(record[speechId] ?? "") || name,
       title: roleOf(role, name),
+    }];
+  });
+}
+
+export function getOrientationMentions(): OrientationMention[] {
+  const text = readFileSync(join(process.cwd(), "public/database.csv"), "utf8");
+  const [header, ...records] = parseCsv(text);
+  if (!header) return [];
+
+  const column = Object.fromEntries(header.map((name, index) => [name, index]));
+  const phrase = column.phrase_pairing_option;
+  const action = column.action_type_option;
+  const iso = column.Country;
+  const place = column.country;
+
+  return records.flatMap((record) => {
+    if (record[phrase] !== PHRASE) return [];
+    const code = record[iso]?.trim();
+    const country = record[place]?.trim();
+    const orientation = record[action]?.trim();
+    if (!code || !country || !orientation) return [];
+
+    return [{
+      iso: code,
+      country,
+      kind: orientation === POLICY_ACTION ? "policy" : "rhetorical",
     }];
   });
 }
