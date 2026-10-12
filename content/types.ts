@@ -168,7 +168,9 @@ export type Content = {
     translation?: string;
   };
   footer: {
-    credits: { role: string; names: string }[];
+    credits: { role: string; names: string; site?: string; linkedin?: string }[];
+    siteLabel: string;
+    linkedinLabel: string;
     bibliographyLabel: string;
     bibliography: BibRun[][];
     methodLabel: string;

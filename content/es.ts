@@ -272,10 +272,22 @@ const es: Content = {
   },
   footer: {
     credits: [
-      { role: "Diseñado por:", names: "Macarena Zappe" },
+      {
+        role: "Diseñado por:",
+        names: "Macarena Zappe",
+        site: "https://macarenazappe.com/",
+        linkedin: "https://www.linkedin.com/in/macarena-zappe/",
+      },
       { role: "Investigación:", names: "Macarena Zappe & Agustina Nahas" },
-      { role: "Desarrollado por:", names: "Agustina Nahas" },
+      {
+        role: "Desarrollado por:",
+        names: "Agustina Nahas",
+        site: "https://agustinanahas.com/",
+        linkedin: "https://www.linkedin.com/in/agustina-nahas/",
+      },
     ],
+    siteLabel: "Sitio web",
+    linkedinLabel: "LinkedIn",
     bibliographyLabel: "Bibliografía:",
     bibliography,
     methodLabel: "Método",
