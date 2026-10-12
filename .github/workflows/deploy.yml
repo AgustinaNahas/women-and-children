@@ -38,8 +38,9 @@ jobs:
       - name: Build with Next.js
         run: npm run build
         env:
-          PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
-          NEXT_PUBLIC_SITE_URL: ${{ steps.setup_pages.outputs.base_url }}
+          # El dominio propio se sirve en la raíz, no en /women-and-children.
+          PAGES_BASE_PATH: ""
+          NEXT_PUBLIC_SITE_URL: https://womenandchildren.agustinanahas.com
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

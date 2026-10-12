@@ -1,4 +1,4 @@
-/** Prefijo público. Vacío en local; en GitHub Pages es /women-and-children. */
+/** Prefijo público. Vacío en local y en el dominio propio. */
 export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 /** Ruta de un archivo de `public/`, con el prefijo del sitio. */
