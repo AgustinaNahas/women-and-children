@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  overflow-x: clip;
+}
+
 @theme {
   --color-linen: #e8e2d6;
   --color-ink: #141210;

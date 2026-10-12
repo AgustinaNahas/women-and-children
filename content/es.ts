@@ -283,7 +283,7 @@ const es: Content = {
       "Esta lectura cubre el debate general del período de sesiones {session} de la Asamblea General de las Naciones Unidas. Se revisaron {scanned} discursos. Las menciones de mujeres se leyeron en los tres marcos definidos en este sitio: agentes, víctimas y mixto. Las filas codificadas están en la base abierta.",
     citeLabel: "Cómo citar",
     cite: "Zappe, Macarena, y Agustina Nahas. {title}.",
-    csvLabel: "Descargar la base (CSV)",
+    csvLabel: "descargar el CSV",
     databaseLabel: "Abrir base de datos",
     databaseHref,
   },

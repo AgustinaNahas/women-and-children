@@ -32,7 +32,7 @@ export function ScriptHeading({
         </p>
       ) : null}
       {body ? (
-        <p className="order-2 mx-auto mt-12 mb-18 max-w-xl text-[clamp(1.15rem,2vw,1.45rem)] leading-snug">
+        <p className="order-2 mx-auto mt-12 mb-18 w-full max-w-xl min-w-0 text-[clamp(1.15rem,2vw,1.45rem)] leading-snug">
           {body}
         </p>
       ) : null}

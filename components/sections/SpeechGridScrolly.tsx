@@ -217,48 +217,49 @@ export function SpeechGridScrolly({
           </p>
           </figure>
         </div>
-        <ol className="pointer-events-none relative z-10 -mt-dvh m-0 flex list-none flex-col items-center gap-[18vh] px-0 pt-[14vh] sheet:gap-[36vh] sheet:pt-[30vh]">
-          {steps.map((step, index) => (
-            <li key={step.id} className={index === steps.length - 1 ? "w-full pb-[72dvh] sheet:px-16 sheet:pb-[100dvh]" : "w-full sheet:px-16"}>
+        <ol className="pointer-events-none relative z-10 -mt-[100dvh] m-0 flex list-none flex-col items-center px-0 pt-[50dvh] pb-[50dvh]">
+          {steps.map((step) => (
+            <li
+              key={step.id}
+              id={step.id}
+              data-step={step.id}
+              className="flex h-dvh w-full items-center justify-center sheet:px-16"
+            >
               {step.body ? (
-                <article
-                  id={step.id}
-                  data-step={step.id}
-                  className="pointer-events-auto rounded-xl border-2 border-dotted border-white bg-waffle p-4 text-center text-lg text-ink sheet:p-6 sheet:text-xl"
-                >
+                <article className="pointer-events-auto rounded-xl border-2 border-dotted border-white bg-waffle p-4 text-center text-lg text-ink sheet:p-6 sheet:text-xl">
                   {step.title ? (
                     <h3 className="mb-3 font-text text-[clamp(1.6rem,3vw,2.2rem)]">{step.title}</h3>
                   ) : null}
                   <p>{step.body}</p>
                 </article>
-              ) : (
-                <div id={step.id} data-step={step.id} className="min-h-[32vh] sheet:min-h-[48vh]" />
-              )}
+              ) : null}
             </li>
           ))}
         </ol>
       </div>
-      <table className="sr-only">
-        <caption>{speechListCaption}</caption>
-        <thead>
-          <tr>
-            <th scope="col">{speakerLabel}</th>
-            <th scope="col">{countryLabel}</th>
-            <th scope="col">{speechTitleLabel}</th>
-            <th scope="col">{mentionLabel}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {speeches.map((speech) => (
-            <tr key={speech.id}>
-              <td>{speech.speaker}</td>
-              <td>{speech.country}</td>
-              <td>{speech.title}</td>
-              <td>{mentionName[speech.mention]}</td>
+      <div className="sr-only">
+        <table className="w-px table-fixed">
+          <caption>{speechListCaption}</caption>
+          <thead>
+            <tr>
+              <th scope="col">{speakerLabel}</th>
+              <th scope="col">{countryLabel}</th>
+              <th scope="col">{speechTitleLabel}</th>
+              <th scope="col">{mentionLabel}</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {speeches.map((speech) => (
+              <tr key={speech.id}>
+                <td>{speech.speaker}</td>
+                <td>{speech.country}</td>
+                <td>{speech.title}</td>
+                <td>{mentionName[speech.mention]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </section>
   );
 }
@@ -293,6 +294,15 @@ function SpeechChart({
     }
     return cells;
   }, [placed, quiet, stepId]);
+  const stitchRows = useMemo(() => {
+    let highest = 0;
+    for (const speech of placed) {
+      if (speech.mention === "none") continue;
+      const fromBottom = grid.rows - 1 - speech.packed.row;
+      if (fromBottom > highest) highest = fromBottom;
+    }
+    return highest + 1;
+  }, [placed, grid.rows]);
   const [tip, setTip] = useState<Tip | null>(null);
   const pointerStart = useRef<{ x: number; y: number } | null>(null);
   const activeTip = tip?.step === stepIndex ? tip : null;
@@ -300,7 +310,7 @@ function SpeechChart({
 
   return (
     <div className={`relative ${className ?? ""}`} style={{ aspectRatio: `${grid.columns} / ${grid.rows}`, ...style }}>
-      <PercentAxis />
+      <PercentAxis rows={grid.rows} span={stitchRows} focused={quiet} />
       <div data-chart="" className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <div
           className="grid h-full w-full gap-0 overflow-hidden"
@@ -440,18 +450,24 @@ function SpeechTip({ speech, rect }: { speech: SpeechTile; rect: Tip["rect"] }) 
   );
 }
 
-function PercentAxis() {
+function PercentAxis({ rows, span, focused }: { rows: number; span: number; focused: boolean }) {
   const ticks = [100, 50, 0];
+  const band = Math.min(Math.max(span, 1), rows);
+  const origin = focused ? (rows - band) / rows : 0;
+  const scale = focused ? band / rows : 1;
 
   return (
     <div className="absolute inset-y-0 right-[calc(100%+0.375rem)] w-12" aria-hidden="true">
-      <span className="absolute inset-y-0 right-0 w-px bg-script/70" />
+      <span
+        className="absolute right-0 w-px bg-script/70 transition-[top,height] duration-700 ease-in-out motion-reduce:transition-none!"
+        style={{ top: `${origin * 100}%`, height: `${scale * 100}%` }}
+      />
       {ticks.map((tick) => (
         <span
           key={tick}
-          className="absolute right-0 flex items-center gap-1 font-ui text-[11px] leading-none whitespace-nowrap text-script"
+          className="absolute right-0 flex items-center gap-1 font-ui text-[11px] leading-none whitespace-nowrap text-script transition-[top] duration-700 ease-in-out motion-reduce:transition-none!"
           style={{
-            top: `${100 - tick}%`,
+            top: `${(origin + ((100 - tick) / 100) * scale) * 100}%`,
             transform: tick === 100 ? "translateY(0)" : tick === 0 ? "translateY(-100%)" : "translateY(-50%)",
           }}
         >

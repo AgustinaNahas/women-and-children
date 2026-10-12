@@ -264,7 +264,7 @@ const en: Content = {
       "This reading covers the general debate of session {session} of the United Nations General Assembly. {scanned} speeches were scanned. Mentions of women were read in the three frames defined on this site: agents, victims, and mixed. The coded rows are in the open database.",
     citeLabel: "Cite this",
     cite: "Zappe, Macarena, and Agustina Nahas. {title}.",
-    csvLabel: "Download the database (CSV)",
+    csvLabel: "download CSV",
     databaseLabel: "Open database",
     databaseHref,
   },

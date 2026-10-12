@@ -7,23 +7,22 @@ const BLUE = "#7E99B4";
 const GREEN = "#5D7E62";
 
 const PATTERN = [
-  "-XX--XX-",
-  "X--XX--X",
-  "X-X--X-X",
-  "-XXYYXX-",
-  "X-X--X-X",
-  "X--XX--X",
-  "-XX--XX-",
+  "-XX-XX-",
+  "XXXXXXX",
+  "XXX-XXX",
+  "-Y-X-Y-",
+  "XXX-XXX",
+  "XXXXXXX",
+  "-XX-XX-",
 ] as const;
 
 const STAGE_COLS = 16;
 const STAGE_ROWS = 9;
 const MOTIF_COL = 4;
 const MOTIF_ROW = 1;
-const BLUE_COL = 12;
-const BLUE_ROW = 1;
 const GREEN_COL = 8;
-const GREEN_ROW = 7;
+const BAR_TOP = 1;
+const BAR_BOTTOM = 7;
 
 type Kind = "blue" | "green";
 type StepId = "motif" | "bars";
@@ -61,6 +60,10 @@ function buildMarks(): Mark[] {
 }
 
 const marks = buildMarks();
+const blueCount = marks.filter((mark) => mark.kind === "blue").length;
+const BLUE_ROWS = BAR_BOTTOM - BAR_TOP + 1;
+const BLUE_COLS = Math.max(1, Math.ceil(blueCount / BLUE_ROWS));
+const BLUE_COL = STAGE_COLS - BLUE_COLS;
 
 function slot(col: number, row: number) {
   return {
@@ -72,8 +75,10 @@ function slot(col: number, row: number) {
 }
 
 function barSlot(mark: Mark) {
-  if (mark.kind === "green") return slot(GREEN_COL + mark.barIndex, GREEN_ROW);
-  return slot(BLUE_COL + (mark.barIndex % 4), BLUE_ROW + Math.floor(mark.barIndex / 4));
+  if (mark.kind === "green") return slot(GREEN_COL + mark.barIndex, BAR_BOTTOM);
+  const col = mark.barIndex % BLUE_COLS;
+  const fromBottom = Math.floor(mark.barIndex / BLUE_COLS);
+  return slot(BLUE_COL + col, BAR_BOTTOM - fromBottom);
 }
 
 export function OrientationScrolly({
@@ -186,7 +191,7 @@ export function OrientationScrolly({
               })}
               <p
                 className={`absolute m-0 flex items-end justify-center text-center font-script leading-none text-script transition-opacity duration-700 ease-in-out motion-reduce:transition-none ${bars ? "opacity-100 delay-300" : "opacity-0"}`}
-                style={{ ...slot(BLUE_COL, 0), width: `${(4 / STAGE_COLS) * 100}%` }}
+                style={{ ...slot(BLUE_COL, 0), width: `${(BLUE_COLS / STAGE_COLS) * 100}%` }}
                 aria-hidden={bars ? undefined : true}
               >
                 <span className="text-[clamp(1.35rem,7cqi,4.2rem)]">{rhetoricalShare}</span>
@@ -195,7 +200,7 @@ export function OrientationScrolly({
                 className={`absolute m-0 flex items-end justify-center text-center font-script leading-none text-script transition-opacity duration-700 ease-in-out motion-reduce:transition-none ${bars ? "opacity-100 delay-300" : "opacity-0"}`}
                 style={{
                   left: `${((GREEN_COL - 1) / STAGE_COLS) * 100}%`,
-                  top: `${((GREEN_ROW - 1) / STAGE_ROWS) * 100}%`,
+                  top: `${((BAR_BOTTOM - 1) / STAGE_ROWS) * 100}%`,
                   width: `${(4 / STAGE_COLS) * 100}%`,
                   height: `${100 / STAGE_ROWS}%`,
                 }}
@@ -212,7 +217,7 @@ export function OrientationScrolly({
         <div className="pointer-events-none relative z-10" style={{ marginTop: "-80dvh" }}>
           <div data-step="motif" className="h-dvh" />
           <div data-step="bars" className="pt-[40dvh] pb-[20dvh]">
-            <p className="pointer-events-auto m-0 max-w-[28rem] px-5 font-text text-base leading-snug text-script sheet:w-[min(35rem,40vw)] sheet:max-w-none sheet:text-[clamp(1.2rem,1.7vw,1.65rem)]">
+            <p className="pointer-events-auto m-0 max-w-[28rem] px-5 font-text text-base leading-snug text-script sheet:w-[min(35rem,40vw)] sheet:max-w-none sheet:pl-16 sheet:text-[clamp(1.2rem,1.7vw,1.65rem)]">
               {body}
             </p>
           </div>

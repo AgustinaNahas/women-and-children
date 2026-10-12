@@ -119,32 +119,28 @@ export function Footer({
           <p className="mt-3 font-text text-[1.08rem] leading-snug">{method}</p>
         </div>
 
-        <div className="mt-12">
-          <h2 className="font-script text-[2.35rem] leading-none font-normal">{content.citeLabel}</h2>
-          <p className="mt-3 font-text text-[1.08rem] leading-snug">
-            {cite}{" "}
-            <a href={citeUrl} className="underline decoration-1 underline-offset-[0.18em]">
-              {citeUrl}
-            </a>
-          </p>
-        </div>
-
-        <a
-          href={csvHref}
-          className="mt-12 inline-block font-text text-[1.08rem] leading-snug underline decoration-1 underline-offset-[0.18em]"
-        >
-          {content.csvLabel}
-        </a>
-
+        <span aria-hidden="true" className="mt-12 block font-script text-[clamp(2rem,8vw,2.35rem)] leading-none text-balance  ">
         <a
           href={content.databaseHref}
-          className="mt-12 inline-block font-script text-[clamp(2rem,8vw,2.35rem)] leading-none text-balance no-underline hover:underline hover:decoration-1 hover:underline-offset-[0.12em]"
+          className="no-underline hover:underline hover:decoration-1 hover:underline-offset-[0.12em]"
+
           target="_blank"
           rel="noopener noreferrer"
         >
           {content.databaseLabel}
           <span className="sr-only"> ({newTabLabel})</span>
         </a>
+        {" "}/{" "}
+        <a
+          href={csvHref}
+          className=" no-underline hover:underline hover:decoration-1 hover:underline-offset-[0.12em]"
+        >
+          {content.csvLabel}
+        </a>
+
+        </span>
+
+        
       </div>
 
       <div data-footer-mid="" className="pointer-events-none absolute top-1/2 left-0 h-px w-px" aria-hidden="true" />

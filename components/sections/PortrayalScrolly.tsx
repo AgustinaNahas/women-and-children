@@ -6,7 +6,7 @@ import type { Locale } from "@/content/types";
 import { CrossStitch } from "@/components/CrossStitch";
 import type { PortrayalKind, PortrayalMention } from "@/lib/portrayals";
 
-const PHRASE = /women\s*(?:,\s*)?(?:and\s+)?children|children\s*(?:,\s*)?(?:and\s+)?women/gi;
+const PHRASE = /wom[ae]n\s*(?:,\s*)?(?:and\s+)?children|children\s*(?:,\s*)?(?:and\s+)?wom[ae]n/gi;
 
 const COLUMNS = 8;
 const ROW_FACTOR = 1.42;
@@ -37,10 +37,11 @@ type Tip = {
   quote: string;
   speaker: string;
   title: string;
+  color: string;
   rect: { left: number; top: number; width: number; height: number };
 };
 
-function highlight(text: string): ReactNode[] {
+function highlight(text: string, color: string): ReactNode[] {
   const parts: ReactNode[] = [];
   const pattern = new RegExp(PHRASE.source, "gi");
   let last = 0;
@@ -49,7 +50,7 @@ function highlight(text: string): ReactNode[] {
     const start = match.index ?? 0;
     if (start > last) parts.push(text.slice(last, start));
     parts.push(
-      <strong key={start} className="font-semibold text-thread">
+      <strong key={start} className="font-semibold" style={{ color }}>
         {match[0]}
       </strong>,
     );
@@ -197,8 +198,11 @@ export function PortrayalScrolly({
       <div className="relative">
         <div className="sticky top-0 z-0 flex h-dvh items-center justify-center">
           <div
-            className="@container mx-auto w-full max-w-5xl"
-            style={{ width: `min(90%, calc((100svh - 18rem) * 0.9 * ${COLUMNS} / ${rows * ROW_FACTOR}))` }}
+            className="@container mx-auto w-(--portrayal-narrow) max-w-5xl sheet:w-(--portrayal-wide)"
+            style={{
+              ["--portrayal-wide" as string]: `min(90%, calc((100svh - 18rem) * 0.9 * ${COLUMNS} / ${rows * ROW_FACTOR}))`,
+              ["--portrayal-narrow" as string]: `min(100%, calc((100svh - 14rem) * ${COLUMNS} / ${rows * ROW_FACTOR}))`,
+            }}
           >
             <ul className="mb-4 flex list-none flex-wrap justify-center gap-x-5 gap-y-2 p-0 font-ui text-[15px] text-script sheet:gap-x-8">
               {(["agents", "mixed", "victims"] as const).map((kind) => (
@@ -248,6 +252,7 @@ export function PortrayalScrolly({
                       quote: mention.quote,
                       speaker: mention.speaker,
                       title: mention.title,
+                      color: COLOR[mention.kind],
                       rect: { left: rect.left, top: rect.top, width: rect.width, height: rect.height },
                     });
                   };
@@ -306,7 +311,7 @@ export function PortrayalScrolly({
                   id="portrayal-detail"
                   className="mx-auto max-w-xl bg-black p-4 text-center font-text text-lg leading-snug text-white sheet:rounded-xl sheet:border-2 sheet:border-dotted sheet:border-white sheet:bg-[#F6F2E7] sheet:p-6 sheet:text-xl sheet:text-ink"
                 >
-                  <p className="m-0">{highlight(pinned.quote)}</p>
+                  <p className="m-0">{highlight(pinned.quote, COLOR[pinned.kind])}</p>
                   <p className="mt-3 mb-0 border-t border-white/25 pt-2 font-ui text-[0.82rem] leading-snug sheet:border-ink/15">
                     <span className="block font-semibold">{pinned.iso}</span>
                     <span className="block">{pinned.speaker}</span>
@@ -334,6 +339,7 @@ export function PortrayalScrolly({
             quote={tip.quote}
             speaker={tip.speaker}
             title={tip.title}
+            color={tip.color}
             rect={tip.rect}
             onEnter={() => window.clearTimeout(hideTip.current)}
             onLeave={() => setTip(null)}
@@ -459,6 +465,7 @@ function QuoteTip({
   quote,
   speaker,
   title,
+  color,
   rect,
   onEnter,
   onLeave,
@@ -466,6 +473,7 @@ function QuoteTip({
   quote: string;
   speaker: string;
   title: string;
+  color: string;
   rect: Tip["rect"];
   onEnter: () => void;
   onLeave: () => void;
@@ -503,7 +511,7 @@ function QuoteTip({
         visibility: pos ? "visible" : "hidden",
       }}
     >
-      <p className="m-0">{highlight(text)}</p>
+      <p className="m-0">{highlight(text, color)}</p>
       <p className="mt-3 mb-0 border-t border-ink/15 pt-2 font-ui text-[0.82rem] leading-snug">
         <span className="block font-semibold">{speaker}</span>
         <span className="block">{title}</span>
