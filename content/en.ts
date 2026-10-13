@@ -33,11 +33,11 @@ const en: Content = {
   },
   header: {
     script: "Women and children!",
-    title: "How women are portrayed in United Nations speeches?",
+    title: "How are women portrayed in United Nations speeches?",
   },
   opening: {
-    script: "How women are portrayed?",
-    title: "how women are portrayed?",
+    script: "How are women portrayed?",
+    title: "how are women portrayed?",
     lede: "Every year, the United Nations organises a General Debate, during which each country delivers a speech. They have 15 minutes to talk. Lots of words can be used.",
     body: "But... we asked ourselves: ",
     videoLabel: "Compilation of speeches that mention women",
